@@ -1,0 +1,45 @@
+/* Mobile responsiveness patch for mirrored Duda pages */
+*{box-sizing:border-box}
+img,video,iframe,canvas,svg{max-width:100%!important;height:auto!important}
+
+@media (max-width: 991px){
+  .dmRespColsWrapper{
+    display:flex!important;
+    flex-wrap:wrap!important;
+  }
+  .dmRespCol,
+  .dmRespRow .dmRespCol,
+  .dmRespRow[class*="u_"] .dmRespCol{
+    width:100%!important;
+    max-width:100%!important;
+    flex:0 0 100%!important;
+    left:auto!important;
+    right:auto!important;
+  }
+  .dmRespRow,
+  .dmRespRow[class*="u_"],
+  .dmRespRow.fullBleedChanged,
+  .dmRespRowsWrapper,
+  .dmRespRowsWrapper > div{
+    height:auto!important;
+    min-height:0!important;
+  }
+  .dmLayoutWrapper,
+  #site_content,
+  #dm_content,
+  #allWrapper{
+    overflow-x:hidden!important;
+  }
+  .dmNewParagraph,
+  .dmWidget,
+  .imageWidget,
+  .photoGalleryThumbs,
+  .dmform{
+    width:100%!important;
+    max-width:100%!important;
+  }
+  nav.unifiednav .unifiednav__container{
+    flex-wrap:wrap!important;
+    row-gap:6px!important;
+  }
+}
