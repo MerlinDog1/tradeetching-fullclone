@@ -1,13 +1,27 @@
 /* OpenClaw mobile enhancement */
 #oc-mobile-topbar,#oc-mobile-nav-toggle,#oc-mobile-nav-panel{display:none}
 
+/* Trigger mobile mode via JS class OR small viewport fallback */
 body.oc-mobile-mode nav.unifiednav{display:none!important}
 body.oc-mobile-mode{padding-top:72px!important}
+
+@media (max-width:1200px){
+  nav.unifiednav{display:none!important}
+  body{padding-top:72px!important}
+}
 
 body.oc-mobile-mode #oc-mobile-topbar{
   display:flex;align-items:center;
   position:fixed;top:0;left:0;right:0;height:72px;z-index:99998;
   background:#000;border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+@media (max-width:1200px){
+  #oc-mobile-topbar{
+    display:flex;align-items:center;
+    position:fixed;top:0;left:0;right:0;height:72px;z-index:99998;
+    background:#000;border-bottom:1px solid rgba(255,255,255,.08);
+  }
 }
 
 body.oc-mobile-mode #oc-mobile-nav-toggle{
@@ -17,17 +31,46 @@ body.oc-mobile-mode #oc-mobile-nav-toggle{
   background:transparent;color:#fff;font-size:30px;line-height:1;cursor:pointer;
 }
 
+@media (max-width:1200px){
+  #oc-mobile-nav-toggle{
+    display:flex;align-items:center;justify-content:center;
+    position:fixed;top:14px;left:14px;z-index:100000;
+    width:44px;height:44px;border:none;border-radius:6px;
+    background:transparent;color:#fff;font-size:30px;line-height:1;cursor:pointer;
+  }
+}
+
 body.oc-mobile-mode #oc-mobile-nav-panel{
   display:block;position:fixed;top:72px;left:0;right:0;z-index:99999;
   background:#0b0b0b;color:#fff;border-top:1px solid rgba(255,255,255,.12);
   max-height:75vh;overflow:auto;padding:0 16px;
 }
 
+@media (max-width:1200px){
+  #oc-mobile-nav-panel{
+    display:block;position:fixed;top:72px;left:0;right:0;z-index:99999;
+    background:#0b0b0b;color:#fff;border-top:1px solid rgba(255,255,255,.12);
+    max-height:75vh;overflow:auto;padding:0 16px;
+  }
+}
+
 body.oc-mobile-mode #oc-mobile-nav-panel[hidden]{display:none!important}
+@media (max-width:1200px){
+  #oc-mobile-nav-panel[hidden]{display:none!important}
+}
+
 body.oc-mobile-mode #oc-mobile-nav-panel a{
   display:block;padding:14px 4px;color:#fff!important;text-decoration:none!important;
   border-bottom:1px solid rgba(255,255,255,.08);font-weight:600;letter-spacing:.02em;
   text-transform:uppercase;font-size:14px;
+}
+
+@media (max-width:1200px){
+  #oc-mobile-nav-panel a{
+    display:block;padding:14px 4px;color:#fff!important;text-decoration:none!important;
+    border-bottom:1px solid rgba(255,255,255,.08);font-weight:600;letter-spacing:.02em;
+    text-transform:uppercase;font-size:14px;
+  }
 }
 
 body.oc-mobile-mode .dmSocialHub,
