@@ -1,4 +1,15 @@
 (function(){
+  function detectMobileMode(){
+    var byWidth = window.matchMedia && window.matchMedia('(max-width: 1200px)').matches;
+    var byUA = /Android|iPhone|iPad|iPod|Mobile|Opera Mini|IEMobile/i.test(navigator.userAgent || '');
+    return !!(byWidth || byUA);
+  }
+
+  function applyMobileClass(){
+    if(detectMobileMode()) document.body.classList.add('oc-mobile-mode');
+    else document.body.classList.remove('oc-mobile-mode');
+  }
+
   function normalizeHref(href){
     if(!href) return '';
     href = href.trim();
@@ -93,10 +104,13 @@
   }
 
   function start(){
+    applyMobileClass();
+    window.addEventListener('resize', applyMobileClass, {passive:true});
     if(buildMenu()) return;
     var tries = 0;
     var t = setInterval(function(){
       tries += 1;
+      applyMobileClass();
       if(buildMenu() || tries > 40) clearInterval(t);
     }, 250);
   }
