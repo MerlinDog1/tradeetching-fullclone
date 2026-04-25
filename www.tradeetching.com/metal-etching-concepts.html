@@ -1,0 +1,3300 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'http://www.tradeetching.com/',
+
+        SystemID: '1AND1_EU_PROD',
+        SiteAlias: 'df3ec980cc9e40009b6d3de3d463012e',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Mar 16, 2026',
+        ExternalUid: '3a6dc0a2-1aab-4512-8460-da093a776d11',
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialPostPageUuid: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'metal-etching-concepts',
+        InitialPageUuid: 'e4faf6bba8854c4381a975ad15eff1e8',
+        InitialPageId: '710074265',
+        InitialEncodedPageAlias: 'bWV0YWwtZXRjaGluZy1jb25jZXB0cw==',
+        InitialHeaderUuid: '5bcd29840643458888ea53a1a620a38a',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '500000',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'en',
+        currentLocale: 'en-gb',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'http://www.tradeetching.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '2202',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'en-gb',
+        hamburgerMigration: null,
+        isFlexSite: false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="https://www.tradeetching.com/metal-etching-concepts">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="icon" type="image/x-icon" href="../cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/site_favicon_16_1567546999001.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://le-cdn.website-editor.net/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id='d-js-dmapi'>
+    window.SystemID = '1AND1_EU_PROD';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="../cdn.website-editor.net/fonts/css2%3Ffamily=Montserrat:ital,wght@0,100..900%3B1,100..900&amp;family=Cabin:ital,wght@0,400..700%3B1,400..700&amp;family=Source+Sans+Pro:ital,wght@0,200%3B0,300%3B0,400%3B0,600%3B0,700%3B0,900%3B1,200%3B1,300%3B1,400%3B1,600%3B1,700%3B1,900&amp;family=Comfortaa:ital,wght@0,30.css"  />
+
+<style>
+@font-face {
+  font-family: "(A) Arslan Wessam A (A) Arslan Wessam A";
+  src: url("../cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/fonts/(A)+Arslan+Wessam+A+(A)+Arslan+Wessam+A-529b_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static-cdn.website-editor.net/mnlt/production/6373/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="../cdn.website-editor.net/WIDGET_CSS/51d190f953ab903d049db25580e619d2.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="metal-etching-concepts"] #dm [data-show-on-page-only="metal-etching-concepts"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/files/df3ec980cc9e40009b6d3de3d463012e_1.min.css?v=226&Expires=1779213147&Signature=SFfnEvG9DyMWwQRNRPz2WLQxJiXEhFARk-wViSBoi4WeWQMyvF5dOkTpmEZS--dlm8SmFCigWfmFLXEixsGuxqSCNnR9qrETeXmUFTDpbF7gsgoz8ED2CHxSv8lqMLGOq7lG2SCGHSMcPpJPLBFsqeEmH7d2D7c4VBE8qXaX19mc5rleR4g9FjrKGVwGzpH430TXruwik~TAods4pTwbl~E3nul-CQo4AAqb5HZ5pCX2HXvElWxBBl0tSS7wkOid1PtLzNqQ1abLojLNhFiaxtGbPQWOczxjtCObvolg-1cLpbTD3U3FZ434BC9CIptU8legYnze25yADmsKwOOApQ__&Key-Pair-Id=K2NXBXLF010TJW" id="siteGlobalCss" />
+
+
+<!-- additional css file per platform -->
+<link
+        type="text/css" rel="stylesheet"
+        href="_dm/s/rt/css/oneUndOne/1and1-runtime.css%3Fversion=2026-04-19T12_48_49.css"
+/>
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody div.u_1784870493 .photoGalleryThumbs .image-container
+{
+	border-radius:3% !important;
+	-moz-border-radius:3% !important;
+	-webkit-border-radius:3% !important;
+}
+*#dm *.dmBody *.u_1784870493 .caption-inner
+{
+	border-bottom-left-radius:3% !important;
+	-webkit-border-top-right-radius:3% !important;
+	-moz-border-top-right-radius:3% !important;
+	-webkit-border-bottom-right-radius:3% !important;
+	-webkit-border-bottom-left-radius:3% !important;
+	border-top-right-radius:3% !important;
+	-webkit-border-top-left-radius:3% !important;
+	border-radius:3% !important;
+	-moz-border-bottom-right-radius:3% !important;
+	-moz-border-top-left-radius:3% !important;
+	border-top-left-radius:3% !important;
+	-moz-border-radius:3% !important;
+	-moz-border-bottom-left-radius:3% !important;
+	border-bottom-right-radius:3% !important;
+	-webkit-border-radius:3% !important;
+}
+*#dm *.dmBody div.u_1776094744
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1353532152
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1784870493 .caption-inner
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	background-color:rgba(255,255,255,0.51) !important;
+}
+*#dm *.dmBody div.u_1784870493 .caption-container .caption-title
+{
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1784870493 .caption-container .caption-text
+{
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1784870493 .caption-container .caption-text .rteBlock
+{
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1596904825
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1052592744
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1140104817
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody h3.u_1967026594
+{
+	line-height:initial !important;
+}
+*#dm *.dmBody div.u_1508524839 hr
+{
+	color:rgba(7,153,226,1) !important;
+	border-top-width:1px !important;
+	border-top-style:solid !important;
+}
+*#dm *.dmBody div.u_1456211032
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1521328904
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1148050404
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1653234008
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1274619109
+{
+	background-repeat:no-repeat !important;
+	background-image:url(../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1723130675943-2880w.jpg%3FExpires=1779213146&Signature=k2QQRLHsk3UKCrCOo5RHo5PbG8FB-EYH2Kss88ilUmrq61aap0QApRNuYaPUCHgXKMneorQ9xgtNIA0EMnRCGRDP51aTKQ4zYrsYxXd35U7BqWbQSsw5TszsmsXqAZ-claB13A0wtmFk5B8hH63-AEVx1aQNwQ4KPigbJ0DLbLlqY93NemNXZmc) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody *.u_1087561829 .photoGalleryThumbs .image-container a
+{
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1302113297
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1843993659
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1774354186
+{
+	background-repeat:no-repeat !important;
+	background-image:url(../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722082098433--281-29-2880w.jpg%3FExpires=1779213146&Signature=Usta-l8Vr~8mSwgNqdjFwDqET~KvK4LKIhDAT6JdkSzOH3S6c31srFjKpbcKiR5jAixvY7weJqodXj7eECgCewn5zi1CKSegGdZ-n5ikxqck8LCBZhD~Z~r3iggzPeC2T4xjkOOkQacMTqiQ03bIQ6rZ-bxuGL~ruJVC~D0u87mre44) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody *.u_1240707539 .photoGalleryThumbs .image-container a
+{
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1279969253
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1977924344
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody *.u_1748789479 .photoGalleryThumbs .image-container a
+{
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1317750417
+{
+	background-repeat:no-repeat !important;
+	background-image:url(../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1721920099496+(2)-2880w.jpg%3FExpires=1779213146&Signature=JUnX0rfTW-NHFWkKWYyyDh8yREQDB4BJG9Cvo692uqUPm7T5qQOxJ-Yd82eoyk0ZF833ysg59oL21~WAFg09gELOfCfeZr62gpL4RwXGGdJputxzzSQXFS7rwQJO5IZ-B-3o-Av5R6ftYqHdRkQ72xpcS2XxeZ9qCT6jk7CzHuOYm4A7r4i) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1540818308
+{
+	background-repeat:no-repeat !important;
+	background-image:url(../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722597867128+(1)-2880w.jpg%3FExpires=1779213146&Signature=pecKITn81uOeE0Y2NK9vNXqE0Ramz1eKHA-Qt6CnnIR5hUKM174wOkITTBNvSmEKUeUdhHYa-oG22d~naZwacLor5UfFlCJBgDAiIOFdRgcocnJNyAktpG4MxYwBt7MyO2wORBMX9y6H1PPPw2Drkq53sjuWqf5CcUVKafoCGn5duskfY4C) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1769143867
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1650080538
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1427578955
+{
+	background-repeat:no-repeat !important;
+	background-image:url(../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722951112106-2880w.jpg%3FExpires=1779213146&Signature=CEABTKl1VncNIF7BJtC0nHRLlHpqbd0dk9yo6oGKZkc9ZYuoD7uJpNE8FvoPdBMtwI~r9218gldwKcuiLTpa~GltsX7NqsqE00eqFlQ~75Iv2HTKRPyXuMA5LTJ8rXSN88uAidfTYROGUxy62dqlH1TXYW80CbRlhcFuyeXdSc0tLLfCwqZHp-v) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1953182379
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1895989325
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1058703618
+{
+	background-repeat:no-repeat !important;
+	background-image:url(../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/laser-cut-3mm-mirror-stainless-with-chemical-etched-surface-2880w.jpg%3FExpires=1779213146&Signature=jdXO-TERW26uhwfLW4mLRTFw8Dk7cu20R7VDVjxY6CRYuP8PkKmzrVwqZ~5aZkh90Nz5KUJ5LEZeBIL9kUZwCG0J-wPjbApKI7XSquBnAhGHJD1TWdV2ZZ-JGzIbGPxeBG0lQjvUA) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody *.u_1138895960
+{
+	width:100% !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.dmBody div.caption-container *.caption-text *.rteBlock
+{
+	font-size:15px !important;
+}
+*#dm *.dmBody *.u_1784870493 .photoGalleryThumbs
+{
+	padding:10px !important;
+}
+*#dm *.dmBody *.u_1784870493 .layout-container
+{
+	padding:10px !important;
+}
+*#dm *.dmBody *.u_1784870493 .photoGalleryViewAll
+{
+	padding:0 20px !important;
+}
+*#dm *.dmBody *.u_1784870493 .photoGalleryThumbs .image-container a
+{
+	padding-top:427px !important;
+}
+*#dm *.dmBody *.u_1784870493 .caption-inner
+{
+	padding-left:30px !important;
+	padding-right:30px !important;
+}
+*#dm *.dmBody div.u_1080141112 .dmforminput label:not(.for-checkable):not(.custom-contact-checkable)
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1080141112 .m-recaptcha
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1044036357
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:18px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1508524839
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:57px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:14px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1140104817
+{
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-right:30px !important;
+	padding-bottom:0px !important;
+}
+*#dm *.dmBody *.u_1004273155 *.photoGalleryThumbs
+{
+	padding:5.5px !important;
+}
+*#dm *.dmBody *.u_1004273155 *.layout-container
+{
+	padding:5.5px !important;
+}
+*#dm *.dmBody *.u_1004273155 *.photoGalleryViewAll
+{
+	padding:0 11px !important;
+}
+*#dm *.dmBody *.u_1004273155 *.photoGalleryThumbs *.image-container a
+{
+	padding-top:519px !important;
+}
+*#dm *.dmBody div.u_1004273155
+{
+	margin-left:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	margin-right:auto !important;
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	max-width:calc(100% - 0px) !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1052592744
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:80px !important;
+	padding-left:40px !important;
+	padding-bottom:80px !important;
+	max-width:none !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1967026594
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:28px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody h3.u_1517311438
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:587px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:-0.5px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+}
+*#dm *.dmBody *.u_1087561829 *.photoGalleryThumbs
+{
+	padding:4px !important;
+}
+*#dm *.dmBody *.u_1087561829 *.layout-container
+{
+	padding:4px !important;
+}
+*#dm *.dmBody *.u_1087561829 *.photoGalleryViewAll
+{
+	padding:0 8px !important;
+}
+*#dm *.dmBody div.u_1362826990
+{
+	height:55px !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:424px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:137px !important;
+	max-width:calc(100% - 137px) !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1058554850
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:20px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1087561829
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:auto !important;
+	max-width:100% !important;
+	margin-top:29px !important;
+	margin-bottom:10px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	margin-left:0 !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1517311438
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:0px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+}
+*#dm *.dmBody h3.u_1707630833
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:587px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:-0.5px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+}
+*#dm *.dmBody *.u_1895005323 *.photoGalleryThumbs
+{
+	padding:4px !important;
+}
+*#dm *.dmBody *.u_1895005323 *.layout-container
+{
+	padding:4px !important;
+}
+*#dm *.dmBody *.u_1895005323 *.photoGalleryViewAll
+{
+	padding:0 8px !important;
+}
+*#dm *.dmBody *.u_1895005323 *.photoGalleryThumbs *.image-container a
+{
+	padding-top:140px !important;
+}
+*#dm *.dmBody div.u_1653234008
+{
+	padding-top:100px !important;
+	padding-left:60px !important;
+	padding-bottom:100px !important;
+	padding-right:60px !important;
+}
+*#dm *.dmBody div.u_1392187357
+{
+	height:55px !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:424px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:137px !important;
+	max-width:calc(100% - 137px) !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1777990001
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:20px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1895005323
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:auto !important;
+	max-width:100% !important;
+	margin-top:29px !important;
+	margin-bottom:10px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	margin-left:0 !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1707630833
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:0px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1456211032
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:64px !important;
+	padding-left:0px !important;
+	padding-bottom:64px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1521328904
+{
+	padding-top:100px !important;
+	padding-left:60px !important;
+	padding-bottom:100px !important;
+	padding-right:60px !important;
+}
+*#dm *.dmBody *.u_1087561829 *.photoGalleryThumbs *.image-container a
+{
+	padding-top:268px !important;
+}
+*#dm *.dmBody div.u_1148050404
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:23.5px !important;
+	padding-left:0px !important;
+	padding-bottom:23.5px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+*#dm *.dmBody div.u_1540818308
+{
+	background-position:50% 50% !important;
+	padding-left:0px !important;
+	padding-right:20px !important;
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody h3.u_1279034573
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:587px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:-0.5px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+}
+*#dm *.dmBody *.u_1240707539 *.photoGalleryThumbs
+{
+	padding:4px !important;
+}
+*#dm *.dmBody *.u_1240707539 *.layout-container
+{
+	padding:4px !important;
+}
+*#dm *.dmBody *.u_1240707539 *.photoGalleryViewAll
+{
+	padding:0 8px !important;
+}
+*#dm *.dmBody div.u_1239148402
+{
+	height:55px !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:424px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:137px !important;
+	max-width:calc(100% - 137px) !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1135894014
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:20px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1240707539
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:auto !important;
+	max-width:100% !important;
+	margin-top:29px !important;
+	margin-bottom:10px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	margin-left:0 !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1279034573
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:0px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1302113297
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:64px !important;
+	padding-left:0px !important;
+	padding-bottom:64px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1843993659
+{
+	padding-top:100px !important;
+	padding-left:60px !important;
+	padding-bottom:100px !important;
+	padding-right:60px !important;
+}
+*#dm *.dmBody *.u_1240707539 *.photoGalleryThumbs *.image-container a
+{
+	padding-top:268px !important;
+}
+*#dm *.dmBody div.u_1774354186
+{
+	background-position:50% 50% !important;
+	padding-left:0px !important;
+	padding-right:20px !important;
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody h3.u_1997974953
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:587px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:-0.5px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+}
+*#dm *.dmBody *.u_1748789479 *.photoGalleryThumbs
+{
+	padding:4px !important;
+}
+*#dm *.dmBody *.u_1748789479 *.layout-container
+{
+	padding:4px !important;
+}
+*#dm *.dmBody *.u_1748789479 *.photoGalleryViewAll
+{
+	padding:0 8px !important;
+}
+*#dm *.dmBody div.u_1618164894
+{
+	height:55px !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:424px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:137px !important;
+	max-width:calc(100% - 137px) !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1950651607
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:20px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1748789479
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:auto !important;
+	max-width:100% !important;
+	margin-top:29px !important;
+	margin-bottom:10px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	margin-left:0 !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1997974953
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:0px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1279969253
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:64px !important;
+	padding-left:0px !important;
+	padding-bottom:64px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1977924344
+{
+	padding-top:100px !important;
+	padding-left:60px !important;
+	padding-bottom:100px !important;
+	padding-right:60px !important;
+}
+*#dm *.dmBody *.u_1748789479 *.photoGalleryThumbs *.image-container a
+{
+	padding-top:268px !important;
+}
+*#dm *.dmBody div.u_1317750417
+{
+	background-position:50% 50% !important;
+	padding-left:0px !important;
+	padding-right:20px !important;
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody h3.u_1471228264
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:587px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:-0.5px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+}
+*#dm *.dmBody div.u_1684774679
+{
+	height:55px !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:424px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:137px !important;
+	max-width:calc(100% - 137px) !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1200914524
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:20px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1471228264
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:0px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1769143867
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:64px !important;
+	padding-left:0px !important;
+	padding-bottom:64px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1650080538
+{
+	padding-top:100px !important;
+	padding-left:60px !important;
+	padding-bottom:100px !important;
+	padding-right:60px !important;
+}
+*#dm *.dmBody div.u_1427578955
+{
+	background-position:50% 50% !important;
+	padding-left:0px !important;
+	padding-right:20px !important;
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1274619109
+{
+	background-position:50% 50% !important;
+	padding-left:0px !important;
+	padding-right:20px !important;
+	background-attachment:initial !important;
+}
+*#dm *.dmBody h3.u_1564493316
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:587px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:-0.5px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:8px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:left !important;
+}
+*#dm *.dmBody *.u_1381717940 *.photoGalleryThumbs
+{
+	padding:4px !important;
+}
+*#dm *.dmBody *.u_1381717940 *.layout-container
+{
+	padding:4px !important;
+}
+*#dm *.dmBody *.u_1381717940 *.photoGalleryViewAll
+{
+	padding:0 8px !important;
+}
+*#dm *.dmBody div.u_1895989325
+{
+	padding-top:100px !important;
+	padding-left:60px !important;
+	padding-bottom:100px !important;
+	padding-right:60px !important;
+}
+*#dm *.dmBody div.u_1000060623
+{
+	height:55px !important;
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:424px !important;
+	position:relative !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:137px !important;
+	max-width:calc(100% - 137px) !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1441981871
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:20px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1381717940
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:auto !important;
+	max-width:100% !important;
+	margin-top:29px !important;
+	margin-bottom:10px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	margin-left:0 !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1564493316
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:0px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1953182379
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:23.5px !important;
+	padding-left:0px !important;
+	padding-bottom:23.5px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	min-height:auto !important;
+}
+*#dm *.dmBody div.u_1058703618
+{
+	background-position:50% 50% !important;
+	padding-left:0px !important;
+	padding-right:20px !important;
+	background-attachment:initial !important;
+}
+*#dm *.dmBody *.u_1381717940 *.photoGalleryThumbs *.image-container a
+{
+	padding-top:324px !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Cabin Fallback";
+  src: local('Arial');
+  ascent-override: 101.7818%;
+  descent-override: 26.3684%;
+  size-adjust: 94.8106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Helvetica Fallback";
+  src: local('Arial');
+  ascent-override: 77.002%;
+  descent-override: 22.998%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Arial Fallback";
+  src: local('Arial');
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Comfortaa Fallback";
+  src: local('Arial');
+  ascent-override: 74.2135%;
+  descent-override: 19.7117%;
+  size-adjust: 118.7115%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Karla Fallback";
+  src: local('Arial');
+  ascent-override: 88.668%;
+  descent-override: 24.3668%;
+  size-adjust: 103.4195%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.tradeetching.com/metal-etching-concepts">
+
+  <meta property="og:image" content="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/trade+etching+direct+%282%29-1920w.png?Expires=1779213147&amp;Signature=n9OckU-wXskcWccC-dzZDlRRLsVki9AsgA02j46WRwlXTkrHH8ANVDvg-sT-0FBFdQQijDF0~wJUvRdLgjZzeeE56Hfz13-YgdOxhGjA7kf5ZZoiMuSX9spNoNH58ABkj15p36lxSmTH0wWRwxOUVfdjdJdG6bOHN4wJWS7d-FxG6x3-PlUAQb7qdyW9PREj7FJaFBjiX6j3tijipk4sP~pvDO3fgO0ZG4XzIZLgivHrviOZcDI2Dgsm0xdrDBsJBffo2cBWZqhmcHBkrf1SUoKyeskchM7xC5JL~DJoGkVAKPKZWD9~7Nk~C9LmafqjTUuvdoEZkSzm8r37GR6baQ__&amp;Key-Pair-Id=K2NXBXLF010TJW"/>
+  <title>
+    Concepts for Chemical Etching and Patination
+  </title>
+  <meta name="description" content="Explore new concepts for metal etching, finishing and patination for the sign industry, architects and designers. "/>
+
+  <!--THE CONTENT OF THIS FILE WILL BE APPENDED TO EVERY PAGE INSIDE THE </HEAD> ELEMENT-->  <!--THE CONTENT OF THIS FILE WILL BE APPENDED TO EVERY PAGE INSIDE THE </HEAD> ELEMENT-->  <!--THE CONTENT OF THIS FILE WILL BE APPENDED TO EVERY PAGE INSIDE THE </HEAD> ELEMENT-->  <!-- Google Tag Manager -->  <script>
+
+
+
+
+
+
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NKZN322');
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+  <!-- End Google Tag Manager -->  <!-- Global site tag (gtag.js) - Google Analytics -->  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-140861906-5">
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+  <script type="application/ld+json" id="1618835343">
+
+
+
+
+
+
+
+     {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://wwww.tradeetching.com",
+  "logo": "https://cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/mobile/Deep%2Betched%2Bmetal%2Bsign%2B%288%29.jpg",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+44-1536-203-813",
+    "email": "sales@tradeetching.com",
+    "contactType": "sales"
+  }]
+}
+                                                                                                                                                                                                                                                  
+              
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+
+
+
+{
+      "@context":"http://schema.org",
+      "@type":"ItemList",
+      "itemListElement":[
+        {
+          "@type": "SiteNavigationElement",
+          "position": 1,
+          "name": "Home",
+          "description": "UK's leading trade supplier of chemically etched metal signs",
+          "url":"https://www.tradeetching.com/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 2,
+          "name": "Chemical Etching Services",
+          "description": "High quality etched metal signs for the UK sign industry",
+          "url":"https://www.tradeetching.com/chemical-etching-services"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 3,
+          "name": "Etching Concepts",
+          "description": "Breaking new ground in metal etching and finishing",
+          "url":"https://www.tradeetching.com/metal-etching-concepts"
+        },
+        {"@type": "SiteNavigationElement",
+          "position": 4,
+          "name": "Metal patination service",
+          "description": "Professional metal patination service ",
+          "url":"https://www.tradeetching.com/metal patination"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 5,
+          "name": "Etching Gallery",
+          "description": "The UK's chemical etching experts",
+          "url":"https://www.tradeetching.com/etching-gallery"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 6,
+          "name": "Contact Us",
+          "description": "Contact Trade Etching Direct today to discuss your chemical etching needs",
+          "url":"https://www.tradeetching.com/contact"
+        }
+      ]
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Chemical Etching Services",
+      "item": "https://www.tradeetching.com/chemical-etching-services"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Etching Gallery",
+      "item": "https://www.tradeetching.com/etching-gallery"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Etching Gallery",
+      "item": "https://www.tradeetching.com/etching-gallery"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contact",
+      "item": "https://www.tradeetching.com/Contact"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Chemical Milling",
+      "item": "https://www.tradeetching.com/chemical-milling"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Metal Patination",
+      "item": "https://www.tradeetching.com/metal-patination"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Etched Metal Signs & Nameplates",
+      "item": "https://www.tradeetching.com/etched-metal-signs-nameplates"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Large Format Chemical Etching for Architecture",
+      "item": "https://www.tradeetching.com/large_format_chemical_etching_for_architecture"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Metal Etching Concepts",
+      "item": "https://www.tradeetching.com/metal-etching-concepts"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script>
+
+
+
+
+
+
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-140861906-5');
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+  <meta name="p:domain_verify" content="42335df007226dcf2ddfb084200d6fd8"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Concepts for Chemical Etching and Patination"/>
+  <meta name="twitter:description" content="Explore new concepts for metal etching, finishing and patination for the sign industry, architects and designers. "/>
+  <meta property="og:description" content="Explore new concepts for metal etching, finishing and patination for the sign industry, architects and designers. "/>
+  <meta property="og:title" content="Concepts for Chemical Etching and Patination"/>
+
+
+
+
+<!-- SYS- MUFORDFfRVVfUFJPRA== -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="metal-etching-concepts"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-sec hasAnimations rows-1200 dmPageBody d-page-1716942098 inputs-css-clean dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="dmHeader p_hfcontainer u_hcontainer" freeheader="true"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1675602342 dmRespRow hide-for-small hide-for-large" id="1675602342"> <div class="dmRespColsWrapper" id="1264883160"> <div class="u_1980807906 dmRespCol small-12 large-9 medium-9" id="1980807906"> <nav class="u_1587919735 effect-bottom2 main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" data-divider="PIPE" id="1587919735" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="HORIZONTAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="page-2.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="home"> <span class="nav-item-text " data-link-text="
+         HOME
+        " data-auto="page-text-style">HOME<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="chemical-etching-services.html" class="unifiednav__item unav-item unav-top-item    unifiednav__item_has-sub-nav" target="" data-target-page-alias="chemical-etching-services"> <span class="nav-item-text " data-link-text="
+         SERVICES
+        " data-auto="page-text-style">SERVICES<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav unav-sub" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="page-2.html" class="unifiednav__item unav-item     " target="" data-target-page-alias="chemical-etching"> <span class="nav-item-text " data-link-text="HOME" data-auto="page-text-style">HOME<span class="icon icon-angle-right" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="chemical-milling.html" class="unifiednav__item unav-item     " target="" data-target-page-alias="chemical-milling"> <span class="nav-item-text " data-link-text="
+         CHEMICAL MILLING
+        " data-auto="page-text-style">CHEMICAL MILLING<span class="icon icon-angle-right" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="page-2.html" class="unifiednav__item unav-item     " target="" data-target-page-alias="metal-patination"> <span class="nav-item-text " data-link-text="HOME" data-auto="page-text-style">HOME<span class="icon icon-angle-right" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="large-format-chemical-etching-for-architecture.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="large-architectural-chemical-etching"> <span class="nav-item-text " data-link-text="ARCHITECTURAL" data-auto="page-text-style">ARCHITECTURAL<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="etching-gallery.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="etching-gallery"> <span class="nav-item-text " data-link-text="
+         GALLERY
+        " data-auto="page-text-style">GALLERY<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="Contact.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="Contact"> <span class="nav-item-text " data-link-text="
+         CONTACT
+        " data-auto="page-text-style">CONTACT<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+ <div class="u_1261906175 align-center text-align-center hide-for-medium dmSocialHub gapSpacing" id="1261906175" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://linkedin.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://instagram.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1198692004 align-center text-align-center hide-for-medium dmSocialHub gapSpacing" id="1198692004" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://linkedin.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://instagram.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1390918706 align-center text-align-center hide-for-medium dmSocialHub gapSpacing" id="1390918706" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://linkedin.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://instagram.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1613691070 dmRespCol small-12 large-3 medium-3" id="1613691070"> <div class="u_1348442737 align-center text-align-center hide-for-medium dmSocialHub gapSpacing" id="1348442737" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://linkedin.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://instagram.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1165813500 align-center text-align-center dmSocialHub gapSpacing" id="1165813500" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:tradeetching@gmail.com" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://instagram.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://linkedin.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1571063569 dmRespRow dmHeaderContent freeHeaderRow1 fullBleedChanged fullBleedMode hide-for-medium" id="1571063569"> <div class="dmRespColsWrapper clearfix" id="1618005341"> <div class="u_1713311601 dmRespCol small-12 large-10 medium-10" id="1713311601"> <nav class="u_1284501632 effect-bottom2 hide-for-medium main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" data-divider="PIPE" id="1284501632" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" navigation_id="" data-logo-src="https://cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/desktop/logo_empty-871ebb7f.png" data-nav-structure="HORIZONTAL" wr="false" icon="true" surround="false" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="page-2.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="home"> <span class="nav-item-text " data-link-text="
+         HOME
+        " data-auto="page-text-style">HOME<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="chemical-etching-services.html" class="unifiednav__item unav-item unav-top-item    unifiednav__item_has-sub-nav" target="" data-target-page-alias="page-2"> <span class="nav-item-text " data-link-text="
+         SERVICES
+        " data-auto="page-text-style">SERVICES<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav unav-sub" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="chemical-etching-services.html#CHEMICALETCHING" class="unifiednav__item unav-item     " target="" data-target-page-alias="chemical-etching-services#CHEMICALETCHING"> <span class="nav-item-text " data-link-text="CHEMICAL ETCHING" data-auto="page-text-style">CHEMICAL ETCHING<span class="icon icon-angle-right" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="chemical-milling.html" class="unifiednav__item unav-item     " target="" data-target-page-alias="chemical-milling"> <span class="nav-item-text " data-link-text="
+         CHEMICAL MILLING
+        " data-auto="page-text-style">CHEMICAL MILLING<span class="icon icon-angle-right" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="metal-patinationb8754569.html" class="unifiednav__item unav-item     " target="" data-target-page-alias="metal-patinationb8754569"> <span class="nav-item-text " data-link-text="
+         METAL PATINATION
+        " data-auto="page-text-style">METAL PATINATION<span class="icon icon-angle-right" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="large-format-chemical-etching-for-architecture.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="large-architectural-chemical-etching"> <span class="nav-item-text " data-link-text="ARCHITECTURAL" data-auto="page-text-style">ARCHITECTURAL<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="flat-cut-metal-letters-brass-stainless-steel.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="flat-cut-letters"> <span class="nav-item-text " data-link-text="LETTERS" data-auto="page-text-style">LETTERS<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="metal-etching-concepts.html" class="unifiednav__item unav-item unav-top-item  dmNavItemSelected    " target="" data-target-page-alias="portfolio" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="CONCEPTS" data-auto="page-text-style">CONCEPTS<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="etched-industrial-labels-control-panels.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="new-page-2a7e2ef67"> <span class="nav-item-text " data-link-text="INDUSTRIAL" data-auto="page-text-style">INDUSTRIAL<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="etching-gallery.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="page-3"> <span class="nav-item-text " data-link-text="
+         GALLERY
+        " data-auto="page-text-style">GALLERY<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="Contact.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="page-4"> <span class="nav-item-text " data-link-text="
+         CONTACT
+        " data-auto="page-text-style">CONTACT<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1634158846 dmRespCol small-12 large-2 medium-2" id="1634158846"> <div class="u_1016230127 align-center text-align-center dmSocialHub gapSpacing" id="1016230127" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:tradeetching@gmail.com" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.linkedin.com/in/anthony-dullaghan-82987260/?originalSubdomain=uk" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.instagram.com/trade_etching/?hl=en" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr/></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"> <div class="innerPageTitle">CONCEPTS</div> 
+</div> 
+ <div class="titleLine display_None"><hr/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_metal-etching-concepts dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="u_1052592744 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1052592744" data-page-element-type="section" data-page-element-id="1543038330"> <div class="dmRespColsWrapper" id="1401737613"> <div class="u_1140104817 dmRespCol small-12 large-4 medium-4" id="1140104817"> <div data-element-type="spacer" class="dmSpacer" id="1123887097"></div> 
+ <div class="u_1967026594 dmNewParagraph" data-element-type="paragraph" id="1967026594" style="transition: opacity 1s ease-in-out;" data-version="5"> <h1 class="size-24 m-size-19"><span style="display: initial; color: rgb(0, 0, 0);" class="font-size-24 m-font-size-19">Innovative Metal Etching &amp; Finishing Solutions for Custom Signage and Architectural Applications</span></h1> 
+</div> <div class="u_1508524839 dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1508524839"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1274210916"/></div> 
+ <div class="u_1044036357 dmNewParagraph" id="1044036357" style="transition: none; display: block;" data-version="5"><p><span style="display: initial;">Welcome to the Concepts section of Trade Etching Direct, where we showcase our latest ideas and innovations in metal etching and finishing.</span></p><p><span style="display: initial;"><br/></span></p><p><span class="" style="display: initial;"><span style="display: initial;">As a leader in the UK sign industry, we are dedicated to pushing the boundaries of what&rsquo;s possible, providing our customers with unique and exciting design options. This section serves as a creative space where we share the new possibilities we&rsquo;re exploring in metal etching.</span> 
+</span></p><p><span style="display: initial;"><br/></span></p><p><span style="display: initial;">Whether it's intricate patterns, innovative finishes, or bold new applications, our goal is to inspire and inform our customers about the extensive capabilities at their disposal. Explore these concepts to see how our advanced techniques can bring your projects to life in ways you might not have imagined.</span></p><p><span style="display: initial;"><br/></span></p></div></div> 
+ <div class="u_1436685164 dmRespCol small-12 large-8 medium-8" id="1436685164"> <div class="u_1004273155 dmPhotoGallery newPhotoGallery dmPhotoGalleryResp photo-gallery-done text-layout-over captionAlignment-center_center photoGallery" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="2" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1004273155" data-rows-to-show="100" data-image-hover-effect="zoomout" data-image-animation="fadeIn" data-placeholder="false"> <div class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1362986591"></div> 
+ <div class="layout-container square"> <div class="photogallery-row " data-index=""> <div class="photogallery-column column-2" data-index="0"> <div index="0" class="photoGalleryThumbs animated  " data-index="0"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="laser cut 3mm polished brass with patina" data-dm-force-device="mobile" class="u_1893176821" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1722597867128.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722597867128-640w.jpg%3FExpires=1779213146&Signature=SEUuD~QZXg3QKpR-bOqPtQckHU~Tqqrqmp7vWTNO3a49zxK3Bg4wIw8PPlv9vnTxUhMqi5rTQ~iGch3uOfoXZv6vDux-Zlnzhp-G9jC-hOG4kuteWOsWKW7iOPYbMgQ3yGgQ6CxmTPE3QlmQywfCKgr5fpINtU11HirvroYSG0eCdHeVChp-NJt5');"><img id="1877100654" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722597867128-1920w.jpg?Expires=1779213146&Signature=RGFk5WcXCHXTnZhluIukg-zDyuDy3oISVoYdGaLiLn8PngMn1YcGJDYGejy5sEXT2wcmnwL9R-NEVfYPYxA8YHEMQ2tggTZ1TxKB0L85CH5wODVDqvkEkS6-299N5EnRHCEn-74i8UI6uofYHs3IFAHOCSB4VVFF28~PsZZ36XJQewEbU4M~Z3ZNBuarEce04arvOX-sWpuFX-kBTGS3DSXDeHC2hf~kF9bBeN-7FqFd6DRGagtVaXZEybSrSl8oQxCILOaf8SAENeIKQLZIBGgK4FQUVouTx40vV8E4i6AVBr7iOejb8spA~kts61MSC7uQqFgwQho7qhSsVVKaeQ__&Key-Pair-Id=K2NXBXLF010TJW" alt="laser cut 3mm polished brass with patina" aria-label="laser cut 3mm polished brass with patina" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1007125532" class="caption-container u_1007125532" style="display:none"> <span class="caption-inner"> <a id="1280304832" class="caption-button dmWidget  clearfix u_1280304832" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="photogallery-column column-2" data-index="1"> <div index="1" class="photoGalleryThumbs animated  " data-index="1"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="penrose tile patina, brass with multiple patina pattern" data-dm-force-device="mobile" class="u_1606591520" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/IMG_3926.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/IMG_3926-640w.jpg%3FExpires=1779213146&Signature=ImFqA-0x08mYvqo8cXbJt~1IT6ztAaRdidpiJFhQwKimX35IoDFOUuiosd0a-iPf2LtYFur96ofVs1ABJjbEamZdRpTKtAMxxDnh-QYlSw3Mku3FAun00eTQpA53lVKYAdx39KXHMWmETXHQSHdNcfmaT0r7fiGpcRXcyXXl9aclG6J1qQDjngqH933I0');"><img id="1022046011" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/IMG_3926-1920w.jpg?Expires=1779213146&Signature=YL5J4IV4R3DDveJqPDeUk3PPDec2tYcGOUU-WQzeE0sRTExVNRtqKJwU9UrVDM~RzGL4bVfIJYHXTgjbKrxtY~AWcNpIeqLwJfsiL23UB5AIv9nQ~cHmCw92GClmT~HeIv5cgfMyQKzokhJwXeiRfMZA2xKlFDaG9jEvVUvBt0FOvZuv9GQnQxT~gIoWlqEFJAGG~dcF3cHGxJJf2JCxw9IyhPvrtiu1eOGZU88Sc2E4wpSs4541MvPOpCIM9XHACwm04~F5mnaUYnV8Ne7xmyCnXYTXgU1J4qWQH1o34e1QAp3yvkgELbuWbYhk9GHvdQvMu3skiX5pn7Eb5akgMg__&Key-Pair-Id=K2NXBXLF010TJW" alt="penrose tile patina, brass with multiple patina pattern" aria-label="penrose tile patina, brass with multiple patina pattern" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1810334506" class="caption-container u_1810334506" style="display:none"> <span class="caption-inner"> <a id="1324045061" class="caption-button dmWidget  clearfix u_1324045061" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1953182379 dmRespRow fullBleedChanged fullBleedMode mobile-columns-reversed" style="text-align: center;" id="1953182379" data-page-element-type="section" data-page-element-id="1326063981"> <div class="dmRespColsWrapper" id="1797418261"> <div class="u_1895989325 dmRespCol small-12 large-6 medium-6" id="1895989325"> <div class="u_1564493316 dmNewParagraph" id="1564493316" style="transition: none; display: block;" data-element-type="paragraph" data-version="5"> <h2><span style="display: initial; color: rgb(0, 0, 0);">Laser cut and reverse etched celtic cross</span></h2> 
+</div> <div class="u_1441981871 dmNewParagraph" id="1441981871" data-version="5"><p><span style="display: initial;">A laser cut 3mm mirror stainless Celtic cross, deep reverse etched to a depth of 0.8mm with a smooth, uniform etched surface.<br/><br/>This project showcases the possibilities of combining laser cutting with deep etching, allowing for both intricate design and durable craftsmanship. The precision of laser cutting paired with the depth and detail of etching opens up endless creative possibilities for custom projects like this.</span></p></div> <div class="u_1381717940 dmPhotoGallery newPhotoGallery dmPhotoGalleryResp hasFullWidth photo-gallery-done text-layout-over captionAlignment-center_center photoGallery" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="3" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1381717940" data-rows-to-show="100" data-placeholder="false" data-mobile-columns="1" data-image-hover-effect="zoomout" data-image-animation="fadeIn"> <div class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1362986591"></div> 
+ <div class="layout-container square"> <div class="photogallery-row " data-index=""> <div class="photogallery-column column-3" data-index="0"> <div index="0" class="photoGalleryThumbs animated  " data-index="0"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="" data-dm-force-device="mobile" class="u_1589920837" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/laser-cut-3mm-mirror-stainless-with-chemical-etching.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/laser-cut-3mm-mirror-stainless-with-chemical-etching-640w.jpg%3FExpires=1779213146&Signature=O9nZhjo31lqJWBlsOS7Hcj2Yw2FNeAccgw7KBlYnl-azGXOng5IYM60hdmYB1ma-HMcrzL0XsIuftyjqkb1sWQrAKteeywkpQU0vMvk2iiZGTu3S4U1bPt-yiHDaw8AGiFbSxQMO~ujJK3~2W');"><img id="1478926937" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/laser-cut-3mm-mirror-stainless-with-chemical-etching-1920w.jpg?Expires=1779213146&Signature=ha6rBS5GpgKHH-HurTrseJFGUjkxBMD-JkfrnmTwj0fyH4qpkLs3zJ8dsClJN~UE4Z2eNk46EKsTvribQywKKwRatqK~UPgkV81O14s-Vm7lguxef~WpA9gcTIPKFQmgBTbr4eF8OgR4w15F80hXyfr6fYgccDHIZhLEftjwxaOcJubaKiPpSiQxFVWh~re5DB3zUTcGgbcBYS0uOfSXLBcWjpriFZ8Cgo40kKTDykgRy4v7svJqTGZBONEajEo-Dv07R9vKKLHb03j3XvZv5jaG7yYxmrk3bHglOvjBca48Gbp4KGETvqK9ChkOnMI4yTuxyohb6hydfM5EcoxayA__&Key-Pair-Id=K2NXBXLF010TJW" alt="" aria-label="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1285780658" class="caption-container u_1285780658" style="display:none"> <span class="caption-inner"> <a id="1745343574" class="caption-button dmWidget  clearfix u_1745343574" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="photogallery-column column-3" data-index="1"> <div index="1" class="photoGalleryThumbs animated  " data-index="1"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="" data-dm-force-device="mobile" class="u_1649021566" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/deep+chemical+etching+on+laser+cut+metal.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/deep+chemical+etching+on+laser+cut+metal-640w.jpg%3FExpires=1779213146&Signature=r2mkfwOYEL6E2-hLaMdW6UKMxHcYbcJ79ooJB-M9Eea8NJ37jIpgTMpoqtRpu7GJSEhkP-eaRZlgKNi7tyEwwgntvD-mqSFY1OgYVVZZn2OhK5E8XDM3NlgaENPT1YneLThvI18W8UqaWztpoaLkyDgOCClyr');"><img id="1405024401" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/deep+chemical+etching+on+laser+cut+metal-1920w.jpg?Expires=1779213146&Signature=lUagf-jn9BjIOzMRE7SDuf5x4uzkWb2127xH7w0DF71WIgANtOXdI8nETMz8qQIIaIZR5JE2DEKfwQ52mJcD4h7KKrchzTqn0KgQNPIBuz5I~zgp2xVCpCUewwzYR~9Tln-cobnKAkdgZw65~5BvWDjj3L0PUTVOSFjRCiyzGoR5wMT3kPJ-tBMgttAW-MWJqcSoz0YOCYDhMcJfdyUvdIJEfdgcLBa6SV7ZTSP5LOqLNy1VFx34FAq4zYnzVM0xxd-P93-GuAwhQU1mHVXK0z86KUanRQSU~~fpK~dcKZiFakJ2r9jI1GEPpOko1DFDvmk8itlFDG1SLqSRlDDSDA__&Key-Pair-Id=K2NXBXLF010TJW" alt="" aria-label="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1656031206" class="caption-container u_1656031206" style="display:none"> <span class="caption-inner"> <a id="1313389176" class="caption-button dmWidget  clearfix u_1313389176" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="photogallery-column column-3" data-index="2"> <div index="2" class="photoGalleryThumbs animated  " data-index="2"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="" data-dm-force-device="mobile" class="u_1958805703" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/laser+cut+and+and+chemical+etched+celtic+corss+in+3mm+mirror+stainless.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/laser+cut+and+and+chemical+etched+celtic+corss+in+3mm+mirror+stainless-640w.jpg%3FExpires=1779213146&Signature=RB4D2IJaPYvO0A5ivnFedRwzlkVWDGpkhutB~zzsE613uiVwo14M4d3YVmVOWvWNOlPk80WDJ7FtRrOQnoaOfKtlmHUTNKG7lKUHy2~kYJH8k8~t2I6T0X5Inxi41b7');"><img id="1506791686" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/laser+cut+and+and+chemical+etched+celtic+corss+in+3mm+mirror+stainless-1920w.jpg?Expires=1779213146&Signature=NyCHAmrsFAdH0ln5KTgz18YC~6kEmaT3wjJL~0yb~fHghPqzHyhNkWBKQx-RLfYkBMOQo8GGUrcHcXUj-Gtq-WZVRHbp-YzhTwOw0aHbUTiUHJgZtnLxp668cM84RiHgV9wceDpBiV3S8warV~OLvMeq7RGffVWYQmkDJ58oRxx7rUwAb33uyDYFSoZbXCNF8JsTiX82y1IWWt88n54kwIlRcyON3ZSjzRYBj5m7-UjmyDBy-YRfWtaG7uo4sHM0PlADBVbYCewomu-pyjrT3R1XWa9rG~5eaHy66xCPi3MKtRZV5ArUYgOE4alYZTioSSWNgLXc5sw9tCvcGn6ZvA__&Key-Pair-Id=K2NXBXLF010TJW" alt="" aria-label="" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1022876242" class="caption-container u_1022876242" style="display:none"> <span class="caption-inner"> <a id="1125210081" class="caption-button dmWidget  clearfix u_1125210081" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1058703618 dmRespCol small-12 dmSectionNoParallax large-6 medium-6" id="1058703618" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9pcnQtY2RuLm11bHRpc2NyZWVuc2l0ZS5jb20vbWQvZG1pcC9kbXMzcmVwL211bHRpL2hvbWUtZGVjb3ItZGl5LmpwZyJdfQ=="> <div data-element-type="spacer" class="u_1000060623 dmSpacer" id="1000060623"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1148050404 dmRespRow fullBleedChanged fullBleedMode mobile-columns-reversed" style="text-align: center;" id="1148050404" data-page-element-type="section" data-page-element-id="1326063981"> <div class="dmRespColsWrapper" id="1807689547"> <div class="u_1653234008 dmRespCol small-12 large-6 medium-6" id="1653234008"> <div class="u_1707630833 dmNewParagraph" id="1707630833" style="transition: none; display: block;" data-element-type="paragraph" data-version="5"> <h2><span style="display: initial; color: rgb(0, 0, 0);">Penrose Tile Patina</span></h2> 
+</div> <div class="u_1777990001 dmNewParagraph" id="1777990001" data-version="5"><p><span style="display: initial;">Introducing a concept Penrose tile patina finish, combining several different patina finishes into brass to highlight the intricate and mesmerizing patterns of Penrose tiles.<br/><br/>Discovered by the renowned British physicist Sir Roger Penrose,&nbsp; Penrose tiles are a set of tiles that can cover a plane in an aperiodic manner, ensuring that no part of the tiling repeats exactly, regardless of the size of the area covered, demonstrating the beauty of mathematical tiling.<br/><br/>Sir Roger Penrose is celebrated for his contributions to mathematics and physics, including his work on black holes, general relativity, and the Penrose-Hawking singularity theorems. He was awarded the Nobel Prize in Physics in 2020 for his discoveries in the field of black hole formation and structure. His work continues to inspire scientists and mathematicians around the world.</span></p></div> <div class="u_1895005323 dmPhotoGallery newPhotoGallery dmPhotoGalleryResp hasFullWidth photo-gallery-done text-layout-over captionAlignment-center_center photoGallery" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="3" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1895005323" data-rows-to-show="100" data-placeholder="false" data-mobile-columns="1" data-image-hover-effect="zoomout" data-image-animation="fadeIn"> <div class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1362986591"></div> 
+ <div class="layout-container square"> <div class="photogallery-row " data-index=""> <div class="photogallery-column column-3" data-index="0"> <div index="0" class="photoGalleryThumbs animated  " data-index="0"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="penrose tile patina, brass with multiple patina pattern" data-dm-force-device="mobile" class="u_1369566270" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1723130677759.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1723130677759-640w.jpg%3FExpires=1779213146&Signature=KuNS1vXgPHxKGgmKw6M3UjxDE26INCdfvPKYWLpzb~92Wa6hDkLQDb9yLcZUfRKlrmQqHAGEGk0ofmO8SSmNh3T6uWbPQ8G16iZPF13FQ82bcmOqGXvO7o-vI99QXfFOXJDSczsbbJLhj5UM4C9U-aE4fovr3FC5zItGr4e~9USpqwIEZPDMSqlQ');"><img id="1029177530" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1723130677759-1920w.jpg?Expires=1779213146&Signature=YUfN6Z6KlwLNZkmxF~0l2r07ZmHdK2u7iz~mqacX13L-9UXtay8B4vVob9flFA1A5sGoW4W6jIyUagRxR0L9gc56lUXJlyuKje-S-vnMEtFbYG-meICgRGN9Ci0ry12vk7eLQ-b2OG0YKIk5cI7~fywQAG~qQyi7rNv3l5UcW6j4sSbtuewvuWUpszcM2614uMo0jGwryKW3NYUrZfnhuxVnCZcaf1ChXhI4W4~Jszo0ioHED0FoJg9EaaUoWQUKaDSmPgDua9pPrhWpqyMyW-sqWzsFDj7aDZWXXrTb7IjGJUKcUvl4kQkPDnSAKNY-4~1trWvKqcL9P4hR~v1IMg__&Key-Pair-Id=K2NXBXLF010TJW" alt="penrose tile patina, brass with multiple patina pattern" aria-label="penrose tile patina, brass with multiple patina pattern" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1681327819" class="caption-container u_1681327819" style="display:none"> <span class="caption-inner"> <a id="1434165024" class="caption-button dmWidget  clearfix u_1434165024" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="photogallery-column column-3" data-index="1"> <div index="1" class="photoGalleryThumbs animated  " data-index="1"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="penrose tile patina, brass with multiple patina pattern" data-dm-force-device="mobile" class="u_1033436144" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1723130680282.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1723130680282-640w.jpg%3FExpires=1779213146&Signature=SOm-Ii6gcbchsfyEWr~pMKPIVazjG-~J6f-LBLD93syMzbK9iW~CdzCBIgRuoGu-6AtyyZafIFAJ~16yGBp2QF7bghDpgpvifkvL8pRQbBT5ZHjwvSq4ySFDSsV9XvYnPP5y4ZXjTGIYYKnn5mzlfmsk0Jrs5~CX5a6zmQd-dey2AjzxGW4jh-VE');"><img id="1872974927" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1723130680282-1920w.jpg?Expires=1779213146&Signature=d4NqDanTr~Jmjjc6vR9D6k~705sqVmXtvCj-diiJ7kd8v4jUZnLCM~AJ3RsyrAXS6wp7Jh49pZDa7rP-3aNNWxtQD2XWseQ7bLMtJFnDOBFcTQ2LIAc~i7CbUQZaS~vE3lR4y8rcK8BARgKG2HUiTZeCxzIaFonOZOVNy59VcaXWUWXyh~dZ7bleXbcenfoj1fAi9Vj4NIAIBvP4uaR8365EHeBZ2NXuu4XK4EEN632X~W-~NzSebmeKZZKjz5~gVbQyrcOUI~ekH6N~Tb2d4iG1mmSuXppIUN~T0wnjGm7-LECehJ9eQRPBGWS9GGvYaAGcV3z4oScJAJX71NhW8g__&Key-Pair-Id=K2NXBXLF010TJW" alt="penrose tile patina, brass with multiple patina pattern" aria-label="penrose tile patina, brass with multiple patina pattern" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1793539984" class="caption-container u_1793539984" style="display:none"> <span class="caption-inner"> <a id="1433924487" class="caption-button dmWidget  clearfix u_1433924487" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="photogallery-column column-3" data-index="2"> <div index="2" class="photoGalleryThumbs animated  " data-index="2"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="penrose tile patina, brass with multiple patina pattern" data-dm-force-device="mobile" class="u_1872828791" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1723130680288.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1723130680288-640w.jpg%3FExpires=1779213146&Signature=jo3n3NWywxq1YDYV9~Y7w07uoC7sf6bipf8iEh3ktHHAzmFflDZ0HJoALHckFOCNmYORZGo2Xxuyu9qbf9sVvWPUsxP8LwvWdFWFXKQ~ZeDFcoMPG9xO~NEGq5Uu3feB6lGdRk9LQSRbaWPc2RBAKFSmbD-L9HL2-gdfY0hPd~DxrYPgpXwsXXDV');"><img id="1384671508" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1723130680288-1920w.jpg?Expires=1779213146&Signature=TYuNqvSzLioeVJ9OPX7FYy1xYpAuCCrtGmBD2hgbXAd7kioIbhTwgrWC1G0ira6YuTpVqrg65-mBvTzC1HyEfyjf4IDRqIdIBIxci9eU2GVpoqhoGxlvVfT8OUEWatEM4a935rAminsdvR5GpL9hKsgAJF8oMsezv4grllgxp7DUOIOfGqhIP~cM5aGJCuONxjTT4xa-FCyYbFRB5bYQbjYA3dtDHLb82eDOQCMZ8PDynjoy4IN~3s1MVo-nJtvC4PS9RM33FtSnT-09A~mExqJGhbiWb46G2envrMaI~gGKcdvgZk1wHahJafkZvuWS5xysuzbzId5xoz2nkK5eGg__&Key-Pair-Id=K2NXBXLF010TJW" alt="penrose tile patina, brass with multiple patina pattern" aria-label="penrose tile patina, brass with multiple patina pattern" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1050677708" class="caption-container u_1050677708" style="display:none"> <span class="caption-inner"> <a id="1564927458" class="caption-button dmWidget  clearfix u_1564927458" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1274619109 dmRespCol small-12 dmSectionNoParallax large-6 medium-6" id="1274619109" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9pcnQtY2RuLm11bHRpc2NyZWVuc2l0ZS5jb20vbWQvZG1pcC9kbXMzcmVwL211bHRpL2hvbWUtZGVjb3ItZGl5LmpwZyJdfQ=="> <div data-element-type="spacer" class="u_1392187357 dmSpacer" id="1392187357"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1302113297 dmRespRow fullBleedChanged fullBleedMode mobile-columns-reversed" style="text-align: center;" id="1302113297" data-page-element-type="section" data-page-element-id="1326063981"> <div class="dmRespColsWrapper" id="1241273604"> <div class="u_1843993659 dmRespCol small-12 large-6 medium-6" id="1843993659"> <div class="u_1279034573 dmNewParagraph" id="1279034573" style="transition: none; display: block;" data-element-type="paragraph" data-version="5"> <h2><span style="display: initial; color: rgb(0, 0, 0);">Peacock Patina Finish</span></h2> 
+</div> <div class="u_1135894014 dmNewParagraph" id="1135894014" data-version="5"><p><span style="display: initial;">Some new signage concepts featuring etched and patinated brass. These designs are inspired by the elegance and beauty of peacocks, aiming to create a luxurious and distinctive look. The combination of detailed etching and rich patina brings depth and character to each piece.</span></p></div> <div class="u_1240707539 dmPhotoGallery newPhotoGallery dmPhotoGalleryResp hasFullWidth photo-gallery-done text-layout-over captionAlignment-center_center photoGallery" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="3" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1240707539" data-rows-to-show="100" data-placeholder="false" data-mobile-columns="1" data-image-hover-effect="zoomout" data-image-animation="fadeIn"> <div class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1362986591"></div> 
+ <div class="layout-container square"> <div class="photogallery-row " data-index=""> <div class="photogallery-column column-3" data-index="0"> <div index="0" class="photoGalleryThumbs animated  " data-index="0"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="Heavy patina on etched brass" data-dm-force-device="mobile" class="u_1663181924" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1722082094710.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722082094710-640w.jpg%3FExpires=1779213146&Signature=ax4Xl3Ww8gBtF6ZOJ6DX~H~2vT0o-osJOFLcxD0BqAR~Ko61AffuJBifXZGpF63oDaaduMI-EKkePh9ZREPWnyGG2FPhRqKEZ4Uj0MmkThLTMgKf8YtrOhPKoV4-maxulFKp2cx1a2s-aW7a9BU-xsH73DLzZSet4rNP79kgIw-a5ti5npwxrTv5');"><img id="1243897266" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722082094710-1920w.jpg?Expires=1779213146&Signature=SFxA9~cyXQu7CTGeqI8CXTxstoQSxjHo5IxE6q1U9iiXn-0mcNefOIwcdJ3laPfwLjYhA2pDcNkPrVjHvmIVmkUldQx0rja6JTghNnXYFQ4hVX5eJdn1hpu0628om60XDAiiT4DEW5Sq02j4nAwvgnIpCy7~Hb0WTHt5fSkeTxZKSHL8yG6k97VHPzVI2SN1tk4Evhjfl6XvlKHhhaoooaLm9lIiK9kYRg~2lUwJKveZlt3KYqDKBwaBza0orbNrFrZpgEFqx~C8ALwRXvXFqdGG8HNd~k-Jb4mi9W43xL7Gn84SH~rGASyRmSHgedfJmFR9TiBVC9fB1tkFbh2Thw__&Key-Pair-Id=K2NXBXLF010TJW" alt="Heavy patina on etched brass" aria-label="Heavy patina on etched brass" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1759560399" class="caption-container u_1759560399" style="display:none"> <span class="caption-inner"> <a id="1908944441" class="caption-button dmWidget  clearfix u_1908944441" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="photogallery-column column-3" data-index="1"> <div index="1" class="photoGalleryThumbs animated  " data-index="1"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="laser cut brass, reverse etched with patina" data-dm-force-device="mobile" class="u_1603133614" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1722082098122.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722082098122-640w.jpg%3FExpires=1779213146&Signature=pxMZ6nfHhxBRCDkhMqLrbs7Eje18BlkOqQ9cmwra1Ec4VWsKK4QVOYK6iNnKF4y1PPQC-Nwp1e02ZE~g1of4mkMRh~Xfvabj1Hhf7~iDP3A8bu7NTLqBcv4ePU2mSCdaIpozaospC2mKuw0VYtVEVchPa1NnGD5I4cwPFpE9gdq8MvcreEdY5mPZ');"><img id="1325076916" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722082098122-1920w.jpg?Expires=1779213146&Signature=FLLbVf9JP7~tHGZKM0r50v-OHJO8olCtzzIJDvaNfpmxsV0fx8LM7tOJ5lVGxU0H6-1CZov81oS2DIFvpINotGwJRmQF4A55mAYeqOKz77E~szbLZZdfqjeBX2zZfVtPKvH6B3vdeQysIPPPFecvWdIy8uJjvcVYcB9yskz6X3AEfCx66ePlkXsPXgMPu4Pm8c4rqm~ehiN1GDdT0xOcRE-ECN2EeXsteH7tVpRWYToATQ-391yEOD8N3eU28wSWFLabLIyEUwKUYT2-SZoooNBr8aRZiXxkuvqZTROTgBedKZPNJSMrjZITL8bj3QJBOndBySKtUcntrqJ7bkrS8w__&Key-Pair-Id=K2NXBXLF010TJW" alt="laser cut brass, reverse etched with patina" aria-label="laser cut brass, reverse etched with patina" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1906081732" class="caption-container u_1906081732" style="display:none"> <span class="caption-inner"> <a id="1598128766" class="caption-button dmWidget  clearfix u_1598128766" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="photogallery-column column-3" data-index="2"> <div index="2" class="photoGalleryThumbs animated  " data-index="2"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="laser cut brass, reverse etched with patina" data-dm-force-device="mobile" class="u_1851019924" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1722082096002.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722082096002-640w.jpg%3FExpires=1779213146&Signature=iJm3u8irHPe4xZrOK3DwzSIDM0lsANd7F9CGqoqa74vuGaTaF2g~JX9-joLYV6x8hQUHTXP-rrUPwrE41POk9sPLADizgVCtObmEEh6qWlZb5Bs19MeOjgi8PDiAHMqrumCmDWrbcjDwPimngILb3uXKr31qq866GXdg3pKzixCEW-mtQgVQ0CUs');"><img id="1866612555" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722082096002-1920w.jpg?Expires=1779213147&Signature=kCkcFD9sK1COeCwEg~vrC3WUlazBUwtp51q4XDLOulIUMYXymUaKJwd5K-UUMBiyJC7A639NxLLQQ5HiYMivi-JJ5tif1oNpqa0DSl-s0et1Xs20fFuHl9OmMoKnCVXRQOM-vR935bZE9nt-MIX3nDA-PYxYCmxti3x6IrEt8JzzlWJ1h1XGWbZAYAxoXEJ19VwD-jB2SF8knuFcRgo2EmHNxjz1iJb7LAJ97Cgzg2ipwsDhOQRGPmuaScjMfVAAF51ypSQ8oH-dG60c6eXIVb0T5jvzqGTkyWnqjhpaGG3b~EyFv1gPjbWf~kynPk4VZMn5jLiB1rD9CyFxkh7gIA__&Key-Pair-Id=K2NXBXLF010TJW" alt="laser cut brass, reverse etched with patina" aria-label="laser cut brass, reverse etched with patina" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1695095733" class="caption-container u_1695095733" style="display:none"> <span class="caption-inner"> <a id="1400600242" class="caption-button dmWidget  clearfix u_1400600242" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1774354186 dmRespCol small-12 dmSectionNoParallax large-6 medium-6" id="1774354186" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9pcnQtY2RuLm11bHRpc2NyZWVuc2l0ZS5jb20vbWQvZG1pcC9kbXMzcmVwL211bHRpL2hvbWUtZGVjb3ItZGl5LmpwZyJdfQ=="> <div data-element-type="spacer" class="u_1239148402 dmSpacer" id="1239148402"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1769143867 dmRespRow fullBleedChanged fullBleedMode mobile-columns-reversed" style="text-align: center;" id="1769143867" data-page-element-type="section" data-page-element-id="1326063981"> <div class="dmRespColsWrapper" id="1160240939"> <div class="u_1650080538 dmRespCol small-12 large-6 medium-6" id="1650080538"> <div class="u_1471228264 dmNewParagraph" id="1471228264" style="transition: none; display: block;" data-element-type="paragraph" data-version="5"> <h2><span style="display: initial; color: rgb(0, 0, 0);">4mm Etched Bronze With Patina</span></h2> 
+</div> <div class="u_1200914524 dmNewParagraph" id="1200914524" data-version="5"><p><span style="display: initial;">17 etched and patinated bronze plaques, each measuring 1400x920mm and 4mm thick, for the Garda Monument of Remembrance at Phoenix Park, Dublin. This project showcases our large etching capabilities. <br/><br/>The Garda Monument of Remembrance commemorates the lives and service of all Garda personnel &ndash; members of An Garda S&iacute;och&aacute;na and Garda staff - who died whilst in service since the organisation&rsquo;s founding in 1922. <br/><br/>The refurbished Garda Monument of Remembrance features the names of over 1,800 Garda personnel who died whilst in service over the last 100 years<br/></span></p></div> <div class="imageWidget align-center u_1138895960" data-element-type="image" data-widget-type="image" id="1138895960"><img src="../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722951111809-1920w.jpg%3FExpires=1779213147&amp;Signature=VqeT4-g4~dLg1d10itxCMS~kiN75cI6GRZ7SIL4aIdo3db-lPj04Y4uxCnTH5oM7hktd~icfuHxopV7f8NRTfgG356wtTquDK12HtMHbw-Ee3QuDjLR2uH07wjhzH45OnMJ0I85~Cn3Lc27z33tBgTEC4moNab8pdEGVUUtE1gqd2aht~3RcsV0" alt="" id="1780660635" class="" width="1920" height="1440" data-dm-image-path="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1722951111809.jpg" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div class="u_1427578955 dmRespCol small-12 dmSectionNoParallax large-6 medium-6" id="1427578955" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9pcnQtY2RuLm11bHRpc2NyZWVuc2l0ZS5jb20vbWQvZG1pcC9kbXMzcmVwL211bHRpL2hvbWUtZGVjb3ItZGl5LmpwZyJdfQ=="> <div data-element-type="spacer" class="u_1684774679 dmSpacer" id="1684774679"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1279969253 dmRespRow fullBleedChanged fullBleedMode mobile-columns-reversed" style="text-align: center;" id="1279969253" data-page-element-type="section" data-page-element-id="1326063981"> <div class="dmRespColsWrapper" id="1238114405"> <div class="u_1977924344 dmRespCol small-12 large-6 medium-6" id="1977924344"> <div class="u_1997974953 dmNewParagraph" id="1997974953" style="transition: none; display: block;" data-element-type="paragraph" data-version="5"> <h2><span style="color: rgb(0, 0, 0); display: initial;">5mm Reverse Etched Brass with Patina</span></h2> 
+</div> <div class="u_1950651607 dmNewParagraph" id="1950651607" data-version="5"><p><span style="display: initial;">Reverse etched 5mm brass piece with a patina finish. The intricate detailing and elegant craftsmanship truly stand out. This unique combination of brass and patina is perfect for creating sophisticated and eye-catching signage.<br/></span></p></div> <div class="u_1748789479 dmPhotoGallery newPhotoGallery dmPhotoGalleryResp hasFullWidth photo-gallery-done text-layout-over captionAlignment-center_center photoGallery" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="3" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1748789479" data-rows-to-show="100" data-placeholder="false" data-mobile-columns="1" data-image-hover-effect="zoomout" data-image-animation="fadeIn"> <div class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1362986591"></div> 
+ <div class="layout-container square"> <div class="photogallery-row " data-index=""> <div class="photogallery-column column-3" data-index="0"> <div index="0" class="photoGalleryThumbs animated  " data-index="0"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="5mm Laser Cut Reverse Etched Brass with Patina" data-dm-force-device="mobile" class="u_1563852475" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1721920100189.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1721920100189-640w.jpg%3FExpires=1779213147&Signature=XXpNXbgS89ual~3W0jktb9QKwykHYHfRNABRjh1s7uvYcfY~0LZmxw6y0ZgES3e3w~zSiRZGB-byO0mKWV4KXlk74FS4-FCxtHoa8l1206lvcUj2J3CX0XhvOtBE8~fAaZZeYTkX48~4kmKCK2j8jM5CvvXAiFzGNUwx2WCucD4nPZk40DzJV7aV');"><img id="1859896907" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1721920100189-1920w.jpg?Expires=1779213147&Signature=P9tDwLuFdFAEtgjbJzK5PgsicxREeamfP~TctaYls9ANUZdAIDbEJnEoqTn32C2ZUnK~rDLz2KTbspYEpYjhUNG~tObeTDt~jCbUMOjhc47AVfYlrmxXurW7odUAUNxbR1H~EvXSsldqpmxMWjcrXaqW~B57eVSusccbfgTRsGmpG-o9nst~tdU18FgbKWTunROhzaOzL-6sOwDaTlFxD6copnE7WuQmmTizJKl~zWE6oIu6D9tu1gqRVKwKQ8rO4HkvB8mxVfE8z78H8kWwNLjPlFjCB5dPwpOBmaCsX6C3SlSn1wegJgx5jI5cCWt17UmPGI-UMLPkLZgdFl7cLw__&Key-Pair-Id=K2NXBXLF010TJW" alt="5mm Laser Cut Reverse Etched Brass with Patina" aria-label="5mm Laser Cut Reverse Etched Brass with Patina" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1159012495" class="caption-container u_1159012495" style="display:none"> <span class="caption-inner"> <a id="1634475757" class="caption-button dmWidget  clearfix u_1634475757" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="photogallery-column column-3" data-index="1"> <div index="1" class="photoGalleryThumbs animated  " data-index="1"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="5mm Laser Cut Reverse Etched Brass with Patina" data-dm-force-device="mobile" class="u_1424842003" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1721920100865+%282%29.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1721920100865+(2)-640w.jpg%3FExpires=1779213147&Signature=MO~dj3qMI1q~wMNXZ3eIz0~itMoDNQFUxg2opzxU14xf3tDt1PXi7dO~2qTNKIopg4t5~JJLEJcS7Ozs4ATUhcDv68nAgkaVPVtFYzsKtch6BJjiLXKOY-5MDA3Vx6a1xJLv0GE6efinnKWPUaCwoJth9AJA5lvBKvW85mAI2nHeNqctzFlZ');"><img id="1259556765" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1721920100865+%282%29-1920w.jpg?Expires=1779213147&Signature=PHyZGyoQ~uvTevUruXMG5xHIPqehel4qY9CimoECh~MDNXy7QcYysXY5iyIu8oIHet-mj~oVQpetjqs76eiS3d2dHFucw7TiTiofSmI5Iuzkux736t7T2DvJEKkh52rAk~-zSE0MM2xLOg5XPpLTr8r1dOlrGbrjKujjWcstLYW73z9WJt0C7KLsOMHZCwsBgKJMd54SvgjtH2Aa9HN~HNFFBNKApAtqVhsxfSO~L~D9SgY2caJVgz4o~mL7dqQq6fFmvzS7U9j-SdWc3izO8v1s8nh-z~Tr2~xKHwilyIp~uv6VQ4ETQ8FtYWltNMPilurCs9L5Sf8UW~~IZ9AXuQ__&Key-Pair-Id=K2NXBXLF010TJW" alt="5mm Laser Cut Reverse Etched Brass with Patina" aria-label="5mm Laser Cut Reverse Etched Brass with Patina" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1496581370" class="caption-container u_1496581370" style="display:none"> <span class="caption-inner"> <a id="1536614762" class="caption-button dmWidget  clearfix u_1536614762" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="photogallery-column column-3" data-index="2"> <div index="2" class="photoGalleryThumbs animated  " data-index="2"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="5mm Laser cut Reverse Etched Brass with Patina" data-dm-force-device="mobile" class="u_1376864897" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1721920099400+%282%29.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1721920099400+(2)-640w.jpg%3FExpires=1779213147&Signature=TerbS0QeXoG5oC3qhv5lRF9LNrhvaClVKj8px2zz7jdfPk1L0fhEpel3TEwfyonVxaIFYTsZzZbjLz1j3pDZPM~1roKPE8vXkjtiWhBiJUBbXIcndWtm4Asn1wrFIboogRLgSlYKcjBrHCdOmEb3tBO7hyaTXNm5wSNEF1DLuTIsEeoBh8P8');"><img id="1938470792" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1721920099400+%282%29-1920w.jpg?Expires=1779213147&Signature=PPvhTv2lQ3bcp0-bioeegrHSr6OODer7~P8tAEgjaRJA48wGLnIHLKY7xewv85C86CXW7ngWJ7jiA3ssC70znaces0Xgxkj3pPR~W5P19zblw1tm74NJktzxg7HBeQ8qhge9OWeOCQ0PeI2WvMM6PKGHtvPu5uV2zbdHzazo7OCOY48AUPGo7AF~Z5ILORSo~nsEs8uEniN7BPvkHwiJ9erqxerdfi8VvrhqwGUBCW-XVRZFvCjISd0dz5aNcWMN5uz8CfiA9Gv60hkRNiC~XcP-uMm6QlCtdqew-VH~-Tr84zAlpmiqukgBCdyBytHuXFSP8wGF3R3V6pmmd6SWeQ__&Key-Pair-Id=K2NXBXLF010TJW" alt="5mm Laser cut Reverse Etched Brass with Patina" aria-label="5mm Laser cut Reverse Etched Brass with Patina" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1071682046" class="caption-container u_1071682046" style="display:none"> <span class="caption-inner"> <a id="1498738989" class="caption-button dmWidget  clearfix u_1498738989" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1317750417 dmRespCol small-12 dmSectionNoParallax large-6 medium-6" id="1317750417" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9pcnQtY2RuLm11bHRpc2NyZWVuc2l0ZS5jb20vbWQvZG1pcC9kbXMzcmVwL211bHRpL2hvbWUtZGVjb3ItZGl5LmpwZyJdfQ=="> <div data-element-type="spacer" class="u_1618164894 dmSpacer" id="1618164894"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1456211032 dmRespRow fullBleedChanged fullBleedMode mobile-columns-reversed" style="text-align: center;" id="1456211032" data-page-element-type="section" data-page-element-id="1326063981"> <div class="dmRespColsWrapper" id="1821306937"> <div class="u_1521328904 dmRespCol small-12 large-6 medium-6" id="1521328904"> <div class="u_1517311438 dmNewParagraph" id="1517311438" style="transition: none; display: block;" data-element-type="paragraph" data-version="5"> <h2><span style="display: initial; color: rgb(0, 0, 0);">Laser Cut 3mm Polished Brass With Patina</span></h2> 
+</div> <div class="u_1058554850 dmNewParagraph" id="1058554850" data-version="5"><p><span style="display: initial;">A blend of clean modern design with aged, textured elements. Check out the close-up shots for more detail.<br/></span></p></div> <div class="u_1087561829 dmPhotoGallery newPhotoGallery dmPhotoGalleryResp hasFullWidth photo-gallery-done text-layout-over captionAlignment-center_center photoGallery" galleryoptionsparams="{thumbnailsPerRow: 3, rowsToShow: 3, imageScaleMethod: true}" data-desktop-layout="square" data-desktop-columns="3" data-element-type="dPhotoGalleryId" data-desktop-text-layout="over" id="1087561829" data-rows-to-show="100" data-placeholder="false" data-mobile-columns="1" data-image-hover-effect="zoomout" data-image-animation="fadeIn"> <div class="dmPhotoGalleryHolder clearfix gallery shadowEffectToChildren gallery4inArow" id="1362986591"></div> 
+ <div class="layout-container square"> <div class="photogallery-row " data-index=""> <div class="photogallery-column column-3" data-index="0"> <div index="0" class="photoGalleryThumbs animated  " data-index="0"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="laser cut 3mm polished brass with patina" data-dm-force-device="mobile" class="u_1297988728" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1722597866325.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722597866325-640w.jpg%3FExpires=1779213147&Signature=DdIXePgT~45Dn7ym661j8C4fC25CS29rQNSFUFR1T0iePTemu--n0JwvZCocBjrSO2-Jgeq8vazlFsa0DnJ1wXJtYhF~H2r~TauUPbW0wpt6n5bFp8KjwTJgFPvzae-qEOkLMve749zrAFL0B2tZyY7V5JzMwWU9cJJU7rbTXQdZBYEBOyEGiWnr');"><img id="1165535370" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722597866325-1920w.jpg?Expires=1779213147&Signature=UxD1YqksVFGb-g1zjHJu4SNzrn-k~yK16~IS9ieRFw0UvEO16kcmFMRpRhPwP4Y9AAY0~wS6BQBYgw0HN4gIBovNRShxE5N~xmI3~dkAeKArShNuqnz-andA3RYGjObQck2fW3jO8Sf8Q~t2fkC293E-P4~5E4PmthBkn2M3-JzoOhvV7Sbjss4oGw0uakyKi3gp7H90re7XHZUGO1S4Di110vwLW2EQsUbDh08eEi8tKxmSCGzMAzWkF2Wp1nOokdv5NH038ciefYb-rhIJJBFaK0Aw-hwHYUOhcvTFKUl6Zjhm64ISSrk2q9BeDnNuoDLPNJ5Eh4lLWeJ8VeW~yw__&Key-Pair-Id=K2NXBXLF010TJW" alt="laser cut 3mm polished brass with patina" aria-label="laser cut 3mm polished brass with patina" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1441879807" class="caption-container u_1441879807" style="display:none"> <span class="caption-inner"> <a id="1873681181" class="caption-button dmWidget  clearfix u_1873681181" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="photogallery-column column-3" data-index="1"> <div index="1" class="photoGalleryThumbs animated  " data-index="1"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="laser cut 3mm polished brass with patina" data-dm-force-device="mobile" class="u_1429884700" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1722597868820+%281%29.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722597868820+(1)-640w.jpg%3FExpires=1779213147&Signature=nGYLDAwANyasASIGN4jYRbhXdwJPgK9QOcxvb8IpravltoLT400gULaLiQziEykJLc7fKz8lV4Gul-v1UjnDQtloWLmBg7mtDluZlpSm~aX9X1UF7CvgJ75khaJlXRVdPYo-mYLJyFTjIJF-6x2bpxWJgMW8u-bkjvJDyJ6cLETP5~yIOgQI');"><img id="1076788611" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722597868820+%281%29-1920w.jpg?Expires=1779213147&Signature=Lt3-g6R1~yds0lsicrh04Q50rr4Oof6oCdEOeijfnHAulhjHlqzUf6RQ7~pZFAxvZy8pbWbi7rXIZ1-5oL6Hqb-S1Q2vHXiYLRyA2OE6wH4n99XWtQ68C6ObMqlCFNb9E-N6dBrRNhvqH6yVNzjn25XrAof3mJzeOHCEtCQXz~Wesoh8~~Vqbgl5Kph1bWEU6L41DJVmfTNSQwvgPSim3V0Oy-n6EbadvjjCtqkN6K5y-xd8MNfDRaRR6Sw8rTClZwXSkqnaHqh6d2Q7FNJ5nNa6taw3LS9l0NzrsneAthJAXgHCnJEOn4fHFThiz3gcz-8NR3hZJ682XUyXDS4nnA__&Key-Pair-Id=K2NXBXLF010TJW" alt="laser cut 3mm polished brass with patina" aria-label="laser cut 3mm polished brass with patina" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1272367408" class="caption-container u_1272367408" style="display:none"> <span class="caption-inner"> <a id="1787282405" class="caption-button dmWidget  clearfix u_1787282405" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="photogallery-column column-3" data-index="2"> <div index="2" class="photoGalleryThumbs animated  " data-index="2"> <div class="thumbnailInnerWrapper" style="opacity: 1;"> <div class="image-container revealed"> <a data-dm-multisize-attr="temp" aria-label="laser cut 3mm polished brass with patina, close up of patina" data-dm-force-device="mobile" class="u_1717311271" data-image-url="https://cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/1722597867490+%281%29.jpg" style="background-image: url('../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722597867490+(1)-640w.jpg%3FExpires=1779213147&Signature=UBZkPjSfGBA~vx--SGRiIXR9z82SmjxA4URWWY4NPKNlVevvEYUssw3JvcXJLVuYxsOWyDYAkhncWjEGFb90zJi71J6QDlwM8fV2Tloa928OjTiJwsYqJ4yju5Fhm88UpHvRYQzkr8NGevsPKxJxNXTHjGCiIBhyoGBjUCMIXGRI-wz2ReKM');"><img id="1480048114" data-src="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/1722597867490+%281%29-1920w.jpg?Expires=1779213147&Signature=Sr~cu28qmVw48RSwh2-hlpyxmSRCsD~6wJI1czHBofa94Zfl4hJ2bHgKW5QBuFvwzCwfosZ9cC05qpqxFqnyXnF1lScJiptdNkD0IlMBD41~xPTNwPe~bYJvLL8lHOAJ9TNH4~RABzXVK~dtPgLU5esXdFTqVWhAeFsvalRFKyjpLdIbe4cIvu-ZBh7k1AhJFLpMB0I2rC3A2OY6npo63mK-~eLSokC5erIPQ5VuA8a3U6id3QFe-78i4QeRHdIuv6JHVeETgF5T3f4hOX3~lXNQQbz6wAJI2NgMURb2E2fpK7HeIlYF5QV84KkNg2YvA~uZ27oFgNQgrP7Mb06-RA__&Key-Pair-Id=K2NXBXLF010TJW" alt="laser cut 3mm polished brass with patina, close up of patina" aria-label="laser cut 3mm polished brass with patina, close up of patina" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div id="1924927087" class="caption-container u_1924927087" style="display:none"> <span class="caption-inner"> <a id="1565780236" class="caption-button dmWidget  clearfix u_1565780236" href="metal-etching-concepts.html" style=""> <span class="iconBg"> <span class="icon hasFontIcon "></span> 
+</span> 
+ <span class="text">Button</span> 
+</a> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1540818308 dmRespCol small-12 dmSectionNoParallax large-6 medium-6" id="1540818308" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9pcnQtY2RuLm11bHRpc2NyZWVuc2l0ZS5jb20vbWQvZG1pcC9kbXMzcmVwL211bHRpL2hvbWUtZGVjb3ItZGl5LmpwZyJdfQ=="> <div data-element-type="spacer" class="u_1362826990 dmSpacer" id="1362826990"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1830968920 dmRespRow fullBleedChanged fullBleedMode hide-for-small" id="1830968920"> <div class="dmRespColsWrapper" id="1046425197"> <div class="dmRespCol large-12 medium-12 small-12" id="1000635753"> <div class="u_1456151056 dmRespRow fullBleedChanged fullBleedMode hide-for-small" id="1456151056"> <div class="dmRespColsWrapper" id="1358454168"> <div class="dmRespCol large-12 medium-12 small-12" id="1320963001"> <div class="dmNewParagraph hide-for-large u_1805668356" id="1805668356" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><div align="center"><font class="font-size-18 lh-1">CONTACT US TODAY | SALES@TRADEETCHING.COM | 01536 203813</font></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1447697353 dmNewParagraph hide-for-medium" id="1447697353" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><div align="center"><font class="font-size-36 lh-1" style="color: rgb(255, 255, 255);"><span style="font-weight: 400;">CONTACT</span> 
+US TODAY | SALES@TRADEETCHING.COM | 01536 203813</font></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1854343535 dmRespRow" id="1854343535"> <div class="dmRespColsWrapper" id="1702690667"> <div class="dmRespCol small-12 large-4 medium-4" id="1855403062"> <nav class="u_1476205531 effect-text-color unifiednav_vertical hide-for-small main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_1" layout-sub="" data-show-vertical-sub-items="HOVER" id="1476205531" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container unav-top  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="page-2.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="page-1"> <span class="nav-item-text " data-link-text="HOME" data-auto="page-text-style">HOME<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="chemical-etching-services.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="page-2"> <span class="nav-item-text " data-link-text="
+         SERVICES
+        " data-auto="page-text-style">SERVICES<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="etching-gallery.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="page-3"> <span class="nav-item-text " data-link-text="
+         GALLERY
+        " data-auto="page-text-style">GALLERY<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="Contact.html" class="unifiednav__item unav-item unav-top-item    " target="" data-target-page-alias="page-4"> <span class="nav-item-text " data-link-text="
+         CONTACT
+        " data-auto="page-text-style">CONTACT<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="dmRespCol small-12 large-4 medium-4 u_1131316375" id="1131316375"> <a class="default dmDefaultGradient align-center u_1124699555 dmEmail dmWidget dmNoMark dmWwr" href="mailto:Sales@tradeetching.com" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToEmail', 'Email',null,'df3ec980cc9e40009b6d3de3d463012e', this);" id="1124699555" dmle_extension="emailextension" data-element-type="emailextension" wr="true" data-display-type="block" localization_key_description="googleTranslate.NoGNOgG.84" icon="true" surround="true" description="Sales@tradeetching.com" adwords="" icon-name="icon-envelope-alt" email="Sales@tradeetching.com"> <span class="iconBg" aria-hidden="true"> <span class="icon hasFontIcon icon-envelope-alt"></span> 
+</span> 
+ <span class="text">Sales@tradeetching.com</span> 
+</a> 
+ <a class="default dmDefaultGradient align-center u_1532467602 dmCall voipReplacement dmWidget dmNoMark dmWwr" href="tel:+44 01536 203813" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToCall', 'Call',null,'df3ec980cc9e40009b6d3de3d463012e', this);" id="1532467602" dmle_extension="clicktocall" data-element-type="clicktocall" wr="true" data-display-type="block" localization_key_description="googleTranslate.A5waxvz.85" icon="true" surround="true" description="01536 203813" adwords="" icon-name="icon-phone" phone="+44 01536 203813" text="" image=""> <span class="iconBg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone"></span> 
+</span> 
+ <span class="text">01536 203813</span> 
+</a> 
+</div> 
+ <div class="dmRespCol large-4 medium-4 small-12" id="1734791331"> <div class="u_1911628850 dmNewParagraph hide-for-small" id="1911628850" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><div align="right"><font style="color: rgb(255, 255, 255);"><span style="font-weight: 400;">&nbsp;</span>Trade Etching Direct Ltd</font></div><div align="right"><font style="color: rgb(255, 255, 255);">Unit M Edison Courtyard</font></div><div align="right"><font style="color: rgb(255, 255, 255);">Brunel Road</font></div><div align="right"><font style="color: rgb(255, 255, 255);">Earlstrees Ind Estate</font></div><div align="right"><font style="color: rgb(255, 255, 255);">Corby</font></div><div align="right"><font style="color: rgb(255, 255, 255);">NN17 4LS</font></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1465871800 dmRespRow dmFooterContent" id="1465871800"> <div class="dmRespColsWrapper" id="1995794985"> <div class="u_1743262250 dmRespCol small-12 medium-12 large-12" id="1743262250"> <div class="align-center text-align-center u_1516458103 dmSocialHub gapSpacing" id="1516458103" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:sales@tradeetching.com" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://instagram.com/trade_etching/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://linkedin.com/in/anthony-dullaghan-82987260" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1495567330 widget-1f5975 hide-for-small dmCustomWidget" data-lazy-load="" data-title="" id="1495567330" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="1f5975986930429f819d4cd2154b5c4a" data-widget-version="25" data-widget-config="eyJyZXZlcnNlRmxhZyI6bnVsbCwiY29weXJpZ2h0VGV4dCI6IjxwIGNsYXNzPVwicnRlQmxvY2tcIj5BbGwgUmlnaHRzIFJlc2VydmVkIHwgVHJhZGUgRXRjaGluZyBEaXJlY3Q8L3A+In0="> <div class="copyright"> <div>&copy; 2026&nbsp;</div> 
+ <div><p class="rteBlock">All Rights Reserved | Trade Etching Direct</p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1877184949 dmRespRow" style="text-align: center;" id="1877184949"> <div class="dmRespColsWrapper" id="1143992047"> <div class="dmRespCol small-12 medium-12 large-12" id="1790251670"> <div class="dmSpacer u_1663665528" id="1663665528" data-element-type="spacer"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH_UK"
+    window.isSitePreview = false;
+</script>
+<script>
+    window.customWidgetsFunctions["1f5975986930429f819d4cd2154b5c4a~25"] = function (element, data, api) {
+        null
+    };
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_6373";
+    var build = "2026-04-19T12_48_49";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2026-04-19T12_48_49";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static-cdn.website-editor.net/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.website-editor.net';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'REDACTED_MAPBOX_TOKEN';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/6373';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static-cdn.website-editor.net';
+    rtCommonProps["common.resources.folder"] = 'https://static-cdn.website-editor.net/mnlt/production/6373';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+    rtCommonProps["booking.cal.api.domain"] = 'api.cal.com';
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://le-cdn.website-editor.net/';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =false;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =false;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["fnb.animations.tracking.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.accountPage.emptyBaseUrl.enabled"] = true;
+    rtFlags["ecom.ecwid.pages.links.disable.listeners"] = true;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["flex.animation.design.panel.layout"] =true;
+    rtFlags["runtime.cwv.report.cls.enabled"] =false;
+    rtFlags["runtime.cwv.report.lcp.enabled"] =false;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["contact.form.custom.errors.enabled"] =false;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+    rtFlags["runtime.ssr.productCustomizations"] =true;
+    rtFlags["runtime.ssr.runtime.filter-sort.newFilterSortWidgetWithOptions.enabled"] =true;
+    rtFlags["runtime.ssr.ssrSlider.jumpThreshold.enabled"] =true;
+</script>
+<script src="https://static-cdn.website-editor.net/mnlt/production/6373/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="d_track_campaign">
+    (function() {
+        if (!window.location.search) {
+            return;
+        }
+        const cleanParams = window.location.search.substring(1); // Strip ?
+        const queryParams = cleanParams.split('&');
+
+        const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+        const domain = 'domain=' + window.location.hostname;
+        const path = "path=/";
+
+        queryParams.forEach((param) => {
+            const [key, value = ''] = param.split('=');
+            if (key.startsWith('utm_')) {
+                const cookieName = "_dm_rt_" + key.substring(4);
+                const cookie = cookieName + "=" + value;
+                const joined = [cookie, expires, domain, path].join(";");
+                document.cookie = joined;
+            }
+        });
+    }());
+</script>
+<script type="text/javascript" >
+    var _dm_gaq = {};
+    var _gaq = _gaq || [];
+    var _dm_insite = [];
+</script>
+
+
+
+<script type="text/javascript" id="d_track_sp">
+    ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+        p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+        };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+        n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d1dxoqu0t5mb7j.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+    window.dmsnowplow  = window.snowplow;
+
+    dmsnowplow('newTracker', 'cf', 'd1dxoqu0t5mb7j.cloudfront.net', { // Initialise a tracker
+        appId: 'df3ec980cc9e40009b6d3de3d463012e'
+    });
+
+    // snowplow queries element styles so we wait until CSS calculations are done.
+    requestAnimationFrame(() => {
+        dmsnowplow('trackPageView');
+        _dm_insite.forEach((rule) => {
+            // Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+            // the tracking is in popup.js
+            if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+            window?.waitForDeferred?.('dmAjax', () => {
+                $.DM.events.trigger('event-ruleTriggered', {value: rule});
+            });
+        });
+    });
+</script>
+
+
+
+<div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="en_GB"></div>
+<!-- Alias: df3ec980cc9e40009b6d3de3d463012e -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'More';
+    
+    Parameters.NavigationAreaParams.LessButtonText = '......';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Begin Body End Markup -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKZN322"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5da383e7fbec0f2fe3b98899/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script--><!--  End Body End Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Begin Product Custom HTML Markup -->
+<script>
+function call1and1Tracking() {
+	var externalId = dmAPI.getSiteExternalId();
+	var siteName = dmAPI.getSiteName();
+	var src = 'https://integration.mywebsite-editor.com/dakota-snippet-service/snippet/integration/snippet.js?sitename='+siteName+'&external_uid='+externalId+'&mode=visit'
+	var tracking = document.createElement('script');
+     tracking.setAttribute('src',src);
+   	document.head.appendChild(tracking);
+}
+call1and1Tracking();
+</script><!--  End Product Custom HTML Markup -->
+</body>
+</html>

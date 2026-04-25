@@ -1,0 +1,3018 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      class="">
+<head>
+    <meta charset="utf-8">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        HomeUrl: 'http://www.tradeetching.com/',
+
+        SystemID: '1AND1_EU_PROD',
+        SiteAlias: 'df3ec980cc9e40009b6d3de3d463012e',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Mar 16, 2026',
+        ExternalUid: '3a6dc0a2-1aab-4512-8460-da093a776d11',
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialPostPageUuid: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'chemical-milling',
+        InitialPageUuid: '59408c2b9ed04806b1c52c04174ca59d',
+        InitialPageId: '710074252',
+        InitialEncodedPageAlias: 'Y2hlbWljYWwtbWlsbGluZw==',
+        InitialHeaderUuid: '5bcd29840643458888ea53a1a620a38a',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '500000',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'null',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '',
+        StoreId: 'null',
+        StoreVersion: 0,
+        StoreBaseUrl: '',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        HasCustomDomain: true,
+        SimpleSite: false,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'en',
+        currentLocale: 'en-gb',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'http://www.tradeetching.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '2202',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+        hasNativeStore: false,
+        defaultLang: 'en-gb',
+        hamburgerMigration: null,
+        isFlexSite: false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+
+<link rel="canonical" href="https://www.tradeetching.com/chemical-milling">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="icon" type="image/x-icon" href="../cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/site_favicon_16_1567546999001.ico"/>
+
+<!-- End favorite icons -->
+<link rel="preconnect" href="https://le-cdn.website-editor.net/"/>
+
+
+
+<!-- render the required CSS and JS in the head section -->
+<script id='d-js-dmapi'>
+    window.SystemID = '1AND1_EU_PROD';
+
+    if (!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function () {
+            },
+            getCurrentDeviceType: function () {
+                return window._currentDevice;
+            },
+            runOnReady: (ns, fn) => {
+                const safeFn = dmAPI.toSafeFn(fn);
+                ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                const eventName = 'afterAjax.' + ns;
+
+                if (document.readyState === 'complete') {
+                    $.DM.events.off(eventName).on(eventName, safeFn);
+                    setTimeout(function () {
+                        safeFn({
+                            isAjax: false,
+                        });
+                    }, 0);
+                } else {
+                    window?.waitForDeferred?.('dmAjax', () => {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        safeFn({
+                            isAjax: false,
+                        });
+                    });
+                }
+            },
+            toSafeFn: (fn) => {
+                if (fn?.safe) {
+                    return fn;
+                }
+                const safeFn = function (...args) {
+                    try {
+                        return fn?.apply(null, args);
+                    } catch (e) {
+                        console.log('function failed ' + e.message);
+                    }
+                };
+                safeFn.safe = true;
+                return safeFn;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+
+<!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+<script id="d-js-load-css">
+/**
+ * There are a few <link> tags with CSS resource in them that are preloaded in the page
+ * in each of those there is a "onload" handler which invokes the loadCSS callback
+ * defined here.
+ * We are monitoring 3 main CSS files - the runtime, the global and the page.
+ * When each load we check to see if we can append them all in a batch. If threre
+ * is no page css (which may happen on inner pages) then we do not wait for it
+ */
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+  
+    function checkCss() {
+      const pageCssLink = document.querySelector("[id*='CssLink']");
+      const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+        if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+            const storedRuntimeCssLink = cssLinks.runtime;
+            const storedPageCssLink = cssLinks.page;
+            const storedGlobalCssLink = cssLinks.global;
+            const storedWidgetCssLink = cssLinks.widget;
+
+            storedGlobalCssLink.disabled = true;
+            loadCssLink(storedGlobalCssLink);
+
+            if (storedPageCssLink) {
+                storedPageCssLink.disabled = true;
+                loadCssLink(storedPageCssLink);
+            }
+
+            if(storedWidgetCssLink) {
+                storedWidgetCssLink.disabled = true;
+                loadCssLink(storedWidgetCssLink);
+            }
+
+            storedRuntimeCssLink.disabled = true;
+            loadCssLink(storedRuntimeCssLink);
+
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    storedRuntimeCssLink.disabled = false;
+                    storedGlobalCssLink.disabled = false;
+                    if (storedPageCssLink) {
+                      storedPageCssLink.disabled = false;
+                    }
+                    if (storedWidgetCssLink) {
+                      storedWidgetCssLink.disabled = false;
+                    }
+                    // (SUP-4179) Clear the accumulated cssLinks only when we're
+                    // sure that the document has finished loading and the document 
+                    // has been parsed.
+                    if(document.readyState === 'interactive') {
+                      cssLinks = null;
+                    }
+                }, 0);
+            });
+        }
+    }
+  
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href && link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } 
+      
+      else if (link.id && link.id.includes("CssLink")) {
+        cssLinks.page = link;
+        checkCss();
+      } else if (link.id && link.id.includes("widgetCSS")) {
+        cssLinks.widget = link;
+        checkCss();
+      }
+      
+      else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      throw e
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def() {
+        this.promise = new Promise((function (a, b) {
+            this.resolve = a, this.reject = b
+        }).bind(this))
+    }
+
+    const defs = {};
+    window.getDeferred = function (a) {
+        return null == defs[a] && (defs[a] = new Def), defs[a]
+    }
+    window.waitForDeferred = function (b, a, c) {
+        let d = window?.getDeferred?.(b);
+        d
+            ? d.promise.then(a)
+            : c && ["complete", "interactive"].includes(document.readyState)
+                ? setTimeout(a, 1)
+                : c
+                    ? document.addEventListener("DOMContentLoaded", a)
+                    : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}#dmRoot div.stickyHeaderFix div.site_content{margin-top:0!important}#dmRoot div.stickyHeaderFix div.hamburger-header-container{position:relative}
+    
+
+</style>
+<style id="cssVariables" type="text/css">
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function fonts.jsp-->
+
+
+
+<link type="text/css" rel="stylesheet" href="../cdn.website-editor.net/fonts/css2%3Ffamily=Montserrat:ital,wght@0,100..900%3B1,100..900&amp;family=Cabin:ital,wght@0,400..700%3B1,400..700&amp;family=Source+Sans+Pro:ital,wght@0,200%3B0,300%3B0,400%3B0,600%3B0,700%3B0,900%3B1,200%3B1,300%3B1,400%3B1,600%3B1,700%3B1,900&amp;family=Comfortaa:ital,wght@0,30.css"  />
+
+<style>
+@font-face {
+  font-family: "(A) Arslan Wessam A (A) Arslan Wessam A";
+  src: url("../cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/fonts/(A)+Arslan+Wessam+A+(A)+Arslan+Wessam+A-529b_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="stylesheet" type="text/css" href="https://static-cdn.website-editor.net/mnlt/production/6369/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+<link type="text/css" rel="stylesheet" href="https://cdn.website-editor.net/WIDGET_CSS/8e734816ca5160c4d378b1fb548edf5f.css" id="widgetCSS" />
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="chemical-milling"] #dm [data-show-on-page-only="chemical-milling"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="../cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/files/df3ec980cc9e40009b6d3de3d463012e_1.min.css%3Fv=226&amp;Expires=1779092098&amp;Signature=r7rFk7SKtsk7u9T69D1wbYyYl4xWShbWhjRlk~ACDZy04e0MZ7dheI1WOysskOD8MaHSIuwvJj28X4DbEzLlp25fwr5GvkkkDKqH-z6abWVbg4BJ6hHLzkpGRWn-n15D97f2RvwkIlbMhZnEARf9q7elYIZuNk.css" id="siteGlobalCss" />
+
+
+<!-- additional css file per platform -->
+<link
+        type="text/css" rel="stylesheet"
+        href="_dm/s/rt/css/oneUndOne/1and1-runtime.css%3Fversion=2026-04-16T12_53_56.css"
+/>
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<style id="pagestyle" type="text/css">
+    *#dm *.dmBody div.u_1318300061
+{
+	background-color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody div.u_1482974571
+{
+	background-color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody div.u_1093464700 hr
+{
+	color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody div.u_1795598260 hr
+{
+	color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody div.u_1681030143
+{
+	background-color:rgba(246,246,246,1) !important;
+}
+*#dm *.dmBody div.u_1843508515
+{
+	background-repeat:no-repeat !important;
+	background-image:url(../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/precision+chemical+milling-2880w.png%3FExpires=1779092098&Signature=HOlHUZr~Q2dJvZTW1lCRt72ZHhecEFd8T-KS6pyc821BWCBzj1UBn6iawT8~Qj3oaBjWNkgrGUwzBIYkj08QELThtlZGTece7hyhjDG2vq-JHsalo3Jk~0qutY~m~IkxN1KA8D7gJzSYA5iJXmmj5BrquOuyVWZ~5xgf8awSUZ) !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1709296491 hr
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1469851266
+{
+	background-color:rgba(246,246,246,1) !important;
+}
+*#dm *.dmBody div.u_1799582454 hr
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1465772897
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1115975463
+{
+	background-color:rgba(246,246,246,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1958762017
+{
+	background-color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody div.u_1837435582
+{
+	background-color:rgba(7,153,226,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody div.u_1999079756
+{
+	background-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1598960951 hr
+{
+	color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody div.u_1982766080
+{
+	background-repeat:no-repeat !important;
+	background-image:none !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody *.u_1775814201 a::after
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody div.u_1775814201 a::after
+{
+	text-decoration:none !important;
+}
+*#dm *.dmBody div.u_1792703980 hr
+{
+	color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody *.u_1232869530::after
+{
+	margin-top:0 !important;
+}
+*#dm *.dmBody *.u_1342397639 a::after
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody div.u_1342397639 a::after
+{
+	text-decoration:none !important;
+}
+*#dm *.dmBody *.u_1669289464::after
+{
+	margin-top:0 !important;
+}
+*#dm *.dmBody div.u_1684328724 hr
+{
+	color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody *.u_1920577743 a::after
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody div.u_1920577743 a::after
+{
+	text-decoration:none !important;
+}
+*#dm *.dmBody div.u_1864791347 hr
+{
+	color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody *.u_1933815760::after
+{
+	margin-top:0 !important;
+}
+*#dm *.dmBody *.u_1276740895 a::after
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody div.u_1276740895 a::after
+{
+	text-decoration:none !important;
+}
+*#dm *.dmBody *.u_1439087274::after
+{
+	margin-top:0 !important;
+}
+*#dm *.dmBody div.u_1665797115 hr
+{
+	color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody *.u_1416481724 a::after
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody div.u_1416481724 a::after
+{
+	text-decoration:none !important;
+}
+*#dm *.dmBody div.u_1024809308 hr
+{
+	color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody *.u_1252217974::after
+{
+	margin-top:0 !important;
+}
+*#dm *.dmBody *.u_1187990456 a::after
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody div.u_1187990456 a::after
+{
+	text-decoration:none !important;
+}
+*#dm *.dmBody *.u_1717523077::after
+{
+	margin-top:0 !important;
+}
+*#dm *.dmBody div.u_1194354041 hr
+{
+	color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody *.u_1497120487 a::after
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody div.u_1497120487 a::after
+{
+	text-decoration:none !important;
+}
+*#dm *.dmBody div.u_1899505321 hr
+{
+	color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody *.u_1882475455::after
+{
+	margin-top:0 !important;
+}
+*#dm *.dmBody *.u_1154851178 a::after
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody div.u_1154851178 a::after
+{
+	text-decoration:none !important;
+}
+*#dm *.dmBody *.u_1595578072::after
+{
+	margin-top:0 !important;
+}
+*#dm *.dmBody div.u_1493552011 hr
+{
+	color:rgba(7,153,226,1) !important;
+}
+*#dm *.dmBody nav.u_1587919735
+{
+	color:white !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    *#dm *.dmBody div.u_1318300061 {
+  top:0 !important;
+  left:0 !important;
+  width:auto !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:0 !important;
+  padding-left:0 !important;
+  padding-bottom:0 !important;
+  max-width:100% !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1482974571 {
+  top:0 !important;
+  left:0 !important;
+  width:auto !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:0 !important;
+  padding-left:0 !important;
+  padding-bottom:0 !important;
+  max-width:100% !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1318300061 {
+  top:0 !important;
+  left:0 !important;
+  width:auto !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:0 !important;
+  padding-left:0 !important;
+  padding-bottom:0 !important;
+  max-width:100% !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1482974571 {
+  top:0 !important;
+  left:0 !important;
+  width:auto !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:0 !important;
+  padding-left:0 !important;
+  padding-bottom:0 !important;
+  max-width:100% !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody h1.u_1900358667 {
+  padding-top:2px !important;
+  padding-bottom:0 !important;
+}
+
+*#dm *.dmBody h1.u_1900358667 {
+  padding-top:2px !important;
+  padding-bottom:0 !important;
+}
+
+*#dm *.dmBody div.u_1843508515 { background-position:50% 50% !important; }
+
+*#dm *.dmBody h3.u_1831955541 {
+  padding-top:0 !important;
+  margin-top:0 !important;
+}
+
+*#dm *.dmBody div.u_1795598260 {
+  padding-top:0 !important;
+  margin-top:0 !important;
+}
+
+*#dm *.dmBody div.u_1681030143 {
+  padding-top:0 !important;
+  padding-left:27px !important;
+}
+
+*#dm *.dmBody div.u_1655758644 {
+  top:0 !important;
+  left:0 !important;
+  width:calc(100% - 0px) !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  margin-right:0 !important;
+  margin-left:0 !important;
+  max-width:831px !important;
+  margin-top:8px !important;
+  margin-bottom:20px !important;
+  padding-right:0 !important;
+  min-width:25px !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1804183468 {
+  top:0 !important;
+  left:0 !important;
+  width:calc(100% - 0px) !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  max-width:831px !important;
+  padding-right:0 !important;
+  min-width:25px !important;
+  text-align:left !important;
+  margin-bottom:20px !important;
+}
+
+*#dm *.dmBody div.u_1843508515 { background-position:50% 50% !important; }
+
+*#dm *.dmBody h3.u_1831955541 {
+  padding-top:0 !important;
+  margin-top:0 !important;
+}
+
+*#dm *.dmBody div.u_1795598260 { padding-top:0 !important; }
+
+*#dm *.dmBody div.u_1681030143 {
+  padding-top:0 !important;
+  padding-left:27px !important;
+}
+
+*#dm *.dmBody div.u_1655758644 {
+  top:0 !important;
+  left:0 !important;
+  width:calc(100% - 0px) !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  margin-right:0 !important;
+  margin-left:0 !important;
+  max-width:831px !important;
+  margin-top:8px !important;
+  margin-bottom:20px !important;
+  padding-right:0 !important;
+  min-width:25px !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1804183468 {
+  top:0 !important;
+  left:0 !important;
+  width:calc(100% - 0px) !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  max-width:831px !important;
+  padding-right:0 !important;
+  min-width:25px !important;
+  text-align:left !important;
+  margin-bottom:20px !important;
+}
+
+*#dm *.dmBody div.u_1115975463 {
+  padding-top:18px !important;
+  padding-bottom:40px !important;
+  top:0 !important;
+  left:0 !important;
+  width:auto !important;
+  position:relative !important;
+  height:auto !important;
+  padding-left:60px !important;
+  max-width:100% !important;
+  padding-right:60px !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1115975463 {
+  padding-top:18px !important;
+  padding-bottom:40px !important;
+  top:0 !important;
+  left:0 !important;
+  width:auto !important;
+  position:relative !important;
+  height:auto !important;
+  padding-left:60px !important;
+  max-width:100% !important;
+  padding-right:60px !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody h3.u_1548938719 {
+  padding-top:0 !important;
+  top:0 !important;
+  left:0 !important;
+  width:582px !important;
+  position:relative !important;
+  height:auto !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  margin-right:0 !important;
+  margin-left:0 !important;
+  max-width:100% !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1958762017 {
+  padding-top:25px !important;
+  padding-bottom:0 !important;
+}
+
+*#dm *.dmBody h3.u_1548938719 {
+  padding-top:0 !important;
+  top:0 !important;
+  left:0 !important;
+  width:582px !important;
+  position:relative !important;
+  height:auto !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  margin-right:0 !important;
+  margin-left:0 !important;
+  max-width:100% !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1958762017 {
+  padding-top:25px !important;
+  padding-bottom:0 !important;
+}
+
+*#dm *.dmBody div.u_1837435582 {
+  background-repeat:no-repeat !important;
+  background-size:auto !important;
+  padding-top:5px !important;
+  padding-bottom:20px !important;
+  top:0 !important;
+  left:0 !important;
+  width:auto !important;
+  position:relative !important;
+  height:auto !important;
+  padding-left:60px !important;
+  max-width:100% !important;
+  padding-right:60px !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1837435582 {
+  background-repeat:no-repeat !important;
+  background-size:auto !important;
+  padding-top:5px !important;
+  padding-bottom:20px !important;
+  top:0 !important;
+  left:0 !important;
+  width:auto !important;
+  position:relative !important;
+  height:auto !important;
+  padding-left:60px !important;
+  max-width:100% !important;
+  padding-right:60px !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1469851266 {
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:100% !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:0 !important;
+  padding-left:0 !important;
+  padding-bottom:40px !important;
+  max-width:none !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:center !important;
+}
+
+*#dm *.dmBody div.u_1469851266 {
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:100% !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:0 !important;
+  padding-left:0 !important;
+  padding-bottom:40px !important;
+  max-width:none !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:center !important;
+}
+
+*#dm *.dmBody h3.u_1129361696 {
+  padding-top:0 !important;
+  top:0 !important;
+  left:0 !important;
+  width:582px !important;
+  position:relative !important;
+  height:auto !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  max-width:100% !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody h3.u_1129361696 {
+  padding-top:0 !important;
+  top:0 !important;
+  left:0 !important;
+  width:582px !important;
+  position:relative !important;
+  height:auto !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  max-width:100% !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1514873991 {
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:582px !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  margin-right:auto !important;
+  margin-left:auto !important;
+  max-width:100% !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody h2.u_1129361696 {
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:582px !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  margin-right:0 !important;
+  margin-left:0 !important;
+  max-width:100% !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1799582454 {
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:582px !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:0 !important;
+  padding-left:0 !important;
+  padding-bottom:0 !important;
+  margin-right:0 !important;
+  margin-left:0 !important;
+  max-width:100% !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:start !important;
+}
+
+*#dm *.dmBody h1.u_1775846207 {
+  display:block !important;
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:100% !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  max-width:calc(100% - 0px) !important;
+  padding-right:0 !important;
+  min-width:25px !important;
+  text-align:left !important;
+  margin-right:0 !important;
+  margin-left:0 !important;
+  margin-top:0 !important;
+  margin-bottom:8px !important;
+}
+
+*#dm *.dmBody h2.u_1775846207 {
+  display:block !important;
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:428.5px !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  margin-right:auto !important;
+  margin-left:0 !important;
+  max-width:100% !important;
+  margin-top:8px !important;
+  margin-bottom:8px !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1598960951 {
+  padding-top:0 !important;
+  width:437px !important;
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  position:relative !important;
+  height:auto !important;
+  padding-left:0 !important;
+  padding-bottom:0 !important;
+  margin-right:auto !important;
+  margin-left:auto !important;
+  max-width:100% !important;
+  margin-bottom:0 !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:center !important;
+  display:block !important;
+  margin-top:0 !important;
+}
+
+*#dm *.dmBody h3.u_1775846207 {
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:819px !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:0 !important;
+  margin-right:auto !important;
+  margin-left:auto !important;
+  max-width:100% !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:center !important;
+  display:block !important;
+}
+
+*#dm *.dmBody div.u_1982766080 {
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:auto !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:38px !important;
+  padding-left:60px !important;
+  padding-bottom:38px !important;
+  max-width:100% !important;
+  padding-right:60px !important;
+  min-width:0 !important;
+  text-align:start !important;
+}
+
+*#dm *.dmBody h1.u_1775846207 {
+  display:block !important;
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:100% !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  max-width:calc(100% - 0px) !important;
+  padding-right:0 !important;
+  min-width:25px !important;
+  text-align:left !important;
+  margin-right:0 !important;
+  margin-left:0 !important;
+  margin-top:0 !important;
+  margin-bottom:8px !important;
+}
+
+*#dm *.dmBody h2.u_1775846207 {
+  display:block !important;
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:428.5px !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  margin-right:auto !important;
+  margin-left:0 !important;
+  max-width:100% !important;
+  margin-top:8px !important;
+  margin-bottom:8px !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1598960951 {
+  padding-top:0 !important;
+  width:437px !important;
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  position:relative !important;
+  height:auto !important;
+  padding-left:0 !important;
+  padding-bottom:0 !important;
+  margin-right:auto !important;
+  margin-left:auto !important;
+  max-width:100% !important;
+  margin-bottom:0 !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:center !important;
+  display:block !important;
+}
+
+*#dm *.dmBody h3.u_1775846207 {
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:819px !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:0 !important;
+  margin-right:auto !important;
+  margin-left:auto !important;
+  max-width:100% !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+  padding-right:0 !important;
+  min-width:0 !important;
+  text-align:center !important;
+  display:block !important;
+}
+
+*#dm *.dmBody div.u_1982766080 {
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  float:none !important;
+  top:0 !important;
+  left:0 !important;
+  width:auto !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:38px !important;
+  padding-left:60px !important;
+  padding-bottom:38px !important;
+  max-width:100% !important;
+  padding-right:60px !important;
+  min-width:0 !important;
+  text-align:start !important;
+}
+
+*#dm *.dmBody div.u_1792703980 {
+  padding-top:0 !important;
+  margin-bottom:0 !important;
+}
+
+*#dm *.dmBody div.u_1912130368 {
+  padding-top:2px !important;
+  margin-top:0 !important;
+}
+
+*#dm *.dmBody div.u_1684328724 {
+  padding-top:0 !important;
+  margin-bottom:0 !important;
+}
+
+*#dm *.dmBody div.u_1486756118 { padding-top:2px !important; }
+
+*#dm *.dmBody div.u_1792703980 { padding-top:0 !important; }
+
+*#dm *.dmBody div.u_1912130368 {
+  padding-top:2px !important;
+  margin-top:0 !important;
+}
+
+*#dm *.dmBody div.u_1684328724 { padding-top:0 !important; }
+
+*#dm *.dmBody div.u_1486756118 { padding-top:2px !important; }
+
+*#dm *.dmBody div.u_1864791347 {
+  padding-top:0 !important;
+  margin-bottom:0 !important;
+}
+
+*#dm *.dmBody div.u_1166031015 {
+  padding-top:2px !important;
+  margin-top:0 !important;
+}
+
+*#dm *.dmBody div.u_1665797115 {
+  padding-top:0 !important;
+  margin-bottom:0 !important;
+}
+
+*#dm *.dmBody div.u_1992427357 { padding-top:2px !important; }
+
+*#dm *.dmBody div.u_1864791347 { padding-top:0 !important; }
+
+*#dm *.dmBody div.u_1166031015 {
+  padding-top:2px !important;
+  margin-top:0 !important;
+}
+
+*#dm *.dmBody div.u_1665797115 { padding-top:0 !important; }
+
+*#dm *.dmBody div.u_1992427357 { padding-top:2px !important; }
+
+*#dm *.dmBody div.u_1024809308 {
+  padding-top:0 !important;
+  margin-bottom:0 !important;
+}
+
+*#dm *.dmBody div.u_1840833815 {
+  padding-top:2px !important;
+  margin-top:0 !important;
+}
+
+*#dm *.dmBody div.u_1194354041 {
+  padding-top:0 !important;
+  margin-bottom:0 !important;
+}
+
+*#dm *.dmBody div.u_1589591175 { padding-top:2px !important; }
+
+*#dm *.dmBody div.u_1024809308 { padding-top:0 !important; }
+
+*#dm *.dmBody div.u_1840833815 {
+  padding-top:2px !important;
+  margin-top:0 !important;
+}
+
+*#dm *.dmBody div.u_1194354041 { padding-top:0 !important; }
+
+*#dm *.dmBody div.u_1589591175 { padding-top:2px !important; }
+
+*#dm *.dmBody div.u_1899505321 {
+  padding-top:0 !important;
+  margin-bottom:0 !important;
+}
+
+*#dm *.dmBody div.u_1221818637 {
+  padding-top:2px !important;
+  margin-top:0 !important;
+}
+
+*#dm *.dmBody div.u_1493552011 {
+  padding-top:0 !important;
+  margin-bottom:0 !important;
+}
+
+*#dm *.dmBody div.u_1434348225 { padding-top:2px !important; }
+
+*#dm *.dmBody div.u_1899505321 { padding-top:0 !important; }
+
+*#dm *.dmBody div.u_1221818637 {
+  padding-top:2px !important;
+  margin-top:0 !important;
+}
+
+*#dm *.dmBody div.u_1493552011 { padding-top:0 !important; }
+
+*#dm *.dmBody div.u_1434348225 { padding-top:2px !important; }
+
+*#dm *.dmBody div.u_1129730554 {
+  top:0 !important;
+  left:0 !important;
+  width:calc(100% - 0px) !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  max-width:831px !important;
+  padding-right:0 !important;
+  min-width:25px !important;
+  text-align:left !important;
+}
+
+*#dm *.dmBody div.u_1129730554 {
+  top:0 !important;
+  left:0 !important;
+  width:calc(100% - 0px) !important;
+  position:relative !important;
+  height:auto !important;
+  padding-top:2px !important;
+  padding-left:0 !important;
+  padding-bottom:2px !important;
+  max-width:831px !important;
+  padding-right:0 !important;
+  min-width:25px !important;
+  text-align:left !important;
+}
+
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-42, .size-42, .size-42 > font { font-size: 42px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+
+  #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+    visibility: hidden;
+  }
+
+</style>
+
+
+
+
+<style id="fontFallbacks">
+    @font-face {
+  font-family: "Montserrat Fallback";
+  src: local('Arial');
+  ascent-override: 84.9466%;
+  descent-override: 22.0264%;
+  size-adjust: 113.954%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Cabin Fallback";
+  src: local('Arial');
+  ascent-override: 101.7818%;
+  descent-override: 26.3684%;
+  size-adjust: 94.8106%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Helvetica Fallback";
+  src: local('Arial');
+  ascent-override: 77.002%;
+  descent-override: 22.998%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Arial Fallback";
+  src: local('Arial');
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Comfortaa Fallback";
+  src: local('Arial');
+  ascent-override: 74.2135%;
+  descent-override: 19.7117%;
+  size-adjust: 118.7115%;
+  line-gap-override: 0%;
+ }@font-face {
+  font-family: "Karla Fallback";
+  src: local('Arial');
+  ascent-override: 88.668%;
+  descent-override: 24.3668%;
+  size-adjust: 103.4195%;
+  line-gap-override: 0%;
+ }
+</style>
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.tradeetching.com/chemical-milling">
+
+  <meta property="og:image" content="https://le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/UK+chemical+milling+services-1920w.png?Expires=1779092098&amp;Signature=RYFb1cm5ryklm62o5YDBfzTp8vNuGEQHgf7APNo~cGcY86xB2bnt4vSawxCnu9JqqtIGIah67tox5TBHovnfR4DeFmv9D3zXL4YHY8S4BUy4X-F7qZNY5wEDgSBWkXIJuh4sH2ZaoXzf1-yV9O7KXCZp7npIcpH~EwzlmW9fll0KmLZn2-~Ng0XV9zGVfIRZLXxX2bAVU~Qu1YHSOp7Xx75HFHRD4379VsS-fDm1hpmaEZVN627rndWT2UVb7ByVRt~aiWQ9L1i3xwYovb4pxHmRpJgcgtCjENraY9MUSOVQBj4cW6GL2UM3pXYARXfIHZyonO7YPs1d8baYlMSw2Q__&amp;Key-Pair-Id=K2NXBXLF010TJW"/>
+  <title>
+    Trade Etching Direct | Chemical Milling
+  </title>
+  <meta name="description" content="Trade Etching Direct offer manufacturers a fast and efficient chemical milling service with an emphasis on fast turnarounds &amp; short to medium production runs."/>
+  <script type="application/ld+json">
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "name": "UK Chemical Milling Supplier",
+    "description": "Trade Etching direct offer a fast and competitive chemical milling service ",
+    "isPartOf":{"@id":"https://tradeetching.com/#website"},
+    "Url": "https://tradeetching.com/chemical-milling",
+    "potentialAction":{"@type":"SearchAction","target":"https://tradeetching.com/?s={search_term_string}","query-input":"required name=search_term_string"}},
+    "publisher": {
+        "@type": "Organization",
+        "name": "Trade Etching Direct"
+    }
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+            
+          
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+  <script type="application/ld+json" id="1862776161">
+
+
+
+
+
+
+
+
+
+
+    {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Chemical Milling Service",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<a href="http://www.tradeetching.com/\&quot;https://www.tradeetching.com/\&quot;">Trade Etching Direct</a> offer manufacturers a fast and efficient chemical milling service with an emphasis on fast turnarounds & short to medium production runs. TED can also incorporate chemical milled elements with your signage projects to create unique effects.<p>Our focus is on:</p><br>Short to Medium Production Runs</br><br>Research & Development / Proof of concept</br><br>Rapid Prototyping</br><br>Fast Turnarounds</br>"
+       }
+  }, {
+    "@type": "Question",
+    "name": "What are the applications for chemical milling?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Typical applications for chemical milling include:<p><br>Filters, Shims, Washers</br><br>EMI/RFI Shielding</br><br>SMT Stencils</br><br>Speaker Grills</br>"
+    }
+  }, {
+    "@type": "Question",
+    "name": "What are the advantages of chemical milling?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The advantages of chemical milling over more traditional manufacturing processes such as stamping and laser cutting are its low cost, high speed, flexibility, suitability for complex designs and ability to produce burr-free components, the properties of which are not changed by heat or stress.<p><br>Low Tooling Costs</br><br>Easy to accommodate design changes</br><br>Burr-free stress-free components</br><br>Metal properties unaltered</br><br>Thicknesses from 0.012mm to 1.5mm</br><br>Wide Variety of metals available</br>"
+    }
+  }, {
+    "@type": "Question",
+    "name": "what metals are suitable for chemical milling?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "<b>Stainless Steels</b>
+<br>Austenitic, Ferritic, Martensitic, Precipitation Hardened, Heat Resisting, Duplex and Super Duplex Steels</br><p><b>Other Steels</b><br>
+Mild Steel, Carbon Steel, Tool Steel, Spring Steel</br><p><b>Nickel Alloy</b>s<br>
+Mu Metal, Nickel Copper), Inconel, Nickel Brazing Foil</br><p><b>Nickel/Iron Alloys</b><br>
+Invar, Alloy 42, Kovar, Radio Metal</br><p><b>Coppe</b>r<br>
+Tough Pitch 101, Oxygen free – High Conductivity</br><p><b>Copper Alloys</b><br>
+Brass, Phosphor Bronze, Beryllium Copper, Nickel Silver</br><p><b>Aluminium and Aluminium Alloys</b><br>
+All grades</br><p><b>Other Metals</b><br>
+Molybdenum, Polyimide metallised film</br>
+"
+
+}
+   
+    }]
+  }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                
+              
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+
+  <!--THE CONTENT OF THIS FILE WILL BE APPENDED TO EVERY PAGE INSIDE THE </HEAD> ELEMENT-->  <!--THE CONTENT OF THIS FILE WILL BE APPENDED TO EVERY PAGE INSIDE THE </HEAD> ELEMENT-->  <!--THE CONTENT OF THIS FILE WILL BE APPENDED TO EVERY PAGE INSIDE THE </HEAD> ELEMENT-->  <!-- Google Tag Manager -->  <script>
+
+
+
+
+
+
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NKZN322');
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+  <!-- End Google Tag Manager -->  <!-- Global site tag (gtag.js) - Google Analytics -->  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-140861906-5">
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+  <script type="application/ld+json" id="1618835343">
+
+
+
+
+
+
+
+     {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://wwww.tradeetching.com",
+  "logo": "https://cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/mobile/Deep%2Betched%2Bmetal%2Bsign%2B%288%29.jpg",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+44-1536-203-813",
+    "email": "sales@tradeetching.com",
+    "contactType": "sales"
+  }]
+}
+                                                                                                                                                                                                                                                  
+              
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+
+
+
+{
+      "@context":"http://schema.org",
+      "@type":"ItemList",
+      "itemListElement":[
+        {
+          "@type": "SiteNavigationElement",
+          "position": 1,
+          "name": "Home",
+          "description": "UK's leading trade supplier of chemically etched metal signs",
+          "url":"https://www.tradeetching.com/"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 2,
+          "name": "Chemical Etching Services",
+          "description": "High quality etched metal signs for the UK sign industry",
+          "url":"https://www.tradeetching.com/chemical-etching-services"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 3,
+          "name": "Etching Concepts",
+          "description": "Breaking new ground in metal etching and finishing",
+          "url":"https://www.tradeetching.com/metal-etching-concepts"
+        },
+        {"@type": "SiteNavigationElement",
+          "position": 4,
+          "name": "Metal patination service",
+          "description": "Professional metal patination service ",
+          "url":"https://www.tradeetching.com/metal patination"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 5,
+          "name": "Etching Gallery",
+          "description": "The UK's chemical etching experts",
+          "url":"https://www.tradeetching.com/etching-gallery"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 6,
+          "name": "Contact Us",
+          "description": "Contact Trade Etching Direct today to discuss your chemical etching needs",
+          "url":"https://www.tradeetching.com/contact"
+        }
+      ]
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Chemical Etching Services",
+      "item": "https://www.tradeetching.com/chemical-etching-services"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Etching Gallery",
+      "item": "https://www.tradeetching.com/etching-gallery"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Etching Gallery",
+      "item": "https://www.tradeetching.com/etching-gallery"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contact",
+      "item": "https://www.tradeetching.com/Contact"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Chemical Milling",
+      "item": "https://www.tradeetching.com/chemical-milling"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Metal Patination",
+      "item": "https://www.tradeetching.com/metal-patination"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Etched Metal Signs & Nameplates",
+      "item": "https://www.tradeetching.com/etched-metal-signs-nameplates"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Large Format Chemical Etching for Architecture",
+      "item": "https://www.tradeetching.com/large_format_chemical_etching_for_architecture"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script type="application/ld+json">
+
+
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.tradeetching.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Metal Etching Concepts",
+      "item": "https://www.tradeetching.com/metal-etching-concepts"
+    }
+  ]
+}
+
+
+  
+
+  </script>
+  <script>
+
+
+
+
+
+
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-140861906-5');
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+  <meta name="p:domain_verify" content="42335df007226dcf2ddfb084200d6fd8"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Trade Etching Direct | Chemical Milling"/>
+  <meta name="twitter:description" content="Trade Etching Direct offer manufacturers a fast and efficient chemical milling service with an emphasis on fast turnarounds &amp; short to medium production runs."/>
+  <meta property="og:description" content="Trade Etching Direct offer manufacturers a fast and efficient chemical milling service with an emphasis on fast turnarounds &amp; short to medium production runs."/>
+  <meta property="og:title" content="Trade Etching Direct | Chemical Milling"/>
+
+
+
+
+<!-- SYS- MUFORDFfRVVfUFJPRA== -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="chemical-milling"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet "
+      style="padding:0;margin:0;"
+      
+    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1897166217"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-sec hasAnimations rows-1200 dmPageBody d-page-1180615324 inputs-css-clean dmFreeHeader" id="dm-outer-wrapper" data-page-class="1180615324" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="dmHeader p_hfcontainer u_hcontainer" freeheader="true"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1675602342 dmRespRow hide-for-small hide-for-large" id="1675602342"> <div class="dmRespColsWrapper" id="1264883160"> <div class="u_1980807906 dmRespCol small-12 large-9 medium-9" id="1980807906"> <nav class="u_1587919735 effect-bottom2 main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" data-divider="PIPE" id="1587919735" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="" alt="" data-nav-structure="HORIZONTAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="page-2.html" class="unifiednav__item    " target="" data-target-page-alias="home"> <span class="nav-item-text " data-link-text="
+         HOME
+        " data-auto="page-text-style">HOME<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="chemical-etching-services.html" class="unifiednav__item    unifiednav__item_has-sub-nav" target="" data-target-page-alias="chemical-etching-services"> <span class="nav-item-text " data-link-text="
+         SERVICES
+        " data-auto="page-text-style">SERVICES<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="page-2.html" class="unifiednav__item    " target="" data-target-page-alias="chemical-etching"> <span class="nav-item-text " data-link-text="HOME" data-auto="page-text-style">HOME<span class="icon icon-angle-right" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="chemical-milling.html" class="unifiednav__item  dmNavItemSelected    " target="" data-target-page-alias="chemical-milling" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         CHEMICAL MILLING
+        " data-auto="page-text-style">CHEMICAL MILLING<span class="icon icon-angle-right" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="page-2.html" class="unifiednav__item    " target="" data-target-page-alias="metal-patination"> <span class="nav-item-text " data-link-text="HOME" data-auto="page-text-style">HOME<span class="icon icon-angle-right" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="large-format-chemical-etching-for-architecture.html" class="unifiednav__item    " target="" data-target-page-alias="large-architectural-chemical-etching"> <span class="nav-item-text " data-link-text="ARCHITECTURAL" data-auto="page-text-style">ARCHITECTURAL<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="etching-gallery.html" class="unifiednav__item    " target="" data-target-page-alias="etching-gallery"> <span class="nav-item-text " data-link-text="
+         GALLERY
+        " data-auto="page-text-style">GALLERY<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="Contact.html" class="unifiednav__item    " target="" data-target-page-alias="Contact"> <span class="nav-item-text " data-link-text="
+         CONTACT
+        " data-auto="page-text-style">CONTACT<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+ <div class="u_1261906175 align-center text-align-center hide-for-medium dmSocialHub gapSpacing" id="1261906175" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://linkedin.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://instagram.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1198692004 align-center text-align-center hide-for-medium dmSocialHub gapSpacing" id="1198692004" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://linkedin.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://instagram.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1390918706 align-center text-align-center hide-for-medium dmSocialHub gapSpacing" id="1390918706" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://linkedin.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://instagram.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1613691070 dmRespCol small-12 large-3 medium-3" id="1613691070"> <div class="u_1348442737 align-center text-align-center hide-for-medium dmSocialHub gapSpacing" id="1348442737" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://linkedin.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://instagram.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1165813500 align-center text-align-center dmSocialHub gapSpacing" id="1165813500" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:tradeetching@gmail.com" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://instagram.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="http://linkedin.com/" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1571063569 dmRespRow dmHeaderContent freeHeaderRow1 fullBleedChanged fullBleedMode hide-for-medium" id="1571063569"> <div class="dmRespColsWrapper clearfix" id="1618005341"> <div class="u_1713311601 dmRespCol small-12 large-10 medium-10" id="1713311601"> <nav class="u_1284501632 effect-bottom2 hide-for-medium main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" data-divider="PIPE" id="1284501632" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" navigation_id="" data-logo-src="https://cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/desktop/logo_empty-871ebb7f.png" data-nav-structure="HORIZONTAL" wr="false" icon="true" surround="false" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="page-2.html" class="unifiednav__item    " target="" data-target-page-alias="home"> <span class="nav-item-text " data-link-text="
+         HOME
+        " data-auto="page-text-style">HOME<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" data-sub-nav-menu="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="chemical-etching-services.html" class="unifiednav__item    unifiednav__item_has-sub-nav" target="" data-target-page-alias="page-2"> <span class="nav-item-text " data-link-text="
+         SERVICES
+        " data-auto="page-text-style">SERVICES<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="chemical-etching-services.html#CHEMICALETCHING" class="unifiednav__item    " target="" data-target-page-alias="chemical-etching-services#CHEMICALETCHING"> <span class="nav-item-text " data-link-text="CHEMICAL ETCHING" data-auto="page-text-style">CHEMICAL ETCHING<span class="icon icon-angle-right" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="chemical-milling.html" class="unifiednav__item  dmNavItemSelected    " target="" data-target-page-alias="chemical-milling" aria-current="page" data-auto="selected-page"> <span class="nav-item-text " data-link-text="
+         CHEMICAL MILLING
+        " data-auto="page-text-style">CHEMICAL MILLING<span class="icon icon-angle-right" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="metal-patinationb8754569.html" class="unifiednav__item    " target="" data-target-page-alias="metal-patinationb8754569"> <span class="nav-item-text " data-link-text="
+         METAL PATINATION
+        " data-auto="page-text-style">METAL PATINATION<span class="icon icon-angle-right" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="large-format-chemical-etching-for-architecture.html" class="unifiednav__item    " target="" data-target-page-alias="large-architectural-chemical-etching"> <span class="nav-item-text " data-link-text="ARCHITECTURAL" data-auto="page-text-style">ARCHITECTURAL<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="flat-cut-metal-letters-brass-stainless-steel.html" class="unifiednav__item    " target="" data-target-page-alias="flat-cut-letters"> <span class="nav-item-text " data-link-text="LETTERS" data-auto="page-text-style">LETTERS<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="metal-etching-concepts.html" class="unifiednav__item    " target="" data-target-page-alias="portfolio"> <span class="nav-item-text " data-link-text="CONCEPTS" data-auto="page-text-style">CONCEPTS<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="etched-industrial-labels-control-panels.html" class="unifiednav__item    " target="" data-target-page-alias="new-page-2a7e2ef67"> <span class="nav-item-text " data-link-text="INDUSTRIAL" data-auto="page-text-style">INDUSTRIAL<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="etching-gallery.html" class="unifiednav__item    " target="" data-target-page-alias="page-3"> <span class="nav-item-text " data-link-text="
+         GALLERY
+        " data-auto="page-text-style">GALLERY<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="Contact.html" class="unifiednav__item    " target="" data-target-page-alias="page-4"> <span class="nav-item-text " data-link-text="
+         CONTACT
+        " data-auto="page-text-style">CONTACT<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1634158846 dmRespCol small-12 large-2 medium-2" id="1634158846"> <div class="u_1016230127 align-center text-align-center dmSocialHub gapSpacing" id="1016230127" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:tradeetching@gmail.com" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.linkedin.com/in/anthony-dullaghan-82987260/?originalSubdomain=uk" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.instagram.com/trade_etching/?hl=en" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr/></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"> <div class="innerPageTitle">CHEMICAL MILLING</div> 
+</div> 
+ <div class="titleLine display_None"><hr/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="dmFirstContainer" class="dmBody u_dmStyle_template_chemical-milling"> <div id="allWrapper" class="allWrapper"> <div id="dm_content" class="dmContent" role="main"> <div dm:templateorder="1" class="dmDefaultRespTmpl" id="1180615324"> <div class="innerPageTmplBox dmDefaultPage  dmRespRowsWrapper" id="1203270548"> <div class="u_1318300061 dmRespRow fullBleedChanged fullBleedMode hide-for-small" id="1318300061"> <div class="dmRespColsWrapper" id="1142751245"> <div class="dmRespCol large-12 medium-12 small-12" id="1102679073"> <div class="u_1482974571 dmRespRow fullBleedChanged fullBleedMode hide-for-small" id="1482974571"> <div class="dmRespColsWrapper" id="1371341973"> <div class="dmRespCol large-12 medium-12 small-12" id="1898425001"> <div class="dmNewParagraph hide-for-large u_1452705211" id="1452705211" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><div align="center"><font class="font-size-18 lh-1">CONTACT US TODAY | SALES@TRADEETCHING.COM | 01536 203813</font></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1323496445 dmNewParagraph hide-for-medium" id="1323496445" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><div align="center"><font class="font-size-36 lh-1" style="color: rgb(255, 255, 255);">CONTACT US TODAY | SALES@TRADEETCHING.COM | 01536 203813</font></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1115975463 dmRespRow" id="1115975463"> <div class="dmRespColsWrapper" id="1387325179"> <div class="dmRespCol large-12 medium-12 small-12" id="1683462393"> <h1 class="dmNewParagraph u_1900358667" id="1900358667" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><div align="center"><font class="m-font-size-36 lh-1 font-size-42" style="color: rgb(17, 17, 17);">Photo Chemical Milling Service</font></div></h1> <div class="dmDividerWrapper clearfix u_1093464700" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1093464700"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1761144528"/></div> 
+</div> 
+</div> 
+ <script type="application/ld+json">
+
+
+    {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "name": "Chemical Etching Services",
+    "description": "Trade Etching direct are the Uk's leading trade supplier of chemical etched metal signs",
+    "isPartOf":{"@id":"https://tradeetching.com/chemical-etching-services#website"},
+    "Url": "https://tradeetching.com/chemical-etching-services",
+    "potentialAction":{"@type":"SearchAction","target":"https://tradeetching.com/?s={search_term_string}","query-input":"required name=search_term_string"}},
+    "publisher": {
+        "@type": "Organization",
+        "name": "Trade Etching Direct"
+    }
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+
+            </script> 
+</div> 
+ <div class="u_1469851266 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1469851266"> <div class="dmRespColsWrapper" id="1792364887"> <div class="dmRespCol small-12 dmSectionNoParallax u_1843508515 medium-6 large-6 empty-column" id="1843508515" data-gallery-bg="eyJzbGlkZXMiOlsiaHR0cHM6Ly9sZS1jZG4ud2Vic2l0ZS1lZGl0b3IubmV0L21kL2RtaXAvZG1zM3JlcC9tdWx0aS9vcHQvaG9tZS1kZWNvci1kaXktMTkyMHcuanBnIl19"></div> 
+ <div class="u_1681030143 dmRespCol small-12 medium-6 large-6 content-removed" id="1681030143"> <h2 class="dmNewParagraph u_1831955541" id="1831955541" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><font color="#000000">High quality chemical milling for precision thin metal Components</font></h2> <div class="dmDividerWrapper clearfix u_1795598260" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1795598260"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1224789201"/></div> 
+ <div class="u_1804183468 dmNewParagraph hide-for-large hide-for-medium" id="1804183468" style="transition: opacity 1s ease-in-out 0s;" data-element-type="paragraph"><div><font color="#002000">Trade Etching Direct offer manufacturers a fast and efficient chemical milling service with an emphasis on fast turnarounds &amp; short to medium production runs. TED can also incorporate chemical milled elements with your signage projects to create unique effects.</font></div><div><font style="color: rgb(0, 32, 0);"><br/></font></div><div><font style="color: rgb(0, 32, 0);">&nbsp; ◈&nbsp; Short to Medium Production Runs</font></div><div><font style="color: rgb(0, 32, 0);">&nbsp; ◈&nbsp; Research &amp; Development</font></div><div><font color="#000055" style="color: rgb(0, 32, 0);">&nbsp; ◈&nbsp; Rapid Prototyping</font></div><div><font color="#000055" style="color: rgb(0, 32, 0);">&nbsp; ◈&nbsp; Wide Variety of metals available</font></div><div><font color="#000055" style="color: rgb(0, 32, 0);">&nbsp; ◈&nbsp; Thicknesses from 0.012mm to 1.5mm</font></div><div><font color="#000055" style="color: rgb(0, 32, 0);">&nbsp; ◈&nbsp; Fast Turnaround</font></div><div><font color="#000055" style="color: rgb(0, 32, 0);">&nbsp; &nbsp;</font></div><div><span style="color: rgb(0, 32, 0);">Chemical milling is used to produce high precision thin metal components in many industries including Electronics, Automotive and Medical. Typical uses include:</span></div><div><font color="#002000"><br/></font></div><div><font style="color: rgb(0, 0, 0);">&nbsp; ◈&nbsp; Filters, Shims, Washers<font style="color: rgb(0, 32, 0);"></font></font></div><div><font style="color: rgb(0, 0, 0);">&nbsp; ◈&nbsp; EMI/RFI Shielding&nbsp;</font></div><div><font style="color: rgb(0, 0, 0);">&nbsp; ◈&nbsp; SMT Stencils</font></div><div><font style="color: rgb(0, 0, 0);">&nbsp; ◈&nbsp; Model Kits</font></div><div><font style="color: rgb(0, 0, 0);">&nbsp; ◈&nbsp; Speaker Grills&nbsp;</font></div><div><font style="color: rgb(0, 0, 0);"><br/></font></div><div><font style="color: rgb(0, 32, 0);"><font style="color: rgb(0, 0, 0);"><font style="color: rgb(0, 0, 0);">&nbsp;&nbsp;</font></font></font><font style="color: rgb(0, 0, 0);"><br/></font></div></div> <div class="u_1129730554 dmNewParagraph hide-for-small" id="1129730554" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><div><font color="#002000">Trade Etching Direct offer manufacturers a fast and efficient chemical milling service with an emphasis on fast turnarounds &amp; short to medium production runs. TED can also incorporate chemical milled elements with your signage projects to create unique effects.</font></div><div><font style="color: rgb(0, 32, 0);"><br/></font></div><div><font style="color: rgb(0, 32, 0);">&nbsp; ◈&nbsp; Short to Medium Production Runs</font></div><div><font style="color: rgb(0, 32, 0);">&nbsp; ◈&nbsp; Research &amp; Development / Proof of concept</font></div><div><font color="#000055" style="color: rgb(0, 32, 0);">&nbsp; ◈&nbsp; Rapid Prototyping</font></div><div><font color="#000055" style="color: rgb(0, 32, 0);">&nbsp; ◈&nbsp; Wide Variety of metals available</font></div><div><font color="#000055" style="color: rgb(0, 32, 0);">&nbsp; ◈&nbsp; Thicknesses from 0.012mm to 1.5mm</font></div><div><font color="#000055" style="color: rgb(0, 32, 0);">&nbsp; ◈&nbsp; Fast Turnaround</font></div><div><font color="#000055" style="color: rgb(0, 32, 0);">&nbsp; &nbsp;</font></div><div><span style="color: rgb(0, 32, 0);">Chemical milling is used to produce high precision thin metal components in many industries including Electronics, Automotive and Medical. Typical uses include:</span></div><div><font color="#002000"><br/></font></div><div><font style="color: rgb(0, 0, 0);">&nbsp; ◈&nbsp; Filters, Shims, Washers<font style="color: rgb(0, 32, 0);"></font></font></div><div><font style="color: rgb(0, 0, 0);">&nbsp; ◈&nbsp; EMI/RFI Shielding&nbsp;</font></div><div><font style="color: rgb(0, 0, 0);">&nbsp; ◈&nbsp; SMT Stencils</font></div><div><font style="color: rgb(0, 0, 0);">&nbsp; ◈&nbsp; Model Kits</font></div><div><font style="color: rgb(0, 0, 0);">&nbsp; ◈&nbsp; Speaker Grills&nbsp;</font></div><div><font style="color: rgb(0, 0, 0);"><br/></font></div><div><font style="color: rgb(0, 32, 0);"><font style="color: rgb(0, 0, 0);"><font style="color: rgb(0, 0, 0);">&nbsp;&nbsp;</font></font></font><font style="color: rgb(0, 0, 0);"><br/></font></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1958762017 dmRespRow" id="1958762017"> <div class="dmRespColsWrapper" id="1442784851"> <div class="dmRespCol large-12 medium-12 small-12" id="1186528518"> <h3 class="u_1548938719 dmNewParagraph" id="1548938719" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><font color="#ffffff">Advantages of Chemical Milling</font></h3> <div class="dmDividerWrapper clearfix u_1709296491" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1709296491"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1027868106"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1837435582 dmRespRow" id="1837435582"> <div class="dmRespColsWrapper" id="1110347653"> <div class="dmRespCol small-12 medium-6 large-6" id="1233129966"> <div class="dmNewParagraph" id="1105146363" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><div>The advantages of chemical milling over more traditional manufacturing processes such as stamping and laser cutting are its low cost, high speed, flexibility, suitability for complex designs and ability to produce burr-free components, the properties of which are not changed by heat or stress.</div><div><br/></div><div><br/></div></div></div> 
+ <div class="dmRespCol small-12 medium-6 large-6" id="1914677345"> <div class="dmNewParagraph" id="1655376382" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><div>◈&nbsp; Low Tooling Costs</div><div>◈&nbsp; Easy to accommodate design changes</div><div>◈&nbsp; Burr-free stress-free components</div><div>◈&nbsp; Metal properties unaltered</div><div>◈&nbsp; Fast turnaround times</div></div></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1465772897" id="1465772897"> <div class="dmRespColsWrapper" id="1747453000"> <div class="dmRespCol large-12 medium-12 small-12" id="1678475188"> <h2 class="u_1129361696 dmNewParagraph" id="1129361696" data-element-type="paragraph" background-image="" :="">Materials suitable for chemical milling</h2> <div class="u_1799582454 dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1799582454"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1590604252"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1999079756 dmRespRow" id="1999079756"> <div class="dmRespColsWrapper" id="1777465097"> <div class="u_1402748457 dmRespCol small-12 large-6 medium-6" id="1402748457" data-anim-desktop="none"> <div class="dmNewParagraph" data-element-type="paragraph" id="1873288809" style="transition: opacity 1s ease-in-out 0s;"><div><b><font style="color: rgb(255, 255, 255);">◈ Stainless Steels</font></b></div><div><font style="color: rgb(255, 255, 255);">Austenitic (301, 302, 304, 316, S526, S527), Ferritic (430), Martensitic (321, 410, 420), Precipitation Hardened (17/7), Heat Resisting (309, 310), Duplex and Super Duplex Steels</font></div><div><font style="color: rgb(255, 255, 255);"><br/></font></div><div><b><font style="color: rgb(255, 255, 255);">◈&nbsp; Other Steels</font></b></div><div><font style="color: rgb(255, 255, 255);">Mild Steel, Carbon Steel, Tool Steel, Spring Steel</font></div><div><font style="color: rgb(255, 255, 255);"><br/></font></div><div><b><font style="color: rgb(255, 255, 255);">◈ Nickel Alloys</font></b></div><div><font style="color: rgb(255, 255, 255);">Mu Metal, Nickel Copper (70/30), Inconel, Nickel Brazing Foil</font></div><div><font style="color: rgb(255, 255, 255);"><br/></font></div><div><b><font style="color: rgb(255, 255, 255);">◈ Nickel/Iron Alloys</font></b></div><div><font style="color: rgb(255, 255, 255);">Invar, Alloy 42, Kovar, Radio Metal.</font></div><div><br/></div></div></div> 
+ <div class="dmRespCol large-6 medium-6 small-12" id="1866907374"> <div class="dmNewParagraph u_1514873991" data-element-type="paragraph" id="1514873991" style="transition: opacity 1s ease-in-out 0s; display: block;"><div><font style="color: rgb(255, 255, 255);"><b>◈ Copper</b><br/></font></div><div><font style="color: rgb(255, 255, 255);">Tough Pitch 101, Oxygen free &ndash; High Conductivity,</font></div><div><font style="color: rgb(255, 255, 255);"><br/></font></div><div><b><font style="color: rgb(255, 255, 255);">◈ Copper Alloys</font></b></div><div><font style="color: rgb(255, 255, 255);">Brass, Phosphor Bronze, Beryllium Copper, Nickel Silver</font></div><div><b><font style="color: rgb(255, 255, 255);"><br/></font></b></div><div><b><font style="color: rgb(255, 255, 255);">◈ Aluminium and Aluminium Alloys</font></b></div><div><font style="color: rgb(255, 255, 255);">All grades</font></div><div><font style="color: rgb(255, 255, 255);"><br/></font></div><div><font style="color: rgb(255, 255, 255);">◈ Other Metals</font></div><div><font style="color: rgb(255, 255, 255);">Molybdenum, Polyimide metallised film</font></div><div><font style="color: rgb(255, 255, 255);"><br/></font></div><div><br/></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1982766080 dmRespRow fullBleedChanged fullBleedMode" id="1982766080"> <div class="dmRespColsWrapper" id="1301154846"> <div class="dmRespCol small-12 medium-12 large-12" id="1854870783"> <h3 class="u_1775846207 dmNewParagraph" data-element-type="paragraph" id="1775846207" style="transition: none 0s ease 0s;"><font color="#000000" style="" class="font-size-24 lh-1">Examples of chemical milling</font></h3> <div class="u_1598960951 dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1598960951"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1127270156"/></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1579596673 dmRespRow" style="text-align: center;" id="1579596673"> <div class="dmRespColsWrapper" id="1890664678"> <div class="dmRespCol small-12 medium-6 large-6" id="1148559923"> <div class="imageWidget align-center u_1920577743" data-element-type="image" data-widget-type="image" id="1920577743"> <a id="1933815760" class="u_1933815760"><img src="../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/chemical+milled+thin+metal+components-1920w.jpg%3FExpires=1779092098&amp;Signature=aHgjX-g~eGs6EqaLEKla4vsXJm4~C~OWBMewsNQo57o7mJ20kT7Uf0HlNwkjXUfQpauZ4YVPkJtxg15B~eP5rJ81MjNF~eiWPT7zVZuIAZ-WKT3YM724ivpx3py15R8ePv8TPKhnDyfBvtrJVxniEK00H4jFY1v" id="1068341999" class="" data-dm-image-path="https://cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/chemical+milled+thin+metal+components.jpg" alt="Chemically milled thin metal components" title="Chemically milled thin metal components" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="dmDividerWrapper clearfix u_1864791347" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1864791347"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1299624035"/></div> 
+ <div class="dmNewParagraph u_1166031015" data-element-type="paragraph" id="1166031015" style="transition: opacity 1s ease-in-out 0s;"><font color="#a09c9c">Chemically milled thin metal components</font></div></div> 
+ <div class="dmRespCol small-12 medium-6 large-6" id="1773308106"> <div class="imageWidget align-center u_1276740895" data-element-type="image" data-widget-type="image" id="1276740895"> <a id="1439087274" class="u_1439087274"><img src="../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/chemical+milled+SMT+stencil-1920w.jpg%3FExpires=1779092098&amp;Signature=aSZ04WM8HsbEP~53tXnLIify-4XUq0qyEVmgVKLjrKSyJoXcQ73AfTUAH-GE97VdNeMpiQndmjDpVgTePttcJVktHojbK0tWIhuRYIOAfF1lgH7s1mMV6B4d0iriDoR74NGR3UkUXGLPnk~zFDct3BVC0g~J5jRcIKU7V~dE2" id="1933562130" class="" data-dm-image-path="https://cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/chemical+milled+SMT+stencil.jpg" alt="Chemically milled SMT stencil" title="Chemically milled SMT stencil" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="dmDividerWrapper clearfix u_1665797115" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1665797115"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1299998393"/></div> 
+ <div class="dmNewParagraph u_1992427357" data-element-type="paragraph" id="1992427357" style="transition: opacity 1s ease-in-out 0s;"><font color="#a09c9c">Chemically milled SMT stencil</font></div></div> 
+</div> 
+</div> 
+ <div class="u_1601413559 dmRespRow" style="text-align: center;" id="1601413559"> <div class="dmRespColsWrapper" id="1082665762"> <div class="dmRespCol small-12 medium-6 large-6" id="1173833851"> <div class="imageWidget align-center u_1416481724" data-element-type="image" data-widget-type="image" id="1416481724"> <a id="1252217974" class="u_1252217974"><img src="../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/chemical+milled+filter-1920w.jpg%3FExpires=1779092098&amp;Signature=gaqPbgfysZ58XjD0azG~nqFdDveepqmy~FUNA1zCHIRiJb3c9fmkxs03sj7FjUbmb8TivRAflfsrzQWJPvHXSlMRKvanztaMi10padIDfp4nKYp9WrOm7LXWHNDM4Fy38HxoNYQDhjExQTyd9d3wOkYU0y23RhOSiwEw1enyNBDZ7t" id="1421447471" class="" data-dm-image-path="https://cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/chemical+milled+filter.jpg" alt="Chemical milled stainless steel filter" title="Chemical milled stainless steel filter" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="dmDividerWrapper clearfix u_1024809308" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1024809308"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1642281136"/></div> 
+ <div class="dmNewParagraph u_1840833815" data-element-type="paragraph" id="1840833815" style="transition: opacity 1s ease-in-out 0s;"><font color="#a09c9c">Chemical milled stainless steel filter</font></div></div> 
+ <div class="dmRespCol small-12 medium-6 large-6" id="1782225980"> <div class="imageWidget align-center u_1187990456" data-element-type="image" data-widget-type="image" id="1187990456"> <a id="1717523077" class="u_1717523077"><img src="../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/chemical+milled+brass-1920w.jpg%3FExpires=1779092098&amp;Signature=jnlDWMwfUc8Mkq6QQLZN9mr5ayu8mLijxpPUw8a9CR-NnSX2nmVq9~kDyOVJHlgja919hUhMehXvQlvcr6eV8vCNtCI5yMIK2vLvDeNbH~GL-sBH1JJjWYb949cjRrpEw~AeY8BaVMdYqg4ZZTwk37ZJrzlnYtyZDFfgzW~M0g0qMpQ" id="1684706048" class="" data-dm-image-path="https://cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/chemical+milled+brass.jpg" alt="Chemical milled brass" title="Chemical milled brass" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="dmDividerWrapper clearfix u_1194354041" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1194354041"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1368291842"/></div> 
+ <div class="dmNewParagraph u_1589591175" data-element-type="paragraph" id="1589591175" style="transition: opacity 1s ease-in-out 0s;"><font color="#a09c9c">Chemical milled brass</font></div></div> 
+</div> 
+</div> 
+ <div class="u_1791135605 dmRespRow" style="text-align: center;" id="1791135605"> <div class="dmRespColsWrapper" id="1588589178"> <div class="dmRespCol small-12 medium-6 large-6" id="1714604701"> <div class="imageWidget align-center u_1775814201" data-element-type="image" data-widget-type="image" id="1775814201"> <a id="1232869530" class="u_1232869530"><img src="../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/chemical+milled+elements+for+signage-1920w.png%3FExpires=1779092098&amp;Signature=CNC5-b2Xwe9tci6n0TzqhV-VrCAi6KUzgQiZElKi4EJMEr6gvQPuJWXj8ZOiD2xpVuYHLWH~0p46Hw~FyYe~YZNesTEkbogBAlNh9B5Lb0C~PqmVEQ~cFoocA3D0h8MHdjMO1ly72qUXeVkqvyaxq9yY-MqgnQ9t" id="1015023183" class="" data-dm-image-path="https://cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/chemical+milled+elements+for+signage.png" alt="Etched stainless steel inlaid with chemical milled brass letters" title="Etched stainless steel inlaid with chemical milled brass letters" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="dmDividerWrapper clearfix u_1792703980" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1792703980"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1984978180"/></div> 
+ <div class="dmNewParagraph u_1912130368" data-element-type="paragraph" id="1912130368" style="transition: opacity 1s ease-in-out 0s;"><font color="#a09c9c">Etched stainless steel inlaid with chemical milled brass letters</font></div></div> 
+ <div class="dmRespCol small-12 medium-6 large-6" id="1975204156"> <div class="imageWidget align-center u_1342397639" data-element-type="image" data-widget-type="image" id="1342397639"> <a id="1669289464" class="u_1669289464"><img src="../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/chemical+milled+elements+for+signage+(1)-1920w.png%3FExpires=1779092098&amp;Signature=WHE~-vq0ERMPysldY8tjgZaf53V-MVaboGgLAWScBJ5itH0PSPEG39zRNxshdP7KoGtMg4UIzMFbVZC2jBoW-ABTiJyD1TgYmgtj0zkC9b70fhCM5m3lZUH8v82DayuSBz5-OwkObPuwMHyBJUUP69QJ-MQe" id="1779318708" class="" data-dm-image-path="https://cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/chemical+milled+elements+for+signage+%281%29.png" alt="Etched and patinated Sundial" title="Etched and patinated Sundial" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="dmDividerWrapper clearfix u_1684328724" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1684328724"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1501238490"/></div> 
+ <div class="dmNewParagraph u_1486756118" data-element-type="paragraph" id="1486756118" style="transition: opacity 1s ease-in-out 0s;"><font color="#a09c9c">Close up of chemically milled inlay</font></div></div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1115233311" style="text-align: center;" id="1115233311"> <div class="dmRespColsWrapper" id="1664218183"> <div class="dmRespCol small-12 medium-6 large-6" id="1285492124"> <div class="imageWidget align-center u_1497120487" data-element-type="image" data-widget-type="image" id="1497120487"> <a id="1882475455" class="u_1882475455"><img src="../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/chemical+milled+elements+for+signage-1920w.jpg%3FExpires=1779092098&amp;Signature=oybYV-0Wxzqc4xKFQ06PJEVgXQzrsWxs5EkyBFrdxchIeYgdh~D9kby-h3z~BMjrEHp4Noy3sEGBwKWajN1lZlLw87-Ar-juEZrBoc038CU69UOdZFuxKdP3pX2vNZvuLLVpLoXilHqDsoZo5CqUiM7BHNGvZTfy" id="1646158481" class="" data-dm-image-path="https://cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/chemical+milled+elements+for+signage.jpg" alt="Brass patinated sign inlaid with chemical milled elements" title="Brass patinated sign inlaid with chemical milled elements" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="dmDividerWrapper clearfix u_1899505321" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1899505321"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1534419595"/></div> 
+ <div class="dmNewParagraph u_1221818637" data-element-type="paragraph" id="1221818637" style="transition: opacity 1s ease-in-out 0s;"><font color="#a09c9c">Brass patinated sign inlaid with chemical milled elements</font></div></div> 
+ <div class="dmRespCol small-12 medium-6 large-6" id="1338343582"> <div class="imageWidget align-center u_1154851178" data-element-type="image" data-widget-type="image" id="1154851178"> <a id="1595578072" class="u_1595578072"><img src="../le-cdn.website-editor.net/s/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/opt/chemical+milled+die-1920w.jpg%3FExpires=1779092098&amp;Signature=R4N4mksDkE5jjbYi0yp6uJN~ZEGX05b~wleOnXn~xKISM73Z0pSBDhseLOhN7nBn00LfeIT7vyyuyDqtG4kpi1TzXusfQIzQAXe5noUimKY3PRP8vxAxASGkT5AbaDu9FnK~pHH6NSkzO1Yf6sdAkIZFelPQCcdiUgC~lM9EH~9bB8Upc" id="1195195519" class="" data-dm-image-path="https://cdn.website-editor.net/df3ec980cc9e40009b6d3de3d463012e/dms3rep/multi/chemical+milled+die.jpg" alt="Chemical milled stainless steel die" title="Chemical milled stainless steel die" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="dmDividerWrapper clearfix u_1493552011" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1493552011"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1308722059"/></div> 
+ <div class="dmNewParagraph u_1434348225" data-element-type="paragraph" id="1434348225" style="transition: opacity 1s ease-in-out 0s;"><font color="#a09c9c">Chemical milled stainless steel die</font></div></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1830968920 dmRespRow fullBleedChanged fullBleedMode hide-for-small" id="1830968920"> <div class="dmRespColsWrapper" id="1046425197"> <div class="dmRespCol large-12 medium-12 small-12" id="1000635753"> <div class="u_1456151056 dmRespRow fullBleedChanged fullBleedMode hide-for-small" id="1456151056"> <div class="dmRespColsWrapper" id="1358454168"> <div class="dmRespCol large-12 medium-12 small-12" id="1320963001"> <div class="dmNewParagraph hide-for-large u_1805668356" id="1805668356" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><div align="center"><font class="font-size-18 lh-1">CONTACT US TODAY | SALES@TRADEETCHING.COM | 01536 203813</font></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1447697353 dmNewParagraph hide-for-medium" id="1447697353" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><div align="center"><font class="font-size-36 lh-1" style="color: rgb(255, 255, 255);"><span style="font-weight: 400;">CONTACT</span> 
+US TODAY | SALES@TRADEETCHING.COM | 01536 203813</font></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1854343535 dmRespRow" id="1854343535"> <div class="dmRespColsWrapper" id="1702690667"> <div class="dmRespCol small-12 large-4 medium-4" id="1855403062"> <nav class="u_1476205531 effect-text-color unifiednav_vertical hide-for-small main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="vertical_nav_layout_1" layout-sub="" data-show-vertical-sub-items="HOVER" id="1476205531" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" alt="" data-nav-structure="VERTICAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="page-2.html" class="unifiednav__item    " target="" data-target-page-alias="page-1"> <span class="nav-item-text " data-link-text="HOME" data-auto="page-text-style">HOME<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="chemical-etching-services.html" class="unifiednav__item    " target="" data-target-page-alias="page-2"> <span class="nav-item-text " data-link-text="
+         SERVICES
+        " data-auto="page-text-style">SERVICES<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="etching-gallery.html" class="unifiednav__item    " target="" data-target-page-alias="page-3"> <span class="nav-item-text " data-link-text="
+         GALLERY
+        " data-auto="page-text-style">GALLERY<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="Contact.html" class="unifiednav__item    " target="" data-target-page-alias="page-4"> <span class="nav-item-text " data-link-text="
+         CONTACT
+        " data-auto="page-text-style">CONTACT<span class="icon icon-angle-down" data-hidden-on-mobile="" data-hidden-on-desktop="" data-hidden-on-tablet=""></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="dmRespCol small-12 large-4 medium-4 u_1131316375" id="1131316375"> <a class="default dmDefaultGradient align-center u_1124699555 dmEmail dmWidget dmNoMark dmWwr" href="mailto:Sales@tradeetching.com" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToEmail', 'Email',null,'df3ec980cc9e40009b6d3de3d463012e', this);" id="1124699555" dmle_extension="emailextension" data-element-type="emailextension" wr="true" data-display-type="block" localization_key_description="googleTranslate.NoGNOgG.84" icon="true" surround="true" description="Sales@tradeetching.com" adwords="" icon-name="icon-envelope-alt" email="Sales@tradeetching.com"> <span class="iconBg" aria-hidden="true"> <span class="icon hasFontIcon icon-envelope-alt"></span> 
+</span> 
+ <span class="text">Sales@tradeetching.com</span> 
+</a> 
+ <a class="default dmDefaultGradient align-center u_1532467602 dmCall voipReplacement dmWidget dmNoMark dmWwr" href="tel:+44 01536 203813" contenteditable="false" onclick=";return dm_gaq_push_event('ClickToCall', 'Call',null,'df3ec980cc9e40009b6d3de3d463012e', this);" id="1532467602" dmle_extension="clicktocall" data-element-type="clicktocall" wr="true" data-display-type="block" localization_key_description="googleTranslate.A5waxvz.85" icon="true" surround="true" description="01536 203813" adwords="" icon-name="icon-phone" phone="+44 01536 203813" text="" image=""> <span class="iconBg" aria-hidden="true"> <span class="icon hasFontIcon icon-phone"></span> 
+</span> 
+ <span class="text">01536 203813</span> 
+</a> 
+</div> 
+ <div class="dmRespCol large-4 medium-4 small-12" id="1734791331"> <div class="u_1911628850 dmNewParagraph hide-for-small" id="1911628850" style="transition:opacity 1s ease-in-out;" data-element-type="paragraph"><div align="right"><font style="color: rgb(255, 255, 255);"><span style="font-weight: 400;">&nbsp;</span>Trade Etching Direct Ltd</font></div><div align="right"><font style="color: rgb(255, 255, 255);">Unit M Edison Courtyard</font></div><div align="right"><font style="color: rgb(255, 255, 255);">Brunel Road</font></div><div align="right"><font style="color: rgb(255, 255, 255);">Earlstrees Ind Estate</font></div><div align="right"><font style="color: rgb(255, 255, 255);">Corby</font></div><div align="right"><font style="color: rgb(255, 255, 255);">NN17 4LS</font></div></div></div> 
+</div> 
+</div> 
+ <div class="u_1465871800 dmRespRow dmFooterContent" id="1465871800"> <div class="dmRespColsWrapper" id="1995794985"> <div class="u_1743262250 dmRespCol small-12 medium-12 large-12" id="1743262250"> <div class="align-center text-align-center u_1516458103 dmSocialHub gapSpacing" id="1516458103" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="mailto:sales@tradeetching.com" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://instagram.com/trade_etching/" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://linkedin.com/in/anthony-dullaghan-82987260" target="_blank" dm_dont_rewrite_url="true" aria-label="linkedin" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Linkedin&apos;)"> <span class="dmSocialLinkedin icon-linkedin oneIcon socialHubIcon style8" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1495567330 widget-1f5975 hide-for-small dmCustomWidget" data-lazy-load="" data-title="" id="1495567330" dmle_extension="custom_extension" data-element-type="custom_extension" icon="false" surround="false" data-widget-id="1f5975986930429f819d4cd2154b5c4a" data-widget-version="25" data-widget-config="eyJyZXZlcnNlRmxhZyI6bnVsbCwiY29weXJpZ2h0VGV4dCI6IjxwIGNsYXNzPVwicnRlQmxvY2tcIj5BbGwgUmlnaHRzIFJlc2VydmVkIHwgVHJhZGUgRXRjaGluZyBEaXJlY3Q8L3A+In0="> <div class="copyright"> <div>&copy; 2026&nbsp;</div> 
+ <div><p class="rteBlock">All Rights Reserved | Trade Etching Direct</p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1877184949 dmRespRow" style="text-align: center;" id="1877184949"> <div class="dmRespColsWrapper" id="1143992047"> <div class="dmRespCol small-12 medium-12 large-12" id="1790251670"> <div class="dmSpacer u_1663665528" id="1663665528" data-element-type="spacer"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<!-- ========= JS Section ========= -->
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH_UK"
+    window.isSitePreview = false;
+</script>
+<script>
+    window.customWidgetsFunctions["1f5975986930429f819d4cd2154b5c4a~25"] = function (element, data, api) {
+        null
+    };
+</script>
+<script type="text/javascript">
+
+    var d_version = "production_6369";
+    var build = "2026-04-16T12_53_56";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2026-04-16T12_53_56";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+</script>
+
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static-cdn.website-editor.net/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- End Load jQuery -->
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+    window.jQuery.migrateMute = true;
+</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.website-editor.net';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["common.mapbox.token"] = 'REDACTED_MAPBOX_TOKEN';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/6369';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static-cdn.website-editor.net';
+    rtCommonProps["common.resources.folder"] = 'https://static-cdn.website-editor.net/mnlt/production/6369';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["isAutomation.test"] =false;
+    rtCommonProps["booking.cal.api.domain"] = 'api.cal.com';
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'mapbox';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://le-cdn.website-editor.net/';
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.performance.logs"] =false;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+    // feature flags that's used out of runtime module (in  legacy files)
+    rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] =true;
+
+    window.rtFlags = {};
+    rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] =false;
+    rtFlags["scripts.widgetCount.enabled"] =true;
+    rtFlags["fnb.animations.tracking.enabled"] =true;
+    rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtFlags["ecom.ecwid.accountPage.emptyBaseUrl.enabled"] = true;
+    rtFlags["ecom.ecwid.pages.links.disable.listeners"] = true;
+    rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+    rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+    rtFlags["feature.flag.photo.gallery.exact.size"] =true;
+    rtFlags["geocode.search.localize"] =false;
+    rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtFlags["twitter.heightLimit.enabled"] = true;
+    rtFlags["runtime.lottieOverflow"] =false;
+    rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+    rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] =false;
+    rtFlags["flex.animation.design.panel.layout"] =true;
+    rtFlags["runtime.cwv.report.cls.enabled"] =false;
+    rtFlags["runtime.cwv.report.lcp.enabled"] =false;
+    rtFlags["contact.form.useActiveForm"] =true;
+    rtFlags["contact.form.custom.errors.enabled"] =false;
+    rtFlags["runtime.ssr.productStore.internal.observer"] =true;
+    rtFlags["runtime.ssr.productCustomizations"] =true;
+    rtFlags["runtime.ssr.runtime.filter-sort.newFilterSortWidgetWithOptions.enabled"] =true;
+    rtFlags["runtime.ssr.ssrSlider.jumpThreshold.enabled"] =true;
+</script>
+<script src="https://static-cdn.website-editor.net/mnlt/production/6369/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script>
+    
+    $(window).bind("orientationchange", function (e) {
+        $.layoutManager.initLayout();
+        
+    });
+    $(document).resize(function () {
+        
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="d_track_campaign">
+    (function() {
+        if (!window.location.search) {
+            return;
+        }
+        const cleanParams = window.location.search.substring(1); // Strip ?
+        const queryParams = cleanParams.split('&');
+
+        const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+        const domain = 'domain=' + window.location.hostname;
+        const path = "path=/";
+
+        queryParams.forEach((param) => {
+            const [key, value = ''] = param.split('=');
+            if (key.startsWith('utm_')) {
+                const cookieName = "_dm_rt_" + key.substring(4);
+                const cookie = cookieName + "=" + value;
+                const joined = [cookie, expires, domain, path].join(";");
+                document.cookie = joined;
+            }
+        });
+    }());
+</script>
+<script type="text/javascript" >
+    var _dm_gaq = {};
+    var _gaq = _gaq || [];
+    var _dm_insite = [];
+</script>
+
+
+
+<script type="text/javascript" id="d_track_sp">
+    ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+        p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+        };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+        n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d1dxoqu0t5mb7j.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+    window.dmsnowplow  = window.snowplow;
+
+    dmsnowplow('newTracker', 'cf', 'd1dxoqu0t5mb7j.cloudfront.net', { // Initialise a tracker
+        appId: 'df3ec980cc9e40009b6d3de3d463012e'
+    });
+
+    // snowplow queries element styles so we wait until CSS calculations are done.
+    requestAnimationFrame(() => {
+        dmsnowplow('trackPageView');
+        _dm_insite.forEach((rule) => {
+            // Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+            // the tracking is in popup.js
+            if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+            window?.waitForDeferred?.('dmAjax', () => {
+                $.DM.events.trigger('event-ruleTriggered', {value: rule});
+            });
+        });
+    });
+</script>
+
+
+
+<div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="en_GB"></div>
+<!-- Alias: df3ec980cc9e40009b6d3de3d463012e -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+	window?.waitForDeferred?.('dmAjax', () => {
+		// Collects client data and updates cookies used by smart sites
+		window.expireDays = 365;
+		window.visitLength = 30 * 60000;
+		$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+			setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+	});
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'More';
+    
+    Parameters.NavigationAreaParams.LessButtonText = '......';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<!--  End Script tags -->
+<!--  Begin Body End Markup -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKZN322"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5da383e7fbec0f2fe3b98899/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script--><!--  End Body End Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+<!--  Begin Product Custom HTML Markup -->
+<script>
+function call1and1Tracking() {
+	var externalId = dmAPI.getSiteExternalId();
+	var siteName = dmAPI.getSiteName();
+	var src = 'https://integration.mywebsite-editor.com/dakota-snippet-service/snippet/integration/snippet.js?sitename='+siteName+'&external_uid='+externalId+'&mode=visit'
+	var tracking = document.createElement('script');
+     tracking.setAttribute('src',src);
+   	document.head.appendChild(tracking);
+}
+call1and1Tracking();
+</script><!--  End Product Custom HTML Markup -->
+</body>
+</html>
