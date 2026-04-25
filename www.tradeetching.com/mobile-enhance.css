@@ -1,0 +1,23 @@
+/* OpenClaw mobile enhancement */
+#oc-mobile-nav-toggle,#oc-mobile-nav-panel{display:none}
+@media (max-width: 991px){
+  nav.unifiednav{display:none!important}
+  #oc-mobile-nav-toggle{
+    display:flex;align-items:center;justify-content:center;
+    position:fixed;top:12px;right:12px;z-index:99999;
+    width:44px;height:44px;border:none;border-radius:8px;
+    background:#111;color:#fff;font-size:24px;line-height:1;cursor:pointer;
+    box-shadow:0 2px 10px rgba(0,0,0,.35)
+  }
+  #oc-mobile-nav-panel{
+    display:block;position:fixed;top:64px;left:12px;right:12px;z-index:99998;
+    background:#0b0b0b;color:#fff;border:1px solid rgba(255,255,255,.12);
+    border-radius:10px;max-height:75vh;overflow:auto;padding:8px;transform-origin:top right;
+  }
+  #oc-mobile-nav-panel[hidden]{display:none!important}
+  #oc-mobile-nav-panel a{
+    display:block;padding:12px 10px;color:#fff!important;text-decoration:none!important;
+    border-bottom:1px solid rgba(255,255,255,.08);font-weight:600;letter-spacing:.02em
+  }
+  #oc-mobile-nav-panel a:last-child{border-bottom:none}
+}
