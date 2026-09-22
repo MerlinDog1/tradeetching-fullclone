@@ -1,8 +1,8 @@
 # Trade Etching Direct — website redesign
 
-A complete, static, responsive redesign of **tradeetching.com**, prepared for review. It keeps TED’s existing black/blue identity, original logo, real metalwork photography, service information and public page addresses. The composition takes its visual direction from `MerlinDog1/trade-etching-remotion`.
+A complete, static, responsive redesign of **tradeetching.com**, prepared for review. It keeps TED’s original blue/black logo, real metalwork photography, service information and public page addresses. The revised composition uses the warm brass, near-black and warm-white palette from `MerlinDog1/trade-etching-remotion`, with trade supply leading and finished architectural signage showing the quality of the work.
 
-**This is not deployed.** The live website is on IONOS/Duda. No production settings, provider accounts, customer data or messages were changed.
+**Isolated review:** https://tradeetching-review.vercel.app. This is not the live business website. The live website remains on IONOS/Duda; tradeetching.com, production settings, provider accounts, customer data and messages are untouched.
 
 ## Run the review build
 

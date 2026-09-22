@@ -60,3 +60,17 @@ export const galleryCaptions = [
  ['Decorative guitar scratchplate','decorative'],
  ['Batch of equipment labels','industrial']
 ];
+
+// Editorial captions for service-page galleries. Original imported wording is
+// retained in source-content.json; visible captions describe the actual work.
+export const detailGalleryCaptions = {
+ '/chemical-etching-services': ['Etched and colour-filled mirror stainless steel', 'Batch of etched industrial labels'],
+ '/chemical-milling': ['Chemically milled thin metal components', 'Chemically milled SMT stencil', 'Stainless steel filter', 'Chemically milled brass components', 'Stainless steel sign with inlaid brass lettering', 'Etched and patinated sundial', 'Patinated brass sign with milled elements', 'Chemically milled stainless steel die'],
+ '/metal-patination': ['Etched texture on patinated mild steel', 'Etched and patinated sundial', 'Patinated brass with white colour infill', 'Photographic detail etched in brass', 'Etched brass with patina', 'Etched photographic portrait with patina', 'Patinated brass — surface detail', 'Reverse-etched 3mm brass with patina', 'A selection of metal patinas', 'Patina finishes — a closer look', 'Chemically milled and patinated nickel', 'Reverse-etched brass — finished detail'],
+ '/large-format-chemical-etching-for-architecture': ['Etched architectural patterns', 'Queen Anne — etched and patinated brass', 'Queen Anne — the Grand Lobby installation', 'Architectural brass panel detail'],
+ '/flat-cut-metal-letters-brass-stainless-steel': ['Patinated flat-cut lettering', 'Flat-cut architectural lettering', 'Brass room number with tactile detail', 'Etched pattern on flat-cut letters', 'Cut lettering — surface detail', 'Patterned metal letter — close-up', 'Room number with tactile and Braille detail'],
+ '/etched-metal-signs-nameplates': ['Signs and nameplates made by TED', 'Etched fire safety sign', 'Etched commemorative plaque', 'British Sign Awards trophies', 'Etched crest with colour detail', 'Etched lettering on a brushed metal plaque', 'Decorative lettering on patinated brass', 'Etched and colour-filled mirror stainless steel', 'Batch of etched industrial labels'],
+ '/etched-industrial-labels-control-panels': ['Industrial nameplates and safety signage', 'Batch of etched industrial labels'],
+ '/signage-for-theme-parks-film-tv-props': ['Metal street signs for film and television', 'Etched signs and prop details'],
+ '/metal-etching-concepts': ['Laser-cut brass letter with patina', 'Penrose tile pattern in patinated brass', 'Laser-cut Celtic cross', 'Reverse-etched stainless steel — detail', 'Etched and polished surface contrast', 'Penrose pattern — patina detail', 'Patterned metal house number', 'Reverse-etched brass sign with patina', 'Etched brass with blue patina', 'Decorative brass number with patina', 'Etched brass number — edge detail', 'Etched bronze memorial plaques', 'Reverse-etched brass with patina', 'Patinated brass number', 'Etched brass and blue patina — close-up', 'Laser-cut 3mm brass with patina', 'Etched brass — polished and patinated surfaces', 'Brass patina — texture detail']
+};
