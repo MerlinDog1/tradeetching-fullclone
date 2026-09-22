@@ -57,3 +57,13 @@ Deploy the generated **preview-mode `dist/`**, not the repository root or origin
 Review output remains `noindex` with enquiries disabled. The live business site remains on IONOS/Duda. Before any separately authorised live release, verify that provider’s runtime/anti-spam/delivery integration or implement a replacement backend if changing hosts. The retained HTML contract alone is not proof of message delivery.
 
 Rollback the isolated review to the previous deployment `dpl_6ZyQoeB54CWCa3QSnEbrfQq3PLPp`, or build commit `e7ea70d` in a separate checkout and redeploy its preview `dist/` to the same fixed review project. Never change the live domain, production provider, database or email settings for this review.
+
+## Published review receipt
+
+- Source design commit: `8e8884f`.
+- Deployment: `dpl_6LEUtrGL7i1V9jmpuLMS8xkVcuR8`, READY.
+- Stable review: https://tradeetching-review.vercel.app
+- Immutable deployment: https://tradeetching-review-b1u7xybwq-dullaghan31-3959s-projects.vercel.app
+- Anonymous hosted GET verification: all 13 routes HTTP 200, preview mode and `noindex` meta/HTTP header, 59 gallery photographs, exact CSS match with the revised build, disallow-all robots, and a genuine 404 response. Receipt: ignored `review/hosted-route-report.json`.
+- Deployment packaging added an `X-Robots-Tag: noindex, nofollow` header in ignored `dist/vercel.json`; keep that review-only header when redeploying. The CLI reported Git connection as an optional next action; it was not connected and no push was made.
+- Actual hosted Chromium desktop/mobile smoke passed: gold/hero image render, no overflow, homepage CTA navigation, mobile menu/Escape, gallery filter/lightbox/image decode/Escape, preview form response, and 404 action layout. **Zero POST attempts and zero JavaScript errors.** Hosted first-screen screenshots were visually inspected; receipts are `review/hosted-browser-report.json` and `review/screenshots/hosted-home-{desktop,mobile}.png`.
