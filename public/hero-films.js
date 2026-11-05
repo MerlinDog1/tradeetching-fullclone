@@ -9,10 +9,14 @@ for (const figure of document.querySelectorAll('[data-film]')) {
  let near = false, visible = false, userPaused = false, userRequested = false;
  let generation = 0, pending = false;
  const format = () => portrait.matches ? 'portrait' : 'landscape';
+ const codec = () => figure.dataset.filmWebm === 'true' && video.canPlayType('video/webm; codecs="vp9"') ? 'webm' : 'mp4';
  const eligible = () => !document.hidden && visible && !userPaused && (!reduced.matches || userRequested);
  const update = () => {
   const playing = !video.paused && !video.ended;
   figure.toggleAttribute('data-playing', playing && video.readyState >= 2);
+  // A deliberate pause freezes the current image; it must not jump to frame zero.
+  if (playing && video.readyState >= 2) figure.setAttribute('data-frame-ready', '');
+  if (!video.getAttribute('src') || video.error) figure.removeAttribute('data-frame-ready');
   button.setAttribute('aria-label', playing ? 'Pause hero film' : 'Play hero film');
   button.setAttribute('aria-pressed', String(playing));
   button.querySelector('[data-film-label]').textContent = playing ? 'Pause film' : 'Play film';
@@ -34,14 +38,19 @@ for (const figure of document.querySelectorAll('[data-film]')) {
   await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
   if (ticket !== generation || !near || document.hidden || (reduced.matches && !userRequested)) return;
   video.muted = true;
-  video.src = `${figure.dataset.filmBase}/${format()}-web.mp4`;
+  // Reuse the already decoded, selected image as the native video poster too.
+  // This keeps Chromium's video LCP candidate tied to the same immediate poster.
+  video.poster = poster.currentSrc;
+  video.src = `${figure.dataset.filmBase}/${format()}-web.${codec()}`;
   video.load();
   sync();
  };
  const reset = () => {
   ++generation;
   video.pause();
+  figure.removeAttribute('data-frame-ready');
   video.removeAttribute('src');
+  video.removeAttribute('poster');
   video.load();
   update();
  };

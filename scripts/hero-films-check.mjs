@@ -38,7 +38,7 @@ for(const [route,film] of Object.entries(heroFilms)) {
  assert.ok(!/<video[^>]*(?:\ssrc|poster)=/.test(html),'No eager video fetch');
  assert.ok(html.includes('fetchpriority="high"'));
  assert.ok(html.includes(film.caption.replaceAll('&','&amp;')));
- for(const format of ['landscape','portrait']) for(const extension of ['web.mp4','poster.webp','poster.jpg']) {
+ for(const format of ['landscape','portrait']) for(const extension of ['web.mp4','poster.webp','poster.jpg',...(film.webm?['web.webm']:[])]) {
   const file=`public/media/hero-films/${film.key}/${format}-${extension}`;
   if(!fixtures) {
    const bytes=(await stat(file)).size;
@@ -52,7 +52,7 @@ async function contextFor(viewport,reducedMotion='no-preference',javaScriptEnabl
  const context=await browser.newContext({viewport,reducedMotion,javaScriptEnabled});
  if(fixtures) await context.route('**/media/hero-films/**',async route=>{
   // Explicit test doubles, never written to public/ or used as final visual evidence.
-  const mp4=route.request().url().endsWith('.mp4');
+  const mp4=/\.(mp4|webm)$/.test(route.request().url());
   await route.fulfill({status:200,contentType:mp4?'video/mp4':'image/webp',body:await readFile(mp4?'public/media/flat-cut-letters.mp4':'public/media/flat-cut-letters-poster.webp')});
  });
  return context;
@@ -63,8 +63,8 @@ async function instrument(page) {
  page.on('pageerror',err=>report.errors.push(err.message));
  page.on('response',res=>{if(res.status()>=400)report.errors.push(`${res.status()} ${res.url()}`);});
  await page.addInitScript(()=>{
-  window.__filmVitals={lcp:null,cls:0};
-  new PerformanceObserver(list=>{for(const e of list.getEntries())window.__filmVitals.lcp={ms:e.startTime,url:e.url,element:e.element?.tagName};}).observe({type:'largest-contentful-paint',buffered:true});
+  window.__filmVitals={lcp:null,posterLcp:null,cls:0};
+  new PerformanceObserver(list=>{for(const e of list.getEntries()){const item={ms:e.startTime,url:e.url,element:e.element?.tagName};window.__filmVitals.lcp=item;if(e.url?.includes('-poster'))window.__filmVitals.posterLcp??=item;}}).observe({type:'largest-contentful-paint',buffered:true});
   new PerformanceObserver(list=>{for(const e of list.getEntries())if(!e.hadRecentInput)window.__filmVitals.cls+=e.value;}).observe({type:'layout-shift',buffered:true});
  });
  return requests;
@@ -105,12 +105,14 @@ try {
    }));
    assert.equal(metrics.overflow,false,`${route}/${width}: overflow`);
    assert.equal(metrics.muted,true);
-   assert.ok(metrics.lcp?.url.includes(`${format}-poster`),'Poster is the initial LCP candidate');
+   if(!metrics.posterLcp?.url.includes(`${format}-poster`))report.failureMetrics=metrics;
+   assert.ok(metrics.posterLcp?.url.includes(`${format}-poster`),'The decoded poster must paint as an initial LCP candidate: '+JSON.stringify(metrics));
+   assert.ok(metrics.posterLcp.ms<=metrics.lcp.ms,'Poster is visible no later than playing video');
    const toggleBox=await button.boundingBox();
    assert.ok(toggleBox.y>=0 && toggleBox.y+toggleBox.height<=height,'Playback control visible in initial viewport');
    assert.ok(metrics.cls<0.01,`${route}/${width}: layout shift ${metrics.cls}`);
    checkOrientation(requests,format);
-   assert.ok(requests.some(url=>url.endsWith(`/${format}-web.mp4`)));
+   assert.ok(requests.some(url=>url.endsWith(`/${format}-web.${film.webm?'webm':'mp4'}`)));
    const copy=await page.locator('.film-hero-copy').boundingBox();
    const media=await page.locator('.film-hero-media').boundingBox();
    if(format==='portrait')assert.ok(copy.y+copy.height<=media.y+1,'Mobile heading + enquiry must precede film');
@@ -122,6 +124,7 @@ try {
    assert.notEqual(await button.evaluate(b=>getComputedStyle(b).outlineStyle),'none');
    await page.keyboard.press('Space');
    await page.waitForFunction(()=>document.querySelector('[data-film-video]').paused);
+   assert.equal(await video.evaluate(v=>getComputedStyle(v).opacity),'1','Pause retains the actual frozen video frame');
    await page.waitForFunction(()=>document.querySelector('[data-film-toggle]').getAttribute('aria-label')==='Play hero film');
    assert.equal(await button.getAttribute('aria-pressed'),'false');
    await page.keyboard.press('Enter');
@@ -162,7 +165,7 @@ try {
    await posterReady(reducedPage);
    await reducedPage.locator('.film-hero-media').scrollIntoViewIfNeeded();
    await reducedPage.waitForTimeout(250);
-   assert.ok(reducedRequests.every(url=>!url.endsWith('.mp4')),'Reduced motion must not request video');
+   assert.ok(reducedRequests.every(url=>!/\.(mp4|webm)$/.test(url)),'Reduced motion must not request video');
    assert.equal(await reducedPage.locator('[data-film-video]').getAttribute('src'),null);
    assert.equal(await reducedPage.locator('[data-film-video]').evaluate(v=>v.paused),true);
    checkOrientation(reducedRequests,format);
@@ -202,7 +205,7 @@ try {
  await noJSPage.goto(origin+Object.keys(heroFilms)[0],{waitUntil:'networkidle'});
  await posterReady(noJSPage);
  assert.equal(await noJSPage.locator('[data-film-toggle]').isVisible(),false);
- assert.equal(noJSRequests.some(url=>url.endsWith('.mp4')),false);
+ assert.equal(noJSRequests.some(url=>/\.(mp4|webm)$/.test(url)),false);
  assert.equal(await noJSPage.locator('.film-hero-copy .button').getAttribute('href'),'/Contact');
  report.extra.push('No JavaScript: picture and enquiry remain usable; no video request or dead control');
  await noJS.close();

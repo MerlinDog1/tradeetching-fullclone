@@ -9,7 +9,7 @@ export const heroFilms = {
   alt:'Etched and patinated brass panels in the Grand Lobby of Cunard’s Queen Anne'
  },
  '/metal-patination': {
-  key:'patination', caption:'Genuine finish photography · Light study',
+  key:'patination', webm:true, caption:'Genuine finish photography · Light study',
   alt:'Genuine metal patina finish photography, explored through a light study'
  }
 };
@@ -20,10 +20,10 @@ export function filmHero(page, {e,kicker,link,facts}) {
  <div class="wrap"><div class="breadcrumbs"><a href="/">Home</a><span aria-hidden="true">/</span><span>${e(page.eyebrow.split(' / ')[0])}</span></div></div>
  <div class="film-hero-stage">
  <div class="film-hero-copy"><div>${kicker(e(page.eyebrow))}<h1 id="film-heading">${e(page.title)}</h1><p class="film-hero-intro">${e(page.intro)}</p>${link('/Contact','Discuss your project')}</div></div>
- <figure class="film-hero-media" data-film="${film.key}" data-film-base="${base}">
+ <figure class="film-hero-media" data-film="${film.key}" data-film-base="${base}" data-film-webm="${film.webm?'true':'false'}">
  <picture class="film-hero-poster">
- <source media="(max-width: 767px)" type="image/webp" srcset="${base}/portrait-poster.webp" width="720" height="1280">
- <source media="(max-width: 767px)" srcset="${base}/portrait-poster.jpg" width="720" height="1280">
+ <source media="(max-width: 767px)" type="image/webp" srcset="${base}/portrait-poster.webp" width="1080" height="1920">
+ <source media="(max-width: 767px)" srcset="${base}/portrait-poster.jpg" width="1080" height="1920">
  <source type="image/webp" srcset="${base}/landscape-poster.webp" width="1920" height="1080">
  <img src="${base}/landscape-poster.jpg" width="1920" height="1080" alt="${e(film.alt)}" loading="eager" fetchpriority="high" decoding="async">
  </picture>
