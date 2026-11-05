@@ -17,3 +17,7 @@ Housekeeping checks: instructions and publishing workflows reviewed, documentati
 Deployment/rollback: requires a new explicit request. Use the existing project's documented release process, confirm current alias/revision first, then record the emitted deployment and verify alias assignment. For the named Vercel deployment, a future code rollback uses vercel rollback DEPLOYMENT_ID --scope dullaghan31-3959s-projects with the exact recorded ID above after reviewing storage/payment compatibility. Do not run deploy or rollback during housekeeping.
 
 Git-triggered Vercel deployment is disabled on this source branch. Existing production configuration remains separate from GitHub defaults. Keep this guard on task/WIP descendants; check any new integration before pushing. Follow AGENTS.md.
+
+## 5 November 2026 — local three-film integration
+
+Task branch `codex/ted-hero-films`, isolated checkout `ted-hero-films-site`. The supplied `ba059bb` tree had deleted all active site files; `b0d705f` restores only active source from `1a32325`, retaining the no-auto-deploy guard. See [hero film handoff](docs/hero-films.md) for the exact scope, asset contract, verification commands and outstanding real-media acceptance. No push/deployment performed; main film owner owns final asset copy and publication.

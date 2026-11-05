@@ -1,0 +1,48 @@
+/* Only loaded on the three film routes. A real picture is the first paint. */
+.film-hero{background:#090a0a;color:#f3f0e8}
+.film-hero>.wrap>.breadcrumbs{padding-block:22px}
+.film-hero-stage{position:relative;isolation:isolate;aspect-ratio:16/9;max-width:1920px;margin-inline:auto}
+.film-hero-media{position:absolute;inset:0;margin:0;overflow:hidden;background:#121413}
+.film-hero-poster,.film-hero-poster img,.film-hero-media video{display:block;width:100%;height:100%;object-fit:cover}
+.film-hero-poster,.film-hero-media video{position:absolute;inset:0}
+.film-hero-media video{opacity:0}
+.film-hero-media[data-playing] video{opacity:1}
+/* Even a pure-white film pixel stays below #262727 behind live copy.
+   Warm-white body text >12:1; brass eyebrow >5:1. No frame-dependent contrast. */
+.film-hero-stage::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(9,10,10,.97) 0%,rgba(9,10,10,.9) 48%,rgba(9,10,10,.35) 67%,transparent 83%)}
+.film-hero-copy{position:absolute;inset:0;z-index:2;display:flex;align-items:center;padding-inline:max(var(--gutter),calc((100% - 1320px)/2));pointer-events:none}
+.film-hero-copy>div{width:44%;max-width:600px;pointer-events:auto}
+.film-hero-copy .eyebrow{color:#d7b676}
+.film-hero h1{font-size:clamp(42px,4.9vw,76px);font-weight:750;line-height:1.02;letter-spacing:-.05em;text-wrap:balance}
+.film-hero-intro{max-width:430px;font-size:16px;line-height:1.7;margin-top:26px;color:#f3f0e8}
+.film-hero-copy .button{margin-top:28px}
+.film-toggle{position:absolute;z-index:3;right:28px;top:28px;display:flex;align-items:center;justify-content:center;gap:12px;min-height:48px;min-width:128px;padding:12px 18px;border:1px solid #9d9d95;border-radius:2px;background:#090a0a;color:#f3f0e8;font:600 12px/1.4 Arial,Helvetica,sans-serif;cursor:pointer}
+.film-toggle[hidden]{display:none}
+.film-toggle:hover{background:#282c29;border-color:#f3f0e8}
+.film-toggle:focus-visible{outline:3px solid #f3f0e8;outline-offset:4px;box-shadow:0 0 0 8px #090a0a}
+.film-toggle [data-film-symbol]{font-size:14px;width:16px;text-align:center}
+.film-hero-meta{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:17px;color:#c6c8c1;font-size:11px;line-height:1.6;letter-spacing:.02em}
+.film-hero-meta p{margin:0}
+.film-hero-meta>span{font-size:9px;text-transform:uppercase;letter-spacing:.14em;white-space:nowrap}
+@media(min-width:768px) and (max-width:1100px){
+ .film-hero h1{font-size:clamp(32px,4.6vw,50px)}
+ .film-hero-copy>div{width:46%}
+ .film-hero-copy .eyebrow{margin-bottom:16px;font-size:10px}
+ .film-hero-intro{font-size:14px;margin-top:18px;line-height:1.6}
+ .film-hero-copy .button{margin-top:20px;font-size:12px;padding:12px 16px;gap:18px}
+ .film-toggle{right:20px;top:20px}
+}
+@media(max-width:767px){
+ .film-hero-stage{aspect-ratio:auto}
+ .film-hero-stage::after{display:none}
+ .film-hero-copy{position:relative;display:block;padding:22px var(--gutter) 32px}
+ .film-hero-copy>div{width:100%;max-width:580px}
+ .film-hero h1{font-size:clamp(38px,10.2vw,59px);line-height:1.02}
+ .film-hero-copy .eyebrow{font-size:9px;margin-bottom:20px}
+ .film-hero-intro{font-size:14px;margin-top:21px;max-width:480px}
+ .film-hero-copy .button{font-size:12px;margin-top:23px;min-height:50px;padding:13px 17px;gap:25px}
+ .film-hero-media{position:relative;aspect-ratio:9/16;width:100%}
+ .film-toggle{right:18px;top:18px;min-height:48px}
+ .film-hero-meta{font-size:10px;padding-block:16px;min-height:56px}
+ .film-hero-meta>span{display:none}
+}

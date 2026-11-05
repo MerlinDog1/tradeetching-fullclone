@@ -32,7 +32,7 @@ The default build is **noindex** and **cannot submit enquiries**. It retains nat
 - `scripts/check.mjs` — route, SEO, link, image and form-contract checks.
 - `scripts/browser-check.mjs` — real Chromium/Playwright + axe checks.
 - `review/` — local screenshot/test artifacts, deliberately untracked.
-- The original mirror directories and root `index.html` are **unchanged historical source**, not the redesigned output. Serve **`dist/`**, not the repository root.
+- Historical mirror captures remain in Git history; they are not materialised in this active-source checkout. Serve **`dist/`**, not the repository root.
 
 ## URL preservation
 
@@ -64,6 +64,10 @@ Checks cover all 13 pages at 1440px and 390px, extra 320/360/650/768/1024/1920px
 
 ## Assets and credits
 
-Images belong to the existing Trade Etching Direct site and brand-film project. No generated product photography, invented customers, fabricated reviews or new business claims were added. Queen Anne photographs retain **© Tobias Lange-Rüb / CRUCERO** credit. The silent lettering clip is sourced from the TED film repository; no review soundtrack is included.
+Images belong to the existing Trade Etching Direct site and brand-film project. The flat-cut hero film is labelled as a material visualisation; the patination film uses genuine finish photography with a light study. No invented customers, fabricated reviews or new business claims were added. Queen Anne photographs retain **© Tobias Lange-Rüb / CRUCERO** credit. The silent lettering clip is sourced from the TED film repository; no review soundtrack is included.
 
 No scheduler, background model loop, paid API, analytics tracker, web font service or application database was added.
+
+## Service hero films
+
+Three service routes have responsive poster-first hero films. See [source recovery, media contract and final verification](docs/hero-films.md). Actual film assets are supplied separately; the final checks must pass with those files before publication. The other ten page heroes are unchanged.

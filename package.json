@@ -7,7 +7,8 @@
     "build": "node scripts/build.mjs",
     "preview": "node scripts/serve.mjs",
     "check": "node scripts/check.mjs",
-    "test:browser": "node scripts/browser-check.mjs"
+    "test:browser": "node scripts/browser-check.mjs",
+    "test:hero": "node scripts/hero-films-check.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.11.1",
