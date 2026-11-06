@@ -78,3 +78,14 @@ Strict `npm run check` intentionally fails until real posters are installed.
 
 Preview indexing and enquiry submission stay disabled. Git deployment stays
 disabled. No push or deployment is part of this source handoff.
+
+## Private architecture media
+
+This GitHub repository is public. New Queen Anne film MP4s and posters are
+intentionally ignored at `public/media/page-films/architecture/`. Restore them
+from the private output pack before strict build/check/deploy. The complete pack
+is deployed only to a protected Vercel preview, not the stable review alias.
+The private film-source repository retains its asset provenance and source.
+
+Contact is the deliberate ordering exception: its enquiry form and contact
+details precede the optional film card, keeping the enquiry task primary.

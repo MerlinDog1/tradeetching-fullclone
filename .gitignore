@@ -9,3 +9,7 @@ review/film-*.png
 .env*
 
 review/
+
+# Queen Anne moving-image assets: protected preview only, not public GitHub.
+public/media/page-films/architecture/
+.vercel/
