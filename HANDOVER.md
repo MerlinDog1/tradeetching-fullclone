@@ -21,3 +21,18 @@ Git-triggered Vercel deployment is disabled on this source branch. Existing prod
 ## 5 November 2026 — local three-film integration
 
 Task branch `codex/ted-hero-films`, isolated checkout `ted-hero-films-site`. The supplied `ba059bb` tree had deleted all active site files; `b0d705f` restores only active source from `1a32325`, retaining the no-auto-deploy guard. See [hero film handoff](docs/hero-films.md) for the exact scope, asset contract, verification commands and outstanding real-media acceptance. No push/deployment performed; main film owner owns final asset copy and publication.
+
+## 6 November 2026 — thirteen standalone page films (local source handoff)
+
+Branch `codex/ted-page-films-20261106`, isolated checkout
+`ted-page-films-site-20261106`, base `3624172`. All 13 routes now have poster-first,
+click-to-play film cards below static heroes. Yesterday’s hero films remain
+intact but inactive. Queen Anne imagery is restricted to architecture with
+credit and private-preview clearance note. No push/deployment performed.
+
+See [page-film media contract and acceptance commands](docs/page-films.md).
+Real renders are supplied separately by the parent task; browser fixture mode
+is integration evidence only. Final commit/check details are recorded in the
+local parent handoff `output/ted-page-films-20261106/site-integration.md` in the
+shared workspace. Rebuild only while the local preview is stopped, or after
+browser checks finish: this simple server reads directly from `dist`.

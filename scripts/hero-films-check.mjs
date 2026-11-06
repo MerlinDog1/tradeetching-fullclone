@@ -147,11 +147,18 @@ try {
     await Promise.all([...document.images].filter(img=>img.getAttribute('src')).map(img=>img.decode()));
    });
    // Poster-state screenshots are reproducible; full-page and requested viewport.
-   await page.evaluate(()=>{document.activeElement?.blur();scrollTo({top:0,behavior:'instant'});});
+   await page.evaluate(()=>{document.activeElement?.blur?.();scrollTo({top:0,behavior:'instant'});});
    await page.waitForFunction(()=>scrollY===0);
    await page.waitForTimeout(150);
    await page.screenshot({path:`${out}/${film.key}-${width}x${height}.png`});
-   await page.screenshot({path:`${out}/${film.key}-${width}x${height}-full.png`,fullPage:true});
+   // Long architecture pages can exceed Chromium's full-page raster budget.
+   // Cover the page in bounded viewport tiles instead of one giant bitmap.
+   const documentHeight=await page.evaluate(()=>document.documentElement.scrollHeight);
+   for(let top=0,tile=1;top<documentHeight;top+=height,tile++) {
+    await page.evaluate(y=>scrollTo({top:y,behavior:'instant'}),top);
+    await page.screenshot({path:`${out}/${film.key}-${width}x${height}-full-${String(tile).padStart(2,'0')}.png`});
+   }
+   await page.evaluate(()=>scrollTo({top:0,behavior:'instant'}));
    const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
    assert.deepEqual(axe.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[],`${route}/${width}: axe`);
    report.pages.push({route,width,height,format,metrics,requests,axeViolations:0,keyboard:true,offscreenPause:true});

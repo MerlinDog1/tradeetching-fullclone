@@ -3,12 +3,15 @@ import AxeBuilder from '@axe-core/playwright';
 import {writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import {source} from '../src/content.mjs';
+import {pageFilmFixtures} from './page-films-fixtures.mjs';
+const fixtures=process.env.PAGE_FILM_FIXTURES==='1';
 const origin=process.env.PREVIEW_URL || 'http://127.0.0.1:4210';
 const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'/usr/bin/google-chrome',headless:true,args:['--disable-dev-shm-usage']});
-const report={pages:[],interactions:[],errors:[],failedRequests:[],cancelledRequests:[],axeViolations:[]};
+const report={mediaMode:fixtures?'BROWSER FIXTURES ONLY':'real',pages:[],interactions:[],errors:[],failedRequests:[],cancelledRequests:[],axeViolations:[]};
 try{
  for(const [name,width,height] of [['desktop',1440,1000],['mobile',390,844]]){
   const context=await browser.newContext({viewport:{width,height},reducedMotion:'reduce'});
+  if(fixtures)await pageFilmFixtures(context);
   const page=await context.newPage();
   page.on('pageerror',err=>report.errors.push({viewport:name,error:err.message}));
   page.on('requestfailed',req=>{
@@ -39,11 +42,11 @@ try{
   }
   await page.goto(origin,{waitUntil:'networkidle'});
   // Video respects reduced motion, but remains user-operable.
-  assert.ok(await page.locator('[data-hero-video]').evaluate(v=>v.paused));
-  await page.locator('[data-video-toggle]').click();
-  await page.waitForFunction(()=>!document.querySelector('[data-hero-video]').paused);
-  await page.locator('[data-video-toggle]').click();
-  assert.ok(await page.locator('[data-hero-video]').evaluate(v=>v.paused));
+  assert.ok(await page.locator('[data-page-film-video]').evaluate(v=>v.paused));
+  await page.locator('[data-page-film-toggle]').click();
+  await page.waitForFunction(()=>!document.querySelector('[data-page-film-video]').paused);
+  await page.locator('[data-page-film-toggle]').click();
+  assert.ok(await page.locator('[data-page-film-video]').evaluate(v=>v.paused));
   report.interactions.push(`${name}: reduced-motion poster + manual video play/pause`);
   if(name==='mobile'){
    await page.getByRole('button',{name:'Menu',exact:true}).click();
@@ -111,7 +114,9 @@ try{
   report.interactions.push(`${name}: form required/email validation, clear preview response, zero POSTs`);
   await context.close();
  }
- const page=await browser.newPage({reducedMotion:'reduce'});
+ const boundaryContext=await browser.newContext({reducedMotion:'reduce'});
+ if(fixtures)await pageFilmFixtures(boundaryContext);
+ const page=await boundaryContext.newPage();
  for(const width of [320,360,650,768,1024,1920]){
   await page.setViewportSize({width,height:900});
   for(const route of ['/','/Contact','/chemical-milling','/new-page-2']){

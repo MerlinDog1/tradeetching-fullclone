@@ -64,10 +64,14 @@ Checks cover all 13 pages at 1440px and 390px, extra 320/360/650/768/1024/1920px
 
 ## Assets and credits
 
-Images belong to the existing Trade Etching Direct site and brand-film project. The flat-cut hero film is labelled as a material visualisation; the patination film uses genuine finish photography with a light study. No invented customers, fabricated reviews or new business claims were added. Queen Anne photographs retain **© Tobias Lange-Rüb / CRUCERO** credit. The silent lettering clip is sourced from the TED film repository; no review soundtrack is included.
+Images belong to the existing Trade Etching Direct site and brand-film project. The retained historical flat-cut hero film is labelled as a material visualisation; the historical patination film uses genuine finish photography with a light study. Those hero players are inactive in this page-film preview. No invented customers, fabricated reviews or new business claims were added. Queen Anne photographs retain **© Tobias Lange-Rüb / CRUCERO** credit. The silent lettering clip is sourced from the TED film repository; no review soundtrack is included.
 
 No scheduler, background model loop, paid API, analytics tracker, web font service or application database was added.
 
-## Service hero films
+## Page films
 
-Three service routes have responsive poster-first hero films. See [source recovery, media contract and final verification](docs/hero-films.md). Actual film assets are supplied separately; the final checks must pass with those files before publication. The other ten page heroes are unchanged.
+All 13 pages now have below-hero, click-to-play film cards and static heroes.
+See [page-film media contract and checks](docs/page-films.md). Real renders are
+supplied separately; no video downloads until Play. Yesterday’s three hero films
+remain intact but inactive on this branch. The [historical hero-film notes](docs/hero-films.md)
+are retained for the earlier version, not the current acceptance suite.
