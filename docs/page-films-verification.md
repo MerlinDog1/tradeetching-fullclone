@@ -37,3 +37,14 @@ Evidence pack: `/home/coding-agent/workspace/output/ted-page-films-20261106/`.
 `acceptance-commands.json`, browser JSON reports and screenshots record the
 actual checks. Final protected preview details are in the task REPORT.md and
 HANDOVER.md after deployment verification.
+
+## Protected deployment verified
+
+https://tradeetching-review-6ara3j6pv-dullaghan31-3959s-projects.vercel.app
+
+`dpl_9LNHvKh78vCGopubMf2sB6cHpW35` is READY in the existing review project,
+non-production with no aliases. Anonymous pages and both architecture MP4s
+redirect to sign-in. Authenticated representative HTML matches after removing
+only the platform toolbar; both architecture MP4s match exact tested hashes.
+The stable review page's baseline hash is unchanged. This is a deployed-content
+smoke check; full interactive browser checks ran against the same local build.

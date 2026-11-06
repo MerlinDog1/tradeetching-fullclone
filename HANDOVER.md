@@ -36,3 +36,32 @@ is integration evidence only. Final commit/check details are recorded in the
 local parent handoff `output/ted-page-films-20261106/site-integration.md` in the
 shared workspace. Rebuild only while the local preview is stopped, or after
 browser checks finish: this simple server reads directly from `dist`.
+
+## 6 November 2026 — final page-film preview
+
+- Branch: `codex/ted-page-films-20261106`; verified implementation/media commit
+  `4f3047f2676d836ff0c845b85519b525cf46dffb` (this final note is a later docs commit).
+- Protected non-production preview: https://tradeetching-review-6ara3j6pv-dullaghan31-3959s-projects.vercel.app
+- Deployment: `dpl_9LNHvKh78vCGopubMf2sB6cHpW35`, project
+  `prj_3wo9LAlJeyhhq5Q6w6rtUDJv0Ihi`; API READY, target null (preview), aliases empty.
+- Anonymous page and architecture-video requests redirect to Vercel SSO.
+  Authenticated Home/Contact/architecture pages match the tested build after
+  removing only Vercel's injected feedback-toolbar script. Both architecture
+  MP4s match the tested files byte-for-byte. CLI automatic protection bypass was
+  used; its secret value was not printed or committed.
+- Stable review HTML SHA256 remains
+  `2a5ee38ce9ef7a0ce17fe78e44925d6bab475c48e26b5aabf25b0ecfdaccc1de`.
+  No alias assignment or production deployment was performed.
+- Build and strict check PASS; real-media film suite 52 cases PASS; browser suite
+  26 desktop/phone pages plus 19 interactions PASS, zero errors/axe violations.
+  See `docs/page-films-verification.md` and the output report.
+- All 13 films are 12 s, 25 fps, silent, purpose-built wide/portrait. Contact's
+  form remains before the optional film; other cards follow static heroes.
+- Public Git deliberately excludes the architecture film and posters. Restore
+  those six private files before strict checks/deploy. Queen Anne film rights
+  remain unresolved for public use (© Tobias Lange-Rüb / CRUCERO).
+- Full pack/report: `/home/coding-agent/workspace/output/ted-page-films-20261106/`.
+  Film source is private `MerlinDog1/trade-etching-remotion`, same task branch,
+  `afc2c7cae9c1feb754a3763d03827ee2f8217ed4`.
+- Yesterday's media and dirty worktree remain untouched. Live tradeetching.com
+  on IONOS/Duda remains untouched. Temporary loopback previews are stopped.
